@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import HomePage from '../pages/HomePage'
 import { ProfilePage } from '../pages/ProfilePage'
+import SongPage from '../pages/SongPage'
 import { PrivateRoutes } from './PrivateRoutes'
 
 
@@ -10,6 +11,7 @@ const AppRouter = () => {
             <Routes>
                 <Route path="*" element = {<HomePage />} />
                 <Route path="/" element = {<HomePage />} />
+                <Route path="/song" element = {<SongPage />} />
 
 
                 <Route path='/profile' element={<PrivateRoutes><ProfilePage /></PrivateRoutes>} />
