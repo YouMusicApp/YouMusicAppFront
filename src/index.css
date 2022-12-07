@@ -1,18 +1,21 @@
 body {
         margin: 0px;
         min-width: 100vw;
+        min-height: 120vh;
         font-family: sans-serif;
 }
+
 .grid-center {
         display: grid;
         place-items: center;
 }
+
 .cursor-pointer {
         cursor: pointer;
 }
 
 /* Header */
-.header{
+.header {
         width: 100vw;
 }
 
@@ -32,10 +35,12 @@ body {
 .dropdown-toggle::after {
         content: none !important;
 }
+
 .dropdown-menu[data-bs-popper] {
         right: 0;
         left: auto !important;
 }
+
 .icon {
         font-size: 2rem;
 }
@@ -46,3 +51,4 @@ body {
         background-color: #1C796E !important;
         color: white !important;
 }
+

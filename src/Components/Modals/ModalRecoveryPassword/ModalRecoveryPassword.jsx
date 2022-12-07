@@ -82,7 +82,7 @@ export const ModalRecoveryPassword = () => {
 
                             </div>
 
-                            <button className="mt-2 w-100 btn btn-primary btn-lg" type="submit">Recovery</button>
+                            <button className="mt-2 w-100 btn btn-color btn-lg" type="submit">Recovery</button>
 
                         </form>
                     </div>

@@ -11,7 +11,6 @@ import { functionRegister } from "../../../Api/postApi";
 export const ModalRegister = () => {
     const [fullscreen, setFullscreen] = useState(true);
     const [show, setShow] = useState(false);
-    // const usersData = useSelector(state => state.userSlice);
     const dispatch = useDispatch();
 
     function handleShow(v) {
@@ -71,7 +70,7 @@ export const ModalRegister = () => {
                                     Agree to Terms & Conditions
                                 </label>
                             </div>
-                            <button className="mt-4 w-100 btn btn-primary btn-lg" type="submit">Log in</button>
+                            <button className="mt-4 w-100 btn btn-color btn-lg" type="submit">Create Account</button>
                         </form>
                     </div>
                 </Modal.Body>

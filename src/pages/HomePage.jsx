@@ -4,7 +4,7 @@ import Slider from "../Components/Slider/Slider"
 const HomePage = () => {
   const albums = useSelector(state => state.albumSlice);
   const tracks = useSelector(state => state.trackSlice);
-  
+
   return (
     <>
       <div className="container">
@@ -56,8 +56,6 @@ const HomePage = () => {
           }}
         />
       </div>
-
-
 
 
     </>
