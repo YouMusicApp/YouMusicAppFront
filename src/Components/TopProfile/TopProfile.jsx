@@ -4,16 +4,17 @@ import { useSelector } from 'react-redux';
 
 
 export const TopProfile = () => {
-    // Explicar como reciclar el componente
+
     const array = useSelector(state => state.userSlice);
+  
 
     return (
         <>
             <div className="mx-0 ">
                 <div className="">
-                    <div className=""> <img className="card-img-top" src="https://i.imgur.com/K7A78We.jpg" alt="Card image cap" />
+                    <div className=""> <img className="card-img-top" src="https://images.pexels.com/photos/7629316/pexels-photo-7629316.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap" />
                         <div className="card-body little-profile text-center p-1">
-                            <div className="pro-img"><img src="https://i.imgur.com/8RKXAIV.jpg " alt="user" /></div>
+                            <div className="pro-img"><img src="https://images.pexels.com/photos/3756770/pexels-photo-3756770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="user" /></div>
                             <h3 className="m-b-0">Brad Macullam</h3>
                             <p>Web Designer &amp; Developer</p>
                             {/* <a className="m-t-10 waves-effect waves-dark btn btn-primary btn-md btn-rounded" data-abc="true">Follow</a> */}

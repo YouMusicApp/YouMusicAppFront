@@ -26,7 +26,6 @@ const SongPage = () => {
                 <table class="table">
                     <thead class="thead-dark">
                         <tr>
-                            <th scope="col">#</th>
                             <th scope="col">Title</th>
                             <th scope="col">Artist</th>
                             <th scope="col">Genre</th>
@@ -34,10 +33,10 @@ const SongPage = () => {
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">1</th>
+                            <td>Despacito</td>
                             <td>Mark</td>
                             <td>Otto</td>
-                            <td>@mdo</td>
+                     
                         </tr>
 
                     </tbody>
