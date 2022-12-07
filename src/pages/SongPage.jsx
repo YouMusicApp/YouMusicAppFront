@@ -1,10 +1,12 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
 import Slider from '../Components/Slider/Slider'
 
 const SongPage = () => {
-
+    const { id } = useParams();
     const tracks = useSelector(state => state.trackSlice);
+    const song = tracks.list.find((track) => track.id === parseInt(id));
 
     return (
         <>
@@ -13,7 +15,7 @@ const SongPage = () => {
                     <div className="">
                         <div className="card-body little-profile text-center p-4">
                             <div className="song"><img src="https://i.imgur.com/8RKXAIV.jpg " alt="user" /></div>
-                            <h3 className="m-b-0">Brad Macullam</h3>
+                            <h3 className="m-b-0">{song.name}</h3>
                             <p>Web Designer &amp; Developer</p>
                             <button className="m-t-10 waves-effect waves-dark btn btn-dark btn-md btn-rounded" data-abc="true">Play</button>
                         </div>
@@ -23,8 +25,8 @@ const SongPage = () => {
 
 
             <div className='container mb-4'>
-                <table class="table">
-                    <thead class="thead-dark">
+                <table className="table">
+                    <thead className="thead-dark">
                         <tr>
                             <th scope="col">Title</th>
                             <th scope="col">Artist</th>
@@ -36,7 +38,7 @@ const SongPage = () => {
                             <td>Despacito</td>
                             <td>Mark</td>
                             <td>Otto</td>
-                     
+
                         </tr>
 
                     </tbody>

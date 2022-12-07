@@ -7,7 +7,6 @@
 /* img btn */
 .small:before {
     content: "";
-    position: absolute;
     width: 11rem;
     height: 11rem;
     top: 0;

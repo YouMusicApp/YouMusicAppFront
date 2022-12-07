@@ -9,9 +9,9 @@ const AppRouter = () => {
     return (
         <>
             <Routes>
-                <Route path="*" element = {<HomePage />} />
-                <Route path="/" element = {<HomePage />} />
-                <Route path="/song" element = {<SongPage />} />
+                <Route path="*" element={<HomePage />} />
+                <Route path="/" element={<HomePage />} />
+                <Route path="/song/:id" element={<SongPage />} />
 
 
                 <Route path='/profile' element={<PrivateRoutes><ProfilePage /></PrivateRoutes>} />
