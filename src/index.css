@@ -1,0 +1,48 @@
+body {
+        margin: 0px;
+        min-width: 100vw;
+        font-family: sans-serif;
+}
+.grid-center {
+        display: grid;
+        place-items: center;
+}
+.cursor-pointer {
+        cursor: pointer;
+}
+
+/* Header */
+.header{
+        width: 100vw;
+}
+
+
+/* Player */
+.fixfooter {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+}
+
+
+/* Avatar */
+.dropdown-toggle::after {
+        content: none !important;
+}
+.dropdown-menu[data-bs-popper] {
+        right: 0;
+        left: auto !important;
+}
+.icon {
+        font-size: 2rem;
+}
+
+
+/* Boton with us color */
+.btn-color {
+        background-color: #1C796E !important;
+        color: white !important;
+}

@@ -1,0 +1,30 @@
+.small {
+    width: 11rem;
+    border: none !important;
+    margin-right: 50px !important;
+}
+
+.img__small {
+    width: 11rem;
+    height: 11rem;
+    object-fit: cover;
+}
+
+.big {
+    width: 26rem;
+    border: none !important;
+}
+
+.img__big {
+    width: 32rem;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1rem;
+}
+
+.card-body {
+    border: none;
+}
