@@ -39,7 +39,8 @@
 }
 
 .small .btnheart svg {
-    font-size: 3rem;
+    font-size: 2rem;
+    color: #ff008c;
 }
 
 .small:hover button {

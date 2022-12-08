@@ -52,7 +52,14 @@ body {
         color: white !important;
 }
 
+/* song page */
 .song {
-        margin-top: -80px;
+        margin-top: 0px;
         margin-bottom: 20px
-    }
+}
+.song img {
+        max-height: 200px;
+}
+.card-body button svg {
+        font-size: 2rem;
+}

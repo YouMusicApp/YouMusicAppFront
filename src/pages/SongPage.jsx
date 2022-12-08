@@ -2,6 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import Slider from '../Components/Slider/Slider'
+import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 
 const SongPage = () => {
     const { id } = useParams();
@@ -10,14 +11,19 @@ const SongPage = () => {
 
     return (
         <>
-            <div className="mx-0 ">
+            <div className="mx-0 song">
                 <div className="">
                     <div className="">
-                        <div className="card-body little-profile text-center p-4">
-                            <div className="song"><img src="https://i.imgur.com/8RKXAIV.jpg " alt="user" /></div>
-                            <h3 className="m-b-0">{song.name}</h3>
-                            <p>Web Designer &amp; Developer</p>
-                            <button className="m-t-10 waves-effect waves-dark btn btn-dark btn-md btn-rounded" data-abc="true">Play</button>
+                        <div className="card-body little-profile p-4">
+                            <div className='text-center'>
+                                <div className="song">
+                                    <img src="https://i.imgur.com/8RKXAIV.jpg " alt="user" />
+                                </div>
+                                <h3 className="m-b-0">{song.name}</h3>
+                                <p>Web Designer &amp; Developer</p>
+                            </div>
+                            <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-md btn-rounded" data-abc="true">Play</button>
+                            <button className="m-t-10 waves-effect waves-dark btn btn-md" data-abc="true"><AiOutlineHeart /></button>
                         </div>
                     </div>
                 </div>
@@ -46,7 +52,7 @@ const SongPage = () => {
             </div>
 
 
-            <div className='slider'>
+            <div className='container'>
                 <Slider
                     slidesPerView={2}
                     spaceBetween={100}

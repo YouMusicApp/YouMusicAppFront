@@ -15,7 +15,7 @@ export function Header() {
             <Navbar.Brand className='ms-2'>
                 <ModalAside />
             </Navbar.Brand>
-            <Navbar.Collapse onClick={() => navigate('/')} className="justify-content-end me-2">
+            <Navbar.Collapse onClick={() => navigate('/')} className="justify-content-end cursor-pointer me-2">
                 <SiYoutubemusic />&nbsp;YouMusic
             </Navbar.Collapse>
             <Navbar.Collapse className="justify-content-end me-2">
