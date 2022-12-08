@@ -6,6 +6,7 @@ import { setTrack } from '../../redux/features/player/playerSlice';
 import { BsFillPlayCircleFill } from "react-icons/bs";
 import { useNavigate } from 'react-router-dom';
 import { fetchLikeTrack } from '../../Api/putApi';
+import { setPlayer } from '../../helpers/functions/setPlayer';
 
 const Card = ({ data, size, img }) => {
     const dispatch = useDispatch();
@@ -37,9 +38,6 @@ const Card = ({ data, size, img }) => {
         }
     }
 
-    const setPlayer = (song) => {
-        usersData.isLogged ? dispatch(setTrack([song])) : console.log('Tienes que logearte para escuchar la cancion');
-    }
     const openSong = (data) => {
         navigate(`/song/${data.id}`)
     }
@@ -61,10 +59,10 @@ const Card = ({ data, size, img }) => {
         <div className={size} >
             {
                 usersData.isLogged ? <button className='btnheart btn' onClick={() => likedTrack(data)}>{
-                    usersData.userLogged.liked_tracks.find((like) => like.id === data.id) ? <BsSuitHeart /> : <BsSuitHeartFill />
+                    usersData.userLogged.liked_tracks.find((like) => like.id === data.id) ? <BsSuitHeartFill /> : <BsSuitHeart />
                 }</button> : ""
             }
-            <button className='btn btnplay' onClick={() => setPlayer(data.url)}><BsFillPlayCircleFill /></button>
+            <button className='btn btnplay' onClick={() => setPlayer([data], dispatch, usersData)}><BsFillPlayCircleFill /></button>
 
             <img onClick={() => openSong(data)} className={img} src={data.thumbnail} alt='img' />
 

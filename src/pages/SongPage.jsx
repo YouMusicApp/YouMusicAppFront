@@ -5,17 +5,16 @@ import Slider from '../Components/Slider/Slider'
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import { setTrack } from '../redux/features/player/playerSlice';
 import { BsFillPlayFill } from "react-icons/bs";
+import { setPlayer } from '../helpers/functions/setPlayer';
 
 const SongPage = () => {
     const { id } = useParams();
     const tracks = useSelector(state => state.trackSlice);
-    const UsersData = useSelector(state => state.userSlice);
+    const usersData = useSelector(state => state.userSlice);
     const song = tracks.list.find((track) => track.id === parseInt(id));
     const dispatch = useDispatch();
 
-    const setPlayer = (song) => {
-        UsersData.isLogged ? dispatch(setTrack(song)) : console.log('Tienes que logearte para escuchar la cancion');
-    }
+    
 
     return (
         <>
@@ -31,7 +30,7 @@ const SongPage = () => {
                                 <p>{song.artist}</p>
                             </div>
                             <div className='containerButton--songpage'>
-                            <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true" onClick={()=> setPlayer(song)} ><BsFillPlayFill /></button>
+                            <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true" onClick={()=> setPlayer([song], dispatch, usersData)} ><BsFillPlayFill /></button>
                             <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true"  > <AiOutlineHeart /></button>
                             </div>
                         </div>

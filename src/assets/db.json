@@ -508,20 +508,20 @@
           "genre": "chillout"
         },
         {
-          "id": 4,
-          "name": "Aurora",
-          "artist": "Smoking with poets",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583928/tracks-dev/Smoking_With_Poets_-_to__Aurora_t2qnaw.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/aurora_omys8y.jpg",
-          "genre": "indie"
-        },
-        {
           "id": 12,
           "name": "Under Water",
           "artist": "THE.MADPIX.PROJECT",
           "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644586422/tracks-dev/The.madpix.project_-_Under_Water_2_gyvrkl.mp3",
           "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644586423/tracks-thumbnails-dev/Under_Water_yoirsy.jpg",
           "genre": "electronic"
+        },
+        {
+          "id": 4,
+          "name": "Aurora",
+          "artist": "Smoking with poets",
+          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583928/tracks-dev/Smoking_With_Poets_-_to__Aurora_t2qnaw.mp3",
+          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/aurora_omys8y.jpg",
+          "genre": "indie"
         }
       ],
       "liked_album": [
@@ -562,16 +562,7 @@
         "password": "123"
       },
       "myplaylists": [],
-      "liked_tracks": [
-        {
-          "id": 6,
-          "name": "Tantalizing Youth",
-          "artist": "Social Square",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Social_Square_-_Tantalizing_Youth_eykq87.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/Tantalizing_Youth_bfshzo.jpg",
-          "genre": "rock"
-        }
-      ],
+      "liked_tracks": [],
       "liked_album": [],
       "profilePicture": ""
     }

@@ -10,7 +10,7 @@ const AlbumCard = ({ data, size, img }) => {
     const dispatch = useDispatch();
     const usersData = useSelector(state => state.userSlice);
     const navigate = useNavigate();
-
+    
     const likedTrack = (data) => {
         const userEdited = {
             ...usersData.userLogged,
@@ -24,7 +24,7 @@ const AlbumCard = ({ data, size, img }) => {
         usersData.isLogged ? dispatch(setTrack(listSong)) : console.log('Tienes que logearte para escuchar la cancion');
     }
     const openSong = (data) => {
-        navigate(`/song/${data.id}`)
+        navigate(`/album/${data.id}`)
     }
     return (
 
