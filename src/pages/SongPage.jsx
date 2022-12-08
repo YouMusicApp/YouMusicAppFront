@@ -31,7 +31,8 @@ const SongPage = () => {
                                 <p>{song.artist}</p>
                             </div>
                             <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded" data-abc="true" onClick={()=> setPlayer(song)} >Play <BsFillPlayFill /></button>
-                            <button className="m-t-10 waves-effect waves-dark btn__login--home btn btn-md" data-abc="true"><AiOutlineHeart /></button>
+                            <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded" data-abc="true"  > <AiOutlineHeart /></button>
+
                         </div>
                     </div>
                 </div>
@@ -42,7 +43,7 @@ const SongPage = () => {
                 <table className="table">
                     <thead className="thead-dark">
                         <tr>
-                            <th scope="col">#</th>
+                            <th scope="col"></th>
                             <th scope="col">Title</th>
                             <th scope="col">Artist</th>
                             <th scope="col">Genre</th>
