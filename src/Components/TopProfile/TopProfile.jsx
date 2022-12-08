@@ -6,7 +6,6 @@ export const TopProfile = () => {
 
     const userData = useSelector(state => state.userSlice);
     const user = userData.userLogged.userData;
-    console.log(user)
 
     return (
         <>

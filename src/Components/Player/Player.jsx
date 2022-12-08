@@ -28,7 +28,7 @@ const Player = () => {
                 header={playlist !== '' ? `${playlist[currentTrack].name} - ${playlist[currentTrack].artist}` : ''}
                 autoPlay
                 layout={playlist === '' ? 'horizontal' : ''}
-                src={playlist == '' ? '' : playlist[currentTrack].url}
+                src={playlist === '' ? '' : playlist[currentTrack].url}
                 onPlay={e => console.log("onPlay")}
                 showSkipControls
                 showJumpControls={false}
