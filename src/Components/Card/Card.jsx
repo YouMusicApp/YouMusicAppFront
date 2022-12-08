@@ -1,7 +1,7 @@
 import './Card.css';
-import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
+import { BsSuitHeart, BsSuitHeartFill } from "react-icons/bs";
 import { useDispatch, useSelector } from 'react-redux';
-import { setUserLikedTrack } from '../../redux/features/user/userSlice';
+import { setUserLikedTrack, setUserUnlikedTrack } from '../../redux/features/user/userSlice';
 import { setTrack } from '../../redux/features/player/playerSlice';
 import { BsFillPlayCircleFill } from "react-icons/bs";
 import { useNavigate } from 'react-router-dom';
@@ -13,12 +13,28 @@ const Card = ({ data, size, img }) => {
     const navigate = useNavigate();
 
     const likedTrack = (data) => {
-        const userEdited = {
-            ...usersData.userLogged,
-            'liked_tracks': [...usersData.userLogged.liked_tracks, data]
+        const prueba = usersData.userLogged.liked_tracks.find((like) => like.id === data.id)
+        if (!prueba) {
+            console.log('if is true');
+            const userEdited = {
+
+                ...usersData.userLogged,
+                'liked_tracks': [...usersData.userLogged.liked_tracks, data]
+            }
+            fetchLikeTrack(userEdited);
+            dispatch(setUserLikedTrack(data));
+        } else {
+            console.log('if is false');
+            const unlikedTrack = usersData.userLogged.liked_tracks.filter((track) => {
+                return track.id !== data.id
+            })
+            const userEdited = {
+                ...usersData.userLogged,
+                'liked_tracks': unlikedTrack
+            }
+            fetchLikeTrack(userEdited);
+            dispatch(setUserUnlikedTrack(userEdited))
         }
-        fetchLikeTrack(userEdited);
-        dispatch(setUserLikedTrack(data));
     }
 
     const setPlayer = (song) => {
@@ -27,11 +43,28 @@ const Card = ({ data, size, img }) => {
     const openSong = (data) => {
         navigate(`/song/${data.id}`)
     }
+    /* const heartToggle = () => {
+        const filter = usersData.userLogged.liked_tracks.find((like) => like.id === data.id)
+        if (filter) {
+            return (
+                <AiOutlineHeart />
+            )
+        } else {
+            return (
+                <AiFillHeart />
+            )
+        }
+    } */
+
     return (
 
         <div className={size} >
-            {usersData.isLogged ? <button className='btnheart btn' onClick={() => likedTrack(data)}><AiOutlineHeart /></button> : ""}
-            <button className='btn btnplay' onClick={() => setPlayer(data)}><BsFillPlayCircleFill /></button>
+            {
+                usersData.isLogged ? <button className='btnheart btn' onClick={() => likedTrack(data)}>{
+                    usersData.userLogged.liked_tracks.find((like) => like.id === data.id) ? <BsSuitHeart /> : <BsSuitHeartFill />
+                }</button> : ""
+            }
+            <button className='btn btnplay' onClick={() => setPlayer(data.url)}><BsFillPlayCircleFill /></button>
 
             <img onClick={() => openSong(data)} className={img} src={data.thumbnail} alt='img' />
 
@@ -46,19 +79,3 @@ const Card = ({ data, size, img }) => {
 
 export default Card
 
-{/* <div className="">
-        <a href="" class="icard">
-        <img src="https://i.imgur.com/oYiTqum.jpg" class="icard__image" alt="" />
-        <div class="icard__overlay">
-            <div class="icard__header">
-                <svg class="icard__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                <img class="icard__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                <div class="icard__header-text">
-                <h3 class="icard__title">Jessica Parker</h3>
-                <span class="icard__status">1 hour ago</span>
-            </div>
-            </div>
-            <p class="icard__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-        </div>
-        </a>
-      </div> */}
