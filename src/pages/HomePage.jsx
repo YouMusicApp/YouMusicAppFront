@@ -39,7 +39,7 @@ const HomePage = () => {
           spaceBetween={100}
           size='small'
           img='img__small'
-          array={tracks}
+          array={tracks.list}
           title='Tracks'
           breakpoints={{
             640: {
