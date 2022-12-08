@@ -14,8 +14,6 @@ const SongPage = () => {
     const song = tracks.list.find((track) => track.id === parseInt(id));
     const dispatch = useDispatch();
 
-    
-
     return (
         <>
             <div className="mx-0 song">
@@ -30,8 +28,8 @@ const SongPage = () => {
                                 <p>{song.artist}</p>
                             </div>
                             <div className='containerButton--songpage'>
-                            <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true" onClick={()=> setPlayer([song], dispatch, usersData)} ><BsFillPlayFill /></button>
-                            <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true"  > <AiOutlineHeart /></button>
+                                <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true" onClick={() => setPlayer([song], dispatch, usersData)} ><BsFillPlayFill /></button>
+                                <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true"  > <AiOutlineHeart /></button>
                             </div>
                         </div>
                     </div>
@@ -51,7 +49,7 @@ const SongPage = () => {
                     </thead>
                     <tbody>
                         <tr className='cursor-pointer'>
-                            <td onClick={()=> setPlayer(song)} className='cursor-pointer tdhover'><BsFillPlayFill /></td>
+                            <td onClick={() => setPlayer(song)} className='cursor-pointer tdhover'><BsFillPlayFill /></td>
                             <td>{song.name}</td>
                             <td>{song.artist}</td>
                             <td>{song.genre}</td>
@@ -69,7 +67,7 @@ const SongPage = () => {
                     spaceBetween={100}
                     size='small'
                     img='img__small'
-                    array={tracks}
+                    array={tracks.list}
                     title='Similar song'
                     breakpoints={{
                         640: {

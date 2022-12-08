@@ -14,7 +14,6 @@ export default function AlbumSlider({ array, title, size, slidesPerView, img, br
             <h2>{title}</h2>
             <Swiper
                 slidesPerView={slidesPerView}
-                spaceBetween={12}
                 // pagination={{
                 //     clickable: true,
                 // }}

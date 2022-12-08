@@ -5,12 +5,13 @@ import { setTrack } from '../../../redux/features/player/playerSlice';
 import { BsFillPlayCircleFill } from "react-icons/bs";
 import { useNavigate } from 'react-router-dom';
 import { fetchLikeTrack } from '../../../Api/putApi';
+import '../Card.css'
 
 const AlbumCard = ({ data, size, img }) => {
     const dispatch = useDispatch();
     const usersData = useSelector(state => state.userSlice);
     const navigate = useNavigate();
-    
+
     const likedTrack = (data) => {
         const userEdited = {
             ...usersData.userLogged,
@@ -28,7 +29,7 @@ const AlbumCard = ({ data, size, img }) => {
     }
     return (
 
-        <div className='' >
+        <div className='imgbig' >
             {usersData.isLogged ? <button className='btnheart btn' onClick={() => likedTrack(data)}><AiOutlineHeart /></button> : ""}
             <button className='btn btnplay' onClick={() => setPlayer(data.tracks)}><BsFillPlayCircleFill /></button>
 

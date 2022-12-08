@@ -32,7 +32,7 @@
 }
 
 .btnplay:hover {
-    color: #f9ff5b !important;
+    color: #01ffea !important;
 }
 
 .small .btnheart {
@@ -43,9 +43,9 @@
     border: none !important;
 }
 
-.small .btnheart svg {
+.btnheart svg {
     font-size: 2rem;
-    color: #f9ff5b;
+    color: #00eeff;
 }
 
 .small:hover button {
@@ -65,12 +65,56 @@
     border: none !important;
 }
 
+/* img big btn together */
 .img__big {
     width: 32rem;
-    height: 10rem;
+    height: 11rem;
     object-fit: cover;
 }
 
+.imgbig:before {
+    content: "";
+    width: 32rem;
+    height: 11rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ff008c52;
+}
+
+.imgbig:hover::before {
+    background-color: #ff008c52;
+}
+
+.imgbig img {
+    display: block;
+}
+
+.imgbig .btnplay {
+    position: absolute;
+    transform: translateY(110px);
+    opacity: 0;
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.imgbig:hover {
+    color: #ff5b9f !important;
+}
+
+.imgbig .btnheart {
+    position: absolute;
+    opacity: 0;
+    color: #ffffff;
+    font-size: 1rem;
+    border: none !important;
+}
+
+.imgbig:hover button {
+    opacity: 1;
+}
+
+/* img big btn together */
 .card-title {
     font-size: 1rem;
 }
