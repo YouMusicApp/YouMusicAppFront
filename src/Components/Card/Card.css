@@ -31,6 +31,10 @@
     font-size: 2rem;
 }
 
+.btnplay:hover {
+    color: #f9ff5b !important;
+}
+
 .small .btnheart {
     position: absolute;
     opacity: 0;
@@ -41,7 +45,7 @@
 
 .small .btnheart svg {
     font-size: 2rem;
-    color: #00ffe5;
+    color: #f9ff5b;
 }
 
 .small:hover button {

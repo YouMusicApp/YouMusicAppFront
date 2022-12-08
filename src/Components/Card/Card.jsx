@@ -61,7 +61,7 @@ const Card = ({ data, size, img }) => {
         <div className={size} >
             {
                 usersData.isLogged ? <button className='btnheart btn' onClick={() => likedTrack(data)}>{
-                    usersData.userLogged.liked_tracks.find((like) => like.id === data.id) ? <BsSuitHeart /> : <BsSuitHeartFill />
+                    usersData.userLogged.liked_tracks.find((like) => like.id === data.id) ? <BsSuitHeartFill /> : <BsSuitHeart />
                 }</button> : ""
             }
             <button className='btn btnplay' onClick={() => setPlayer(data.url)}><BsFillPlayCircleFill /></button>
