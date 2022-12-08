@@ -1,8 +1,8 @@
+import './Card.css';
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import { useDispatch, useSelector } from 'react-redux';
 import { setUserLikedTrack } from '../../redux/features/user/userSlice';
 import { setTrack } from '../../redux/features/player/playerSlice';
-import './Card.css';
 import { BsFillPlayCircleFill } from "react-icons/bs";
 import { useNavigate } from 'react-router-dom';
 import { fetchLikeTrack } from '../../Api/putApi';
@@ -25,7 +25,7 @@ const Card = ({ data, size, img }) => {
         usersData.isLogged ? dispatch(setTrack(url)) : console.log('Tienes que logearte para escuchar la cancion');
     }
     const openSong = (data) => {
-        navigate(`song/${data.id}`)
+        navigate(`/song/${data.id}`)
     }
     return (
 

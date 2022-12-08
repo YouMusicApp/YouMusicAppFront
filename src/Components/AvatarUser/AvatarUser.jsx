@@ -25,8 +25,8 @@ export function AvatarUser() {
                 title=<FaUserCircle className='icon' />
             >
                 <Dropdown.Item eventKey="1" onClick={() => navigate('/profile')}>Profile</Dropdown.Item>
-                <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-                <Dropdown.Item eventKey="3">Something else here</Dropdown.Item>
+                <Dropdown.Item eventKey="2">Another</Dropdown.Item>
+                <Dropdown.Item eventKey="3">Something</Dropdown.Item>
                 <Dropdown.Divider />
                 <Dropdown.Item eventKey="4" onClick={() => logout()}>Log out</Dropdown.Item>
             </DropdownButton>
