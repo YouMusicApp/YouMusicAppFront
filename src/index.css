@@ -31,6 +31,7 @@ body {
 }
 
 
+
 /* Avatar */
 .dropdown-toggle::after {
         content: none !important;
@@ -48,9 +49,13 @@ body {
 
 /* Boton with us color */
 .btn-color {
-        background-color: #1C796E !important;
+        background-color: #4d92ca !important;
         color: white !important;
 }
+.btn-link{
+        color: #4d92ca !important;;
+}
+
 
 /* song page */
 .song {
@@ -72,4 +77,21 @@ body {
 
 .tdhover svg :hover {
         color: #ff008c;
+}
+
+
+.containerButton--songpage{
+       display: flex;
+justify-content: center;
+
+}
+.containerButton--songpage__button{
+        
+        text-align: center;
+        width: 75px;
+        height: 35px;
+        background-color: #4d92ca !important;
+        border:none !important;
+        text-decoration: none;
+        padding: 1px 24px !important;
 }

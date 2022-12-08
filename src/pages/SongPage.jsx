@@ -30,9 +30,10 @@ const SongPage = () => {
                                 <h3 className="m-b-0">{song.name}</h3>
                                 <p>{song.artist}</p>
                             </div>
-                            <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded" data-abc="true" onClick={()=> setPlayer(song)} >Play <BsFillPlayFill /></button>
-                            <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded" data-abc="true"  > <AiOutlineHeart /></button>
-
+                            <div className='containerButton--songpage'>
+                            <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true" onClick={()=> setPlayer(song)} ><BsFillPlayFill /></button>
+                            <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true"  > <AiOutlineHeart /></button>
+                            </div>
                         </div>
                     </div>
                 </div>
