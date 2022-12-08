@@ -21,8 +21,8 @@ const Card = ({ data, size, img }) => {
         dispatch(setUserLikedTrack(data));
     }
 
-    const setPlayer = (url) => {
-        usersData.isLogged ? dispatch(setTrack(url)) : console.log('Tienes que logearte para escuchar la cancion');
+    const setPlayer = (song) => {
+        usersData.isLogged ? dispatch(setTrack([song])) : console.log('Tienes que logearte para escuchar la cancion');
     }
     const openSong = (data) => {
         navigate(`/song/${data.id}`)
@@ -31,7 +31,7 @@ const Card = ({ data, size, img }) => {
 
         <div className={size} >
             {usersData.isLogged ? <button className='btnheart btn' onClick={() => likedTrack(data)}><AiOutlineHeart /></button> : ""}
-            <button className='btn btnplay' onClick={() => setPlayer(data.url)}><BsFillPlayCircleFill /></button>
+            <button className='btn btnplay' onClick={() => setPlayer(data)}><BsFillPlayCircleFill /></button>
 
             <img onClick={() => openSong(data)} className={img} src={data.thumbnail} alt='img' />
 

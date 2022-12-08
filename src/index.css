@@ -57,9 +57,19 @@ body {
         margin-top: 0px;
         margin-bottom: 20px
 }
+
 .song img {
         max-height: 200px;
 }
-.card-body button svg {
-        font-size: 2rem;
+
+.btn__login--home svg {
+        font-size: 2.5rem;
+}
+
+.btn-svg svg {
+        font-size: 1.5rem;
+}
+
+.tdhover svg :hover {
+        color: #ff008c;
 }

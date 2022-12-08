@@ -4,7 +4,7 @@ import { createSlice } from "@reduxjs/toolkit";
 export const playerSlice = createSlice({
     name: "player",
     initialState: {
-        track: null,
+        track: '',
     },
     reducers: { 
         setTrack : (state, action) => {

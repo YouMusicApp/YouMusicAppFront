@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux"
+import AlbumSlider from "../Components/Slider/AlbumSlider/AlbumSlider";
 import Slider from "../Components/Slider/Slider"
 
 const HomePage = () => {
@@ -7,8 +8,8 @@ const HomePage = () => {
 
   return (
     <>
-      <div className="container">
-        <Slider
+      <div className="container mt-2">
+        <AlbumSlider
           slidesPerView={1}
           spaceBetween={5}
           size='big'
@@ -32,7 +33,7 @@ const HomePage = () => {
         />
       </div>
 
-      <div className="container">
+      <div className="container mt-2">
         <Slider
           slidesPerView={2}
           spaceBetween={100}
