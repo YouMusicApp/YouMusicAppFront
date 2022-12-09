@@ -1,5 +1,5 @@
 import axios from "axios";
-import { setNewPassword, setUserEdit } from "../redux/features/user/userSlice";
+import { setNewPassword } from "../redux/features/user/userSlice";
 
 
 export const fetchPutUser = async (id, userEdited, dispatch) => {
