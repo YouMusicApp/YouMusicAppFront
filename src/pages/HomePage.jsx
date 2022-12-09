@@ -40,18 +40,26 @@ const HomePage = () => {
           array={tracks.list}
           title='Tracks'
           breakpoints={{
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 20,
+            600: {
+              slidesPerView: 3,
+              spaceBetween: 10,
             },
             768: {
               slidesPerView: 4,
-              spaceBetween: 30,
+              spaceBetween: 10,
             },
-            1024: {
-              slidesPerView: 6,
-              spaceBetween: 40,
+            992: {
+              slidesPerView: 5,
+              spaceBetween: 10,
             },
+            1200: {
+              slidesPerView: 7,
+              spaceBetween: 10,
+            },
+            1400: {
+              slidesPerView: 8,
+              spaceBetween: 10,
+            }
           }}
         />
       </div>
