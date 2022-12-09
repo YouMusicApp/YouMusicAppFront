@@ -16,7 +16,8 @@ export const TopProfile = () => {
                         <div className="card-body little-profile text-center p-1">
                             <div className="pro-img"><img src={user.profilePicture ? user.profilePicture : 'https://bootdey.com/img/Content/avatar/avatar7.png' } alt="user" /></div>
                             <h3 className="m-b-0">{user.first_name} {user.last_name}</h3>
-                            <p>{user.username}</p>
+                            <p className="m-b-0">{user.username}</p>
+                            <p>{user.email}</p>
                             {/* <a className="m-t-10 waves-effect waves-dark btn btn-primary btn-md btn-rounded" data-abc="true">Follow</a> */}
                         </div>
                     </div>
