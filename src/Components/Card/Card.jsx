@@ -1,5 +1,5 @@
 import './Card.css';
-import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
+import { BsSuitHeart, BsSuitHeartFill } from "react-icons/bs";
 import { useDispatch, useSelector } from 'react-redux';
 import { setUserLikedTrack, setUserUnlikedTrack } from '../../redux/features/user/userSlice';
 import { setTrack } from '../../redux/features/player/playerSlice';
@@ -26,17 +26,17 @@ const Card = ({ data, size, img }) => {
             dispatch(setUserLikedTrack(data));
         } else {
             console.log('segunda condicion');
-                const unlikedTrack = usersData.userLogged.liked_tracks.filter((track) => {
-                    return track.id !== data.id
-                })
-                console.log(unlikedTrack);
-                const userEdited = {
-                    ...usersData.userLogged,
-                    'liked_tracks': unlikedTrack
-                }
-                console.log(userEdited);
-                fetchLikeTrack(userEdited);
-                dispatch(setUserUnlikedTrack(userEdited))
+            const unlikedTrack = usersData.userLogged.liked_tracks.filter((track) => {
+                return track.id !== data.id
+            })
+            console.log(unlikedTrack);
+            const userEdited = {
+                ...usersData.userLogged,
+                'liked_tracks': unlikedTrack
+            }
+            console.log(userEdited);
+            fetchLikeTrack(userEdited);
+            dispatch(setUserUnlikedTrack(userEdited))
         }
     }
 
@@ -46,11 +46,26 @@ const Card = ({ data, size, img }) => {
     const openSong = (data) => {
         navigate(`/song/${data.id}`)
     }
+    /* const heartToggle = () => {
+        const filter = usersData.userLogged.liked_tracks.find((like) => like.id === data.id)
+        if (filter) {
+            return (
+                <AiOutlineHeart />
+            )
+        } else {
+            return (
+                <AiFillHeart />
+            )
+        }
+    } */
+
     return (
 
         <div className={size} >
             {
-            usersData.isLogged ? <button className='btnheart btn' onClick={() => likedTrack(data)}><AiOutlineHeart /></button> : ""
+                usersData.isLogged ? <button className='btnheart btn' onClick={() => likedTrack(data)}>{
+                    usersData.userLogged.liked_tracks.find((like) => like.id === data.id) ? <BsSuitHeart /> : <BsSuitHeartFill />
+                }</button> : ""
             }
             <button className='btn btnplay' onClick={() => setPlayer(data.url)}><BsFillPlayCircleFill /></button>
 
@@ -67,19 +82,3 @@ const Card = ({ data, size, img }) => {
 
 export default Card
 
-{/* <div className="">
-        <a href="" class="icard">
-        <img src="https://i.imgur.com/oYiTqum.jpg" class="icard__image" alt="" />
-        <div class="icard__overlay">
-            <div class="icard__header">
-                <svg class="icard__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                <img class="icard__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                <div class="icard__header-text">
-                <h3 class="icard__title">Jessica Parker</h3>
-                <span class="icard__status">1 hour ago</span>
-            </div>
-            </div>
-            <p class="icard__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-        </div>
-        </a>
-      </div> */}
