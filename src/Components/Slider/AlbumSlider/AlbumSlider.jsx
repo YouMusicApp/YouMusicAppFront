@@ -25,7 +25,7 @@ export default function AlbumSlider({ array, title, size, slidesPerView, img, br
                 <div className="row">
 
 
-                    {array.list.map((data) => {
+                    {array.map((data) => {
                         return (
                             <SwiperSlide
                                 key={uuidv4()}

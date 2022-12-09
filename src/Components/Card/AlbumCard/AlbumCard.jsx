@@ -1,10 +1,9 @@
-import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import { useDispatch, useSelector } from 'react-redux';
-import { setUserLikedTrack } from '../../../redux/features/user/userSlice';
+import { setUserLikedAlbum, setUserUnlikedAlbum } from '../../../redux/features/user/userSlice';
 import { setTrack } from '../../../redux/features/player/playerSlice';
-import { BsFillPlayCircleFill } from "react-icons/bs";
+import { BsFillPlayCircleFill, BsSuitHeart, BsSuitHeartFill } from "react-icons/bs";
 import { useNavigate } from 'react-router-dom';
-import { fetchLikeTrack } from '../../../Api/putApi';
+import { fetchLikeAlbum } from '../../../Api/putApi';
 import '../Card.css'
 
 const AlbumCard = ({ data, size, img }) => {
@@ -12,25 +11,47 @@ const AlbumCard = ({ data, size, img }) => {
     const usersData = useSelector(state => state.userSlice);
     const navigate = useNavigate();
 
-    const likedTrack = (data) => {
-        const userEdited = {
-            ...usersData.userLogged,
-            'liked_tracks': [...usersData.userLogged.liked_tracks, data]
-        }
-        fetchLikeTrack(userEdited);
-        dispatch(setUserLikedTrack(data));
-    }
-
     const setPlayer = (listSong) => {
         usersData.isLogged ? dispatch(setTrack(listSong)) : console.log('Tienes que logearte para escuchar la cancion');
     }
     const openSong = (data) => {
         navigate(`/album/${data.id}`)
     }
+
+    const likedAlbum = (data) => {
+        const checkLiked = usersData.userLogged.liked_album.find((like) => like.id === data.id);
+        console.log(usersData.userLogged.liked_album);
+        console.log(checkLiked);
+        if (!checkLiked) {
+            console.log('like');
+            const userEdited = {
+                ...usersData.userLogged,
+                'liked_album': [...usersData.userLogged.liked_album, data]
+            }
+            fetchLikeAlbum(userEdited);
+            dispatch(setUserLikedAlbum(data));
+        } else {
+            console.log('dislike');
+            const unlikedAlbum = usersData.userLogged.liked_album.filter((album) => {
+                return album.id !== data.id
+            })
+            const userEdited = {
+                ...usersData.userLogged,
+                'liked_album': unlikedAlbum
+            }
+            fetchLikeAlbum(userEdited);
+            dispatch(setUserUnlikedAlbum(userEdited))
+        }
+    }
+
     return (
 
         <div className='imgbig' >
-            {usersData.isLogged ? <button className='btnheart btn' onClick={() => likedTrack(data)}><AiOutlineHeart /></button> : ""}
+            {
+                usersData.isLogged ? <button className='btnheart btn' onClick={() => likedAlbum(data)}>{
+                    usersData.userLogged.liked_album.find((like) => like.id === data.id) ? <BsSuitHeartFill /> : <BsSuitHeart />
+                }</button> : ""
+            }
             <button className='btn btnplay' onClick={() => setPlayer(data.tracks)}><BsFillPlayCircleFill /></button>
 
             <img onClick={() => openSong(data)} className={img} src={data.thumbnail} alt='img' />
