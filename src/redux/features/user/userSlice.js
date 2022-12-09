@@ -51,11 +51,7 @@ export const userSlice = createSlice({
         },
         setUserUnlikedAlbum: (state, action) => {
             state.userLogged = action.payload       
-        }
-            state.userLogged = action.payload
         },
-
-        //crear slice pa userEdit
         setUserEdit: (state, action) => {
             state.userLogged = {
                 ...state.userLogged,
@@ -66,6 +62,7 @@ export const userSlice = createSlice({
     }
 });
 
-export const { setUserList, setUserLogged, setIsLogged, setUserLogOut, setUserRegister, setUserLikedTrack, setUserUnlikedTrack, setNewPassword, registerUser, setUserLikedAlbum, setUserUnlikedAlbum, setUserEdit } = userSlice.actions;
+export const { setUserList, setUserLogged, setIsLogged, setUserLogOut, setUserRegister, setUserLikedTrack, setUserUnlikedTrack, 
+    setNewPassword, registerUser, setUserLikedAlbum, setUserUnlikedAlbum, setUserEdit } = userSlice.actions;
 
 export default userSlice.reducer;

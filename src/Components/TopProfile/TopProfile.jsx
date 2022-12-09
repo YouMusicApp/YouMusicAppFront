@@ -43,7 +43,7 @@ console.log(editUser)
                                 <input type="text" placeholder="name" name="username" className="username" defaultValue={user.userData.username} />
                                 <input type="text" placeholder="first_name" name="first_name" className="first_name" defaultValue={user.userData.first_name} />
                                 <input type="text" placeholder="last_name" name="last_name" className="last_name" defaultValue={user.userData.last_name} />
-                                <inp className="m-b-0"ut type="text" placeholder="email" name="email" className="email" defaultValue={user.userData.email} />
+                                <input className="m-b-0" type="text" placeholder="email" name="email" defaultValue={user.userData.email} />
                                 <input type="password" placeholder="password" name="password" className="password" defaultValue={user.userData.password} />
                                 <button href="#" type="submit" className="btn btn-primary profile">Edit</button>
                             </form>
