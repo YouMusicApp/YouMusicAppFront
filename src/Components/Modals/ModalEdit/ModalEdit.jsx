@@ -44,7 +44,7 @@ export const ModalEdit = () => {
 
     return (
         <>
-            <Button onClick={handleShow} className='mt-2 btn-color btn-sm'>Edit </Button>
+            <Button onClick={handleShow} className='mt-1 btn-color btn-md'>Edit </Button>
 
             <Modal className='p-0' show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
                 <Modal.Header>
@@ -83,7 +83,7 @@ export const ModalEdit = () => {
                                     <label htmlFor="floatingPassword">Password</label>
                                 </div>
                             </div>
-                            <button className="mt-4 w-100 btn btn-color btn-lg" type="submit">Save</button>
+                            <button className="mt-4 w-100 btn btn-color btn-lg" type="submit" onClick={() => setShow(false)}>Save</button>
 
                         </form>
                     </div>

@@ -15,9 +15,9 @@ export const TopProfile = () => {
             <div className="mx-0 ">
                 <div className="">
                     <div className=""> <img className="card-img-top" src="https://www.fotocasion.es/media/img/articulos/35203-fondo-colorama-rose-pink-84-27-FOTOCASION-OFERTA-DESCUENTO.jpg" alt="Cimage" />
-                        <div className="card-body little-profile text-center p-1">
+                        <div className="card-body little-profile text-center p-2">
                             <div className="pro-img"><img src={user.profilePicture ? user.profilePicture : 'https://bootdey.com/img/Content/avatar/avatar7.png'} alt="user" /></div>
-                        <div>
+                        <div >
                             <h2>{user.userData.username} </h2>
                             <p>{user.userData.first_name} {user.userData.last_name}</p>
                             <p>{user.userData.email}</p>
