@@ -9,7 +9,6 @@ import './Slider.css'
 
 
 export default function Slider({ array, title, size, slidesPerView, img, breakpoints }) {
-
     return (
         <>
             <h2>{title}</h2>
@@ -27,7 +26,7 @@ export default function Slider({ array, title, size, slidesPerView, img, breakpo
                 <div className="row">
 
 
-                    {array.list.map((data) => {
+                    {array.map((data) => {
                         return (
                             <SwiperSlide key={uuidv4()}>
                                 <Card

@@ -12,7 +12,7 @@ export function AvatarUser() {
     // const usersData = useSelector(state => state.userSlice)
     const logout = () => {
         dispatch(setUserLogOut());
-        dispatch(setTrack(null))
+        dispatch(setTrack(''))
     }
 
     const dispatch = useDispatch();

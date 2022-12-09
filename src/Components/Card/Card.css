@@ -1,3 +1,11 @@
+.cardContainer {
+    margin: 0 5%;
+}
+
+.titleCards {
+    margin-top: 2%;
+}
+
 .small {
     width: 11rem;
     border: none !important;
@@ -12,7 +20,7 @@
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #ff008c52;
 }
 
 .small:hover::before {
@@ -31,6 +39,10 @@
     font-size: 2rem;
 }
 
+.btnplay:hover {
+    color: #01ffea !important;
+}
+
 .small .btnheart {
     position: absolute;
     opacity: 0;
@@ -39,9 +51,9 @@
     border: none !important;
 }
 
-.small .btnheart svg {
+.btnheart svg {
     font-size: 2rem;
-    color: #00ffe5;
+    color: #00eeff;
 }
 
 .small:hover button {
@@ -61,12 +73,56 @@
     border: none !important;
 }
 
+/* img big btn together */
 .img__big {
-    width: 32rem;
-    height: 10rem;
+    width: 100%;
+    height: 11rem;
     object-fit: cover;
 }
 
+.imgbig:before {
+    content: "";
+    width: 32rem;
+    height: 11rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ff008c52;
+}
+
+.imgbig:hover::before {
+    background-color: #ff008c52;
+}
+
+.imgbig img {
+    display: block;
+}
+
+.imgbig .btnplay {
+    position: absolute;
+    transform: translateY(110px);
+    opacity: 0;
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.imgbig:hover {
+    color: #ff5b9f !important;
+}
+
+.imgbig .btnheart {
+    position: absolute;
+    opacity: 0;
+    color: #ffffff;
+    font-size: 1rem;
+    border: none !important;
+}
+
+.imgbig:hover button {
+    opacity: 1;
+}
+
+/* img big btn together */
 .card-title {
     font-size: 1rem;
 }
@@ -74,6 +130,9 @@
 .card-body {
     border: none;
 }
+
+
+
 
 /* PRUEBA */
 .icards {
@@ -138,7 +197,6 @@
 
 .icard__arc path {
     fill: var(--surface-color);
-    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
 }
 
 .icard:hover .icard__header {

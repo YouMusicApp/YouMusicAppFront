@@ -1,6 +1,6 @@
 body {
         margin: 0px;
-        min-width: 100vw;
+        min-width: 98vw;
         min-height: 120vh;
         font-family: sans-serif;
 }
@@ -16,7 +16,7 @@ body {
 
 /* Header */
 .header {
-        width: 100vw;
+        width: 100%;
 }
 
 
@@ -29,6 +29,7 @@ body {
         text-align: center;
         z-index: 1;
 }
+
 
 
 /* Avatar */
@@ -48,18 +49,52 @@ body {
 
 /* Boton with us color */
 .btn-color {
-        background-color: #1C796E !important;
+        background-color: #4d92ca !important;
         color: white !important;
 }
+
+.btn-link {
+        color: #4d92ca !important;
+        ;
+}
+
 
 /* song page */
 .song {
         margin-top: 0px;
         margin-bottom: 20px
 }
+
 .song img {
         max-height: 200px;
 }
-.card-body button svg {
-        font-size: 2rem;
+
+.btn__login--home svg {
+        font-size: 2.5rem;
+}
+
+.btn-svg svg {
+        font-size: 1.5rem;
+}
+
+.tdhover svg :hover {
+        color: #ff008c;
+}
+
+
+.containerButton--songpage {
+        display: flex;
+        justify-content: center;
+
+}
+
+.containerButton--songpage__button {
+
+        text-align: center;
+        width: 75px;
+        height: 35px;
+        background-color: #4d92ca !important;
+        border: none !important;
+        text-decoration: none;
+        padding: 1px 24px !important;
 }

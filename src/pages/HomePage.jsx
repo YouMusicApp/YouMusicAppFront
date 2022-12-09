@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux"
+import AlbumSlider from "../Components/Slider/AlbumSlider/AlbumSlider";
 import Slider from "../Components/Slider/Slider"
 
 const HomePage = () => {
@@ -6,59 +7,69 @@ const HomePage = () => {
   const tracks = useSelector(state => state.trackSlice);
 
   return (
-    <>
-      <div className="container">
-        <Slider
+    <div className="cardContainer">
+      <div className="mx-2 titleCards">
+        <AlbumSlider
           slidesPerView={1}
-          spaceBetween={5}
           size='big'
           img='img__big'
           array={albums}
           title='Albums'
           breakpoints={{
-            640: {
+            600: {
               slidesPerView: 1,
-              spaceBetween: 20,
+              spaceBetween: 10,
             },
             768: {
               slidesPerView: 2,
-              spaceBetween: 40,
+              spaceBetween: 10,
             },
-            1024: {
+            992: {
               slidesPerView: 3,
-              spaceBetween: 50,
+              spaceBetween: 10,
             },
+            1200: {
+              slidesPerView: 4,
+              spaceBetween: 10,
+            }
           }}
         />
       </div>
 
-      <div className="container">
+      <div className="mx-2 titleCards">
         <Slider
           slidesPerView={2}
-          spaceBetween={100}
           size='small'
           img='img__small'
-          array={tracks}
+          array={tracks.list}
           title='Tracks'
           breakpoints={{
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 20,
+            600: {
+              slidesPerView: 3,
+              spaceBetween: 10,
             },
             768: {
               slidesPerView: 4,
-              spaceBetween: 30,
+              spaceBetween: 10,
             },
-            1024: {
-              slidesPerView: 6,
-              spaceBetween: 40,
+            992: {
+              slidesPerView: 5,
+              spaceBetween: 10,
             },
+            1200: {
+              slidesPerView: 7,
+              spaceBetween: 10,
+            },
+            1400: {
+              slidesPerView: 8,
+              spaceBetween: 10,
+            }
           }}
         />
       </div>
 
 
-    </>
+    </div>
   )
 }
 
