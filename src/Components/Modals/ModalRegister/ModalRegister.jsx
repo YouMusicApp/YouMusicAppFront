@@ -34,7 +34,7 @@ export const ModalRegister = () => {
                 </Modal.Header>
                 <Modal.Body>
                     <div className='m-4 row'><h1 className='text-center'>Create ID</h1></div>
-                    <div className='container'>
+                    <div className='mx-2'>
                         <form onSubmit={e => register(e)} className="needs-validation">
                             <div className="row g-3">
 

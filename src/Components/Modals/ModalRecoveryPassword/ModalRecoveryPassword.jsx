@@ -51,7 +51,7 @@ export const ModalRecoveryPassword = () => {
                     <Modal.Title>YouMusic</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <div className='container'>
+                    <div className='mx-2'>
                         <div className='m-4 row'><h1 className='text-center'>Account Recovery</h1></div>
                         <form onSubmit={e => recovery(e)} className="needs-validation">
                             <div className="row g-3">

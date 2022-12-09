@@ -30,6 +30,7 @@ const Player = () => {
                 layout={playlist === '' ? 'horizontal' : ''}
                 src={playlist === '' ? '' : playlist[currentTrack].url}
                 onPlay={e => console.log("onPlay")}
+                // mirar propiedad onchange
                 showSkipControls
                 showJumpControls={false}
                 onClickPrevious={e => console.log('previus song')}

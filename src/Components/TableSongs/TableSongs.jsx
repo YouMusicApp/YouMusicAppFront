@@ -15,7 +15,7 @@ export const TableSongs = ({ song }) => {
     }
 
     return (
-        <div className='container mb-4'>
+        <div className='mx-2 mb-4'>
             <table className="table">
                 <thead className="thead-dark">
                     <tr>

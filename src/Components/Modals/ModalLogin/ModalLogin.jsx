@@ -29,7 +29,7 @@ const ModalLogin = () => {
     return (
         <>
             <MainBtn
-                name='Login'
+                name='Log in'
                 className='btn__login--home btn-lg text-decoration-none'
                 openModal={handleShow}
                 variant='link'
@@ -43,7 +43,7 @@ const ModalLogin = () => {
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body >
-                    <div className='container'>
+                    <div className='mx-2'>
                         <div className='m-4 row'>
                             <h1 className='text-center'>Sign</h1>
                             <p className='text-center'>You will get access to all your songs and playlists.</p>
