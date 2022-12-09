@@ -2,7 +2,6 @@ import './Card.css';
 import { BsSuitHeart, BsSuitHeartFill } from "react-icons/bs";
 import { useDispatch, useSelector } from 'react-redux';
 import { setUserLikedTrack, setUserUnlikedTrack } from '../../redux/features/user/userSlice';
-import { setTrack } from '../../redux/features/player/playerSlice';
 import { BsFillPlayCircleFill } from "react-icons/bs";
 import { useNavigate } from 'react-router-dom';
 import { fetchLikeTrack } from '../../Api/putApi';
@@ -14,8 +13,8 @@ const Card = ({ data, size, img }) => {
     const navigate = useNavigate();
 
     const likedTrack = (data) => {
-        const prueba = usersData.userLogged.liked_tracks.find((like) => like.id === data.id)
-        if (!prueba) {
+        const checkLiked = usersData.userLogged.liked_tracks.find((like) => like.id === data.id)
+        if (!checkLiked) {
             console.log('if is true');
             const userEdited = {
 
