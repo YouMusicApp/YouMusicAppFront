@@ -5,33 +5,83 @@ import Slider from "../Components/Slider/Slider"
 const HomePage = () => {
   const albums = useSelector(state => state.albumSlice);
   const tracks = useSelector(state => state.trackSlice);
+  const userData = useSelector(state => state.userSlice);
+
+  let likeTracks = [];
+  if (userData.isLogged) {
+    likeTracks = userData.userLogged.liked_tracks;
+    console.log(likeTracks);
+  }
 
   return (
-    <div className="mx-2 mt-2">
-      <div className="">
+    <div className="cardContainer">
+      {
+
+        userData.isLogged ?
+          <div className="mx-2 titleCards">
+            <Slider
+              slidesPerView={2}
+              spaceBetween={100}
+              size='small'
+              img='img__small'
+              array={likeTracks}
+              title='Liked tracks'
+              breakpoints={{
+                600: {
+                  slidesPerView: 3,
+                  spaceBetween: 10,
+                },
+                768: {
+                  slidesPerView: 4,
+                  spaceBetween: 10,
+                },
+                992: {
+                  slidesPerView: 5,
+                  spaceBetween: 10,
+                },
+                1200: {
+                  slidesPerView: 7,
+                  spaceBetween: 10,
+                },
+                1400: {
+                  slidesPerView: 8,
+                  spaceBetween: 10,
+                }
+              }}
+            />
+          </div>
+          : ''
+      }
+
+      <div className="mx-2 titleCards">
         <AlbumSlider
           slidesPerView={1}
           size='big'
           img='img__big'
-          array={albums}
+          array={albums.list}
           title='Albums'
           breakpoints={{
-            640: {
+            600: {
               slidesPerView: 1,
-              spaceBetween: 20,
+              spaceBetween: 10,
             },
             768: {
               slidesPerView: 2,
-              spaceBetween: 40,
+              spaceBetween: 10,
             },
-            1024: {
+            992: {
               slidesPerView: 3,
-              spaceBetween: 50,
+              spaceBetween: 10,
             },
+            1200: {
+              slidesPerView: 4,
+              spaceBetween: 10,
+            }
           }}
         />
       </div>
-      <div>
+
+      <div className="mx-2 titleCards">
         <Slider
           slidesPerView={1}
           size='small'
@@ -74,6 +124,9 @@ const HomePage = () => {
           }}
         />
       </div>
+
+
+
     </div>
 
   )
