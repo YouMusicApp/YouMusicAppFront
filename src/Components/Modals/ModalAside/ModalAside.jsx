@@ -2,8 +2,15 @@ import { useState } from 'react';
 import { Modal } from 'react-bootstrap';
 import { RxHamburgerMenu } from "react-icons/rx"
 import { MainBtn } from '../../Buttons/MainBtn/MainBtn';
+import { IoIosArrowBack } from "react-icons/io";
+import { useSelector } from 'react-redux';
+import { AvatarUser } from '../../AvatarUser/AvatarUser';
+import ModalLogin from '../ModalLogin/ModalLogin';
+import { SiYoutubemusic } from "react-icons/si";
+
 
 const ModalAside = () => {
+    const usersData = useSelector(state => state.userSlice);
 
     const [fullscreen, setFullscreen] = useState(true);
     const [show, setShow] = useState(false);
@@ -22,16 +29,19 @@ const ModalAside = () => {
             />
 
             <Modal className='p-0' show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
-                <Modal.Header closeButton>
-                    <Modal.Title>YouMusic</Modal.Title>
+                <Modal.Header className=''>
+                    <IoIosArrowBack onClick={() => setShow(false)} className='cursor-pointer' />
+                    <Modal.Title><SiYoutubemusic /> YouMusic</Modal.Title>
+                    <div>{usersData.isLogged ? <AvatarUser /> : <ModalLogin />}</div>
                 </Modal.Header>
                 <Modal.Body>
-                    <ul>
-                        <li>Buscador</li>
-                        <li>Listen now </li>
-                        <li>Browse</li>
-                        <li>Radio</li>
-                    </ul>
+                    <div className="">
+                        <ul className="sidebar-nav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
                 </Modal.Body>
             </Modal>
         </>

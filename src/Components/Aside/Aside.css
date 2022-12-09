@@ -1,0 +1,7 @@
+.aside{
+    position: absolute;
+    width: 30%;
+    float: left;
+    max-width: 270px;
+    height: 100vh;
+}

@@ -8,7 +8,7 @@ export const ProfilePage = () => {
     return (
         <>
             <TopProfile />
-            <div className="container mt-2">
+            <div className="mx-2 mt-2">
                 <Slider
                     slidesPerView={2}
                     spaceBetween={100}

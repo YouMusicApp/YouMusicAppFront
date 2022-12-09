@@ -37,7 +37,7 @@ const SongPage = () => {
             </div>
 
 
-            <div className='container mb-4'>
+            <div className='mx-2 mb-4'>
                 <table className="table">
                     <thead className="thead-dark">
                         <tr>
@@ -61,7 +61,7 @@ const SongPage = () => {
             </div>
 
 
-            <div className='container mt-2'>
+            <div className='mx-2 mt-2'>
                 <Slider
                     slidesPerView={2}
                     spaceBetween={100}

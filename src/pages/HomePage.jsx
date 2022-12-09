@@ -7,8 +7,8 @@ const HomePage = () => {
   const tracks = useSelector(state => state.trackSlice);
 
   return (
-    <div className="container mt-2">
-      <div className="container">
+    <div className="mx-2 mt-2">
+      <div className="">
         <AlbumSlider
           slidesPerView={1}
           size='big'
@@ -31,41 +31,51 @@ const HomePage = () => {
           }}
         />
       </div>
-
-      <div className="container mt-2">
+      <div>
         <Slider
-          slidesPerView={2}
+          slidesPerView={1}
           size='small'
           img='img__small'
           array={tracks.list}
           title='Tracks'
           breakpoints={{
-            600: {
+            325: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            480: {
               slidesPerView: 3,
               spaceBetween: 10,
             },
-            768: {
+            800: {
               slidesPerView: 4,
               spaceBetween: 10,
             },
-            992: {
+            1035: {
               slidesPerView: 5,
               spaceBetween: 10,
             },
-            1200: {
+            1240: {
+              slidesPerView: 6,
+              spaceBetween: 10,
+            },
+            1450: {
               slidesPerView: 7,
               spaceBetween: 10,
             },
-            1400: {
+            1635: {
               slidesPerView: 8,
+              spaceBetween: 10,
+            },
+            1825: {
+              slidesPerView: 9,
               spaceBetween: 10,
             }
           }}
         />
       </div>
-
-
     </div>
+
   )
 }
 

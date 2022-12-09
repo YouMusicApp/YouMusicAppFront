@@ -1,0 +1,85 @@
+/*
+    DEMO STYLE
+*/
+
+.navbar {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 20%;
+    max-width: 20%;
+    background: #f9f9f9;
+    color: rgb(44, 44, 44);
+    transition: all 0.3s;
+    box-shadow: 1px 1px 3px rgb(0 0 0 / 10%);
+}
+
+#sidebar .sidebar-header {
+    padding: 11px;
+    background-color: #f9f9f9
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    margin-left: 2px;
+    width: 80%;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 600px) {
+    #content {
+        width: 100%;
+    }
+
+    #sidebar {
+        display: none;
+    }
+}
+
+
+/* ---------------------------------------------------
+    Sidebar styling
+----------------------------------------------------- */
+.sidebar-nav {
+    padding: 0;
+    list-style: none;
+    transition: all .5s;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar-nav li {
+    line-height: 40px;
+    width: 100%;
+    transition: all .3s;
+    padding: 10px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: rgb(41, 40, 40);
+}
+
+.sidebar-nav li:hover {
+    background: #4d92ca;
+}
