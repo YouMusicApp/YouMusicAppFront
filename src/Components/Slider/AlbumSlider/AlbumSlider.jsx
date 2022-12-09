@@ -27,7 +27,9 @@ export default function AlbumSlider({ array, title, size, slidesPerView, img, br
 
                     {array.list.map((data) => {
                         return (
-                            <SwiperSlide key={uuidv4()}>
+                            <SwiperSlide
+                                key={uuidv4()}
+                                className='bigSlide' >
                                 <AlbumCard
                                     data={data}
                                     size={size}

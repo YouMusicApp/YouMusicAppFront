@@ -1,6 +1,6 @@
 body {
         margin: 0px;
-        min-width: 100vw;
+        min-width: 98vw;
         min-height: 120vh;
         font-family: sans-serif;
 }
@@ -16,7 +16,7 @@ body {
 
 /* Header */
 .header {
-        width: 100vw;
+        width: 100%;
 }
 
 
@@ -52,8 +52,10 @@ body {
         background-color: #4d92ca !important;
         color: white !important;
 }
-.btn-link{
-        color: #4d92ca !important;;
+
+.btn-link {
+        color: #4d92ca !important;
+        ;
 }
 
 
@@ -80,18 +82,19 @@ body {
 }
 
 
-.containerButton--songpage{
-       display: flex;
-justify-content: center;
+.containerButton--songpage {
+        display: flex;
+        justify-content: center;
 
 }
-.containerButton--songpage__button{
-        
+
+.containerButton--songpage__button {
+
         text-align: center;
         width: 75px;
         height: 35px;
         background-color: #4d92ca !important;
-        border:none !important;
+        border: none !important;
         text-decoration: none;
         padding: 1px 24px !important;
 }
