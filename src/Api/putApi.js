@@ -1,5 +1,6 @@
 import axios from "axios";
-import { setNewPassword } from "../redux/features/user/userSlice";
+import { setNewPassword, setUserEdit } from "../redux/features/user/userSlice";
+
 
 export const fetchPutUser = async (id, userEdited, dispatch) => {
     try {
@@ -21,5 +22,13 @@ export const fetchLikeAlbum = async (userEdited) => {
         const response = await axios.put(`http://localhost:4000/users/${userEdited.id}`, userEdited)
     } catch (error) {
         console.log(error);
+    }
+}
+
+export const fetchUserEdited = async (id, editUser) => {
+    try {
+        await axios.put(`http://localhost:4000/users/${id}`, editUser);
+    } catch (error) {
+        console.log(error)
     }
 }
