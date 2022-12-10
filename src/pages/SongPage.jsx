@@ -2,10 +2,10 @@ import React from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import Slider from '../Components/Slider/Slider'
-import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
-import { setTrack } from '../redux/features/player/playerSlice';
+import { BsSuitHeart, BsSuitHeartFill } from "react-icons/bs";
 import { BsFillPlayFill } from "react-icons/bs";
 import { setPlayer } from '../helpers/functions/setPlayer';
+import { breakpoints_small } from '../helpers/functions/breackpoint';
 
 const SongPage = () => {
     const { id } = useParams();
@@ -29,7 +29,7 @@ const SongPage = () => {
                             </div>
                             <div className='containerButton--songpage'>
                                 <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true" onClick={() => setPlayer([song], dispatch, usersData)} ><BsFillPlayFill /></button>
-                                <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true"  > <AiOutlineHeart /></button>
+                                <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true"  > <BsSuitHeart /></button>
                             </div>
                         </div>
                     </div>
@@ -63,26 +63,12 @@ const SongPage = () => {
 
             <div className='mx-2 mt-2'>
                 <Slider
-                    slidesPerView={2}
-                    spaceBetween={100}
+                    slidesPerView={1}
                     size='small'
                     img='img__small'
                     array={tracks.list}
-                    title='Similar song'
-                    breakpoints={{
-                        640: {
-                            slidesPerView: 2,
-                            spaceBetween: 20,
-                        },
-                        768: {
-                            slidesPerView: 4,
-                            spaceBetween: 30,
-                        },
-                        1024: {
-                            slidesPerView: 6,
-                            spaceBetween: 40,
-                        },
-                    }}
+                    title='Tracks'
+                    breakpoints={breakpoints_small}
                 />
             </div>
         </>

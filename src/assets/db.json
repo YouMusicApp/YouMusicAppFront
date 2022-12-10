@@ -700,30 +700,6 @@
           ],
           "thumbnail": "https://i.scdn.co/image/ab67616d0000b273cfb34a37cfed6297d8c18231",
           "artist": "Kim Cesarion"
-        },
-        {
-          "id": 2,
-          "name": "XXX (Bow Wow Wow)",
-          "tracks": [
-            {
-              "id": 1,
-              "name": "Better of alone",
-              "artist": "Kim Cesarion",
-              "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
-              "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
-              "genre": "piano"
-            },
-            {
-              "id": 2,
-              "name": "Alone",
-              "artist": "Color Out",
-              "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
-              "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
-              "genre": "poprock"
-            }
-          ],
-          "thumbnail": "https://i.scdn.co/image/ab67616d0000b273256e16efc88a39e4795d5f32",
-          "artist": "C.Gambino"
         }
       ],
       "profilePicture": ""

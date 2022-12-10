@@ -19,10 +19,10 @@ export function AvatarUser() {
     return (
         <>
             <DropdownButton
-                className='my-dropdown-toggle '
+                className='my-dropdown-toggle'
                 drop=''
                 variant=""
-                title=<FaUserCircle className='icon' />
+                title=<FaUserCircle className='icon color-purple' />
             >
                 <Dropdown.Item eventKey="1" onClick={() => navigate('/profile')}>Profile</Dropdown.Item>
                 <Dropdown.Item eventKey="2">Another</Dropdown.Item>

@@ -1,7 +1,5 @@
 import './TopProfile.css'
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchLikeTrack } from '../../Api/putApi';
-import { setUserEdit } from '../../redux/features/user/userSlice';
+import { useSelector } from 'react-redux';
 import { ModalEdit } from '../Modals/ModalEdit/ModalEdit';
 
 export const TopProfile = () => {

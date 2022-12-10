@@ -106,17 +106,11 @@
 }
 .sidebar-nav li svg{
     margin-bottom: 4px;
-    color: #4d92ca;
+    color: var(--purple);
 }
 .sidebar-nav2 li svg{
     margin-bottom: 4px;
     color: #4d92ca;
-}
-.sidebar-nav li svg :hover{
-    color: #f700ff !important;
-}
-.sidebar-nav2 li svg :hover{
-    color: #f700ff !important;
 }
 
 .sidebar-nav li a {

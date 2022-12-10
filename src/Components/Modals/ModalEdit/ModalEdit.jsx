@@ -4,7 +4,7 @@ import { fetchLikeTrack } from '../../../Api/putApi';
 import { setUserEdit } from '../../../redux/features/user/userSlice';
 import { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
-import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowBack } from "react-icons/io";
 
 
 
@@ -44,7 +44,7 @@ export const ModalEdit = () => {
 
     return (
         <>
-            <Button onClick={handleShow} className='mt-1 btn-color btn-md'>Edit </Button>
+            <Button onClick={handleShow} className='mt-1 btn-color'>Edit </Button>
 
             <Modal className='p-0' show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
                 <Modal.Header>

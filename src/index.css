@@ -1,8 +1,28 @@
+:root {
+        --purple: #9262FD;
+        --pink: #D176FF;
+        --light: #F9F0FF;
+        --white: #FFFFFF;
+}
+
 body {
         margin: 0px;
         font-family: sans-serif;
         overflow-x: hidden;
 }
+
+.color-purple {
+        color: var(--purple) !important;
+}
+
+.color-pink {
+        color: var(--pink) !important;
+}
+
+.color-light {
+        color: var(--light) !important;
+}
+
 
 .grid-center {
         display: grid;
@@ -17,7 +37,6 @@ body {
 .header {
         width: 100%;
 }
-
 
 /* Player */
 .fixfooter {
@@ -48,7 +67,7 @@ body {
 
 /* Boton with us color */
 .btn-color {
-        background-color: #4d92ca !important;
+        background-color: var(--purple) !important;
         color: white !important;
 }
 
@@ -63,9 +82,9 @@ body {
         max-height: 200px;
 }
 
-.btn__login--home svg {
+/* .btn__login--home svg {
         font-size: 2.5rem;
-}
+} */
 
 .btn-svg svg {
         font-size: 1.5rem;
@@ -92,7 +111,7 @@ body {
         text-align: center;
         width: 75px;
         height: 35px;
-        background-color: #4d92ca !important;
+        background-color: var(--purple) !important;
         border: none !important;
         border: none !important;
         text-decoration: none;
