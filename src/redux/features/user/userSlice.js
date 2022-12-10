@@ -61,7 +61,7 @@ export const userSlice = createSlice({
         setUserLikedPlaylist: (state, action) => {
             state.userLogged = {
                 ...state.userLogged,
-                'myplaylists': [...state.userLogged.liked_album, action.payload]
+                'myplaylists': [...state.userLogged.myplaylists, action.payload]
             }
         },
         setUserUnlikedPlaylist: (state, action) => {
