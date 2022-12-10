@@ -9,6 +9,7 @@ import './Slider.css'
 
 
 export default function Slider({ array, title, size, slidesPerView, img, breakpoints }) {
+    
     return (
         <>
             <h2>{title}</h2>

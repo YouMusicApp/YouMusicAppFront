@@ -5,6 +5,7 @@ import Player from "./Components/Player/Player";
 import { useSelector } from "react-redux";
 import { Aside } from "./Components/Aside/Aside";
 import './assets/css/styles.css'
+import MediaQuery from 'react-responsive'
 
 function App() {
 
@@ -15,10 +16,12 @@ function App() {
       <Helper />
 
       <div className="wrapper">
-        <Aside />
+        <MediaQuery minWidth={600} >
+          <Aside />
+        </MediaQuery>
         <div id="content">
           <Header />
-          <main>
+          <main className="main">
             <AppRouter />
           </main>
           {isLogged ? <Player /> : null}
