@@ -1,6 +1,7 @@
 // axios
 import axios from "axios";
 import { setAlbumsList } from "../redux/features/albums/albumsSlice";
+import { setPlaylist, setPlaylistsList } from "../redux/features/playlist/playlistSlice";
 import { setTracksList } from "../redux/features/tracks/tracksSlice";
 import { setUserList, setUserLogged } from "../redux/features/user/userSlice";
 
@@ -32,6 +33,14 @@ export const fetchGetAlbums = async (dispatch) => {
     }
 }
 
+export const fetchGetPlaylists = async (dispatch) => {
+    try {
+        const resp = await axios.get('http://localhost:4000/playlists');
+        await dispatch(setPlaylistsList(resp.data))
+    } catch (error) {
+        console.log(error);
+    }
+}
 
 export const functionLogin = (e, userData, dispatch) => {
     const new_user = {

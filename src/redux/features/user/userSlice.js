@@ -58,11 +58,20 @@ export const userSlice = createSlice({
                 'userData': action.payload.userData
             }
         },
+        setUserLikedPlaylist: (state, action) => {
+            state.userLogged = {
+                ...state.userLogged,
+                'myplaylists': [...state.userLogged.liked_album, action.payload]
+            }
+        },
+        setUserUnlikedPlaylist: (state, action) => {
+            state.userLogged = action.payload       
+        },
 
     }
 });
 
 export const { setUserList, setUserLogged, setIsLogged, setUserLogOut, setUserRegister, setUserLikedTrack, setUserUnlikedTrack, 
-    setNewPassword, registerUser, setUserLikedAlbum, setUserUnlikedAlbum, setUserEdit } = userSlice.actions;
+    setNewPassword, registerUser, setUserLikedAlbum, setUserUnlikedAlbum, setUserEdit, setUserLikedPlaylist, setUserUnlikedPlaylist } = userSlice.actions;
 
 export default userSlice.reducer;

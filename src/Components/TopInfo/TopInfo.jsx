@@ -9,7 +9,7 @@ export const TopInfo = ({data}) => {
     const UsersData = useSelector(state => state.userSlice);
 
 
-    
+    console.log(data)
 
 
     return (

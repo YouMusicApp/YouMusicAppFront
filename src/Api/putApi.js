@@ -25,6 +25,14 @@ export const fetchLikeAlbum = async (userEdited) => {
     }
 }
 
+export const fetchLikePlaylist = async (userEdited) => {
+    try {
+        await axios.put(`http://localhost:4000/users/${userEdited.id}`, userEdited)
+    } catch (error) {
+        console.log(error);
+    }
+}
+
 export const fetchUserEdited = async (id, editUser) => {
     try {
         await axios.put(`http://localhost:4000/users/${id}`, editUser);
