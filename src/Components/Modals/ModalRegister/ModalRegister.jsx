@@ -25,9 +25,9 @@ export const ModalRegister = () => {
     }
     return (
         <>
-            <Button variant='link' onClick={handleShow} className='text-decoration-none color-pink'>Create New YouMusic ID <IoIosArrowForward /></Button>
+            <Button variant='link' onClick={() => handleShow('sm-down')} className='text-decoration-none color-pink'>Create New YouMusic ID <IoIosArrowForward /></Button>
 
-            <Modal className='p-0' show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
+            <Modal centered className='p-0' show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
                 <Modal.Header>
                     <Modal.Title><IoIosArrowBack onClick={() => setShow(false)} className='cursor-pointer' /></Modal.Title>
                     <Modal.Title>YouMusic</Modal.Title>

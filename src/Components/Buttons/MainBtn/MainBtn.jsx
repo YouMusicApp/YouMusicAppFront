@@ -4,7 +4,7 @@ import './../StyleBtn.css'
 
 export const MainBtn = ({ name, className, variant, openModal, size }) => {
     return (
-        <Button className={className} size={size} variant={variant} onClick={() => openModal(true)}>
+        <Button className={className} size={size} variant={variant} onClick={() => openModal('sm-down')}>
             {name}
         </Button>
     )

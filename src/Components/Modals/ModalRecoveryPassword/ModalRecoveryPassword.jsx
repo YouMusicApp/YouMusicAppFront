@@ -45,7 +45,7 @@ export const ModalRecoveryPassword = () => {
             <MainBtn name='Forgot Password?' className='text-center text-decoration-none color-pink' variant='link' openModal={handleShow} />
 
 
-            <Modal className='p-0' show={show} fullscreen={fullscreen} onHide={() => setShow(false)} >
+            <Modal centered className='p-0' show={show} fullscreen={fullscreen} onHide={() => setShow(false)} >
                 <Modal.Header>
                     <Modal.Title><IoIosArrowBack onClick={() => setShow(false)} className='' /></Modal.Title>
                     <Modal.Title>YouMusic</Modal.Title>

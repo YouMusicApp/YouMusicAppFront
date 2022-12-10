@@ -36,7 +36,7 @@ const ModalLogin = () => {
             />
 
 
-            <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
+            <Modal centered show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
                 <Modal.Header>
                     <Modal.Title>
                         <IoIosArrowBack onClick={() => setShow(false)} className='cursor-pointer' />
