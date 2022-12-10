@@ -15,7 +15,6 @@ const HomePage = () => {
     likeTracks = userData.userLogged.liked_tracks;
   }
 
-console.log(playlists.list)
 
   return (
     <div className="cardContainer">

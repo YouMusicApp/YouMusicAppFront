@@ -14,8 +14,7 @@ export const PlaylistPage = () => {
 
 
     const info = playlist.tracks;
-    console.log(info)
-    console.log(info.name)
+
 
 
     return (
@@ -57,7 +56,7 @@ export const PlaylistPage = () => {
                         {info.map((item) =>{
                         return (
                             <>
-                            <tr className='cursor-pointer'>
+                            <tr className='cursor-pointer' key={item.id}>
                                 <td onClick={() => setPlayer(playlist)} className='cursor-pointer tdhover'><BsFillPlayFill /></td>
                                 <td>{item.name} </td>
                                 <td>{item.artist}</td>
@@ -66,6 +65,8 @@ export const PlaylistPage = () => {
                             </tr>
                             </>
                         )})}
+
+
                     </tbody>
                 </table>
             </div>

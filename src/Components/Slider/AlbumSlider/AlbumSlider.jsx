@@ -8,7 +8,7 @@ import AlbumCard from "../../Card/AlbumCard/AlbumCard";
 
 
 export default function AlbumSlider({ array, title, size, slidesPerView, img, breakpoints }) {
-console.log(array)
+
     return (
         <>
             <h2>{title}</h2>
