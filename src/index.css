@@ -48,6 +48,15 @@ body {
         z-index: 1;
 }
 
+.img__player {
+        width: 40px;
+        position: absolute;
+        display: flex;
+        align-items: flex-start;
+        margin-top: 65px;
+        margin-left: 80px;
+}
+
 
 
 /* Avatar */
