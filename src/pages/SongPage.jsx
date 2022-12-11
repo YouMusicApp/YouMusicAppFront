@@ -14,6 +14,10 @@ const SongPage = () => {
     const usersData = useSelector(state => state.userSlice);
     const song = tracks.list.find((track) => track.id === parseInt(id));
     const dispatch = useDispatch();
+    const genreSong = tracks.list.filter((track) => track.genre === song.genre);
+    const listSameGenre = genreSong.filter((track) => {
+        return track.id !== song.id
+    })
 
     return (
         <>
@@ -67,6 +71,16 @@ const SongPage = () => {
             </div>
 
 
+            <div className='mx-2 mt-2'>
+                <Slider
+                    slidesPerView={1}
+                    size='small'
+                    img='img__small'
+                    array={listSameGenre}
+                    title='Songs of the same genre'
+                    breakpoints={breakpoints_small}
+                />
+            </div>
             <div className='mx-2 mt-2'>
                 <Slider
                     slidesPerView={1}
