@@ -3,20 +3,31 @@
 */
 
 .navbar {
+    position: fixed !important;
+    width: 80%;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    z-index: 2;
 }
 
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
-
+.main {
+    margin-top: 70px;
+}
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
 .wrapper {
     display: flex;
     width: 100%;
     align-items: stretch;
+    margin-bottom: 115px;
 }
 
 #sidebar {
+    position: fixed;
+    height: 2000px;
     min-width: 20%;
     max-width: 20%;
     background: #f9f9f9;
@@ -26,7 +37,7 @@
 }
 
 #sidebar .sidebar-header {
-    padding: 11px;
+    padding: 15px;
     background-color: #f9f9f9
 }
 
@@ -35,6 +46,8 @@
 ----------------------------------------------------- */
 
 #content {
+    
+    margin-left: 20% !important;
     margin-left: 2px;
     width: 80%;
     min-height: 100vh;
@@ -49,9 +62,14 @@
     #content {
         width: 100%;
     }
-
+    #content {
+        margin-left: 0 !important;
+    }
     #sidebar {
         display: none;
+    }
+    .navbar {
+        width: 100%;
     }
 }
 
@@ -64,22 +82,53 @@
     list-style: none;
     transition: all .5s;
     width: 100%;
-    text-align: center;
+    text-align: left;
+}
+.sidebar-nav2 {
+    padding: 0;
+    list-style: none;
+    transition: all .5s;
+    width: 100%;
+    text-align: left;
 }
 
 .sidebar-nav li {
     line-height: 40px;
     width: 100%;
     transition: all .3s;
-    padding: 10px;
+    padding: 5px;
+}
+.sidebar-nav2 li {
+    line-height: 40px;
+    width: 100%;
+    transition: all .3s;
+    padding: 5px;
+}
+.sidebar-nav li svg{
+    margin-bottom: 4px;
+    color: var(--purple);
+}
+.sidebar-nav2 li svg{
+    margin-bottom: 4px;
+    color: #4d92ca;
 }
 
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: rgb(41, 40, 40);
+    color: rgb(27, 26, 26);
+}
+.sidebar-nav2 li a {
+    display: block;
+    text-decoration: none;
+    color: rgb(27, 26, 26);
 }
 
 .sidebar-nav li:hover {
-    background: #4d92ca;
+    background: #c2c8ce44;
+    border-radius: 15px;
+}
+.sidebar-nav2 li:hover {
+    background: #c2c8ce44;
+    border-radius: 15px;
 }

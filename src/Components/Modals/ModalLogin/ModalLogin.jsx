@@ -30,7 +30,7 @@ const ModalLogin = () => {
         <>
             <MainBtn
                 name='Log in'
-                className='btn__login--home btn-lg text-decoration-none'
+                className='color-purple btn-lg text-decoration-none'
                 openModal={handleShow}
                 variant='link'
             />

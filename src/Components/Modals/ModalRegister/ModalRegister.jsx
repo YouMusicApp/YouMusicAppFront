@@ -25,7 +25,7 @@ export const ModalRegister = () => {
     }
     return (
         <>
-            <Button variant='link' onClick={handleShow} className='text-decoration-none'>Create New YouMusic ID <IoIosArrowForward /></Button>
+            <Button variant='link' onClick={handleShow} className='text-decoration-none color-pink'>Create New YouMusic ID <IoIosArrowForward /></Button>
 
             <Modal className='p-0' show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
                 <Modal.Header>

@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux"
 import AlbumSlider from "../Components/Slider/AlbumSlider/AlbumSlider";
 import Slider from "../Components/Slider/Slider"
+import { breakpoints_album, breakpoints_small } from "../helpers/functions/breackpoint";
 
 const HomePage = () => {
   const albums = useSelector(state => state.albumSlice);
@@ -10,7 +11,6 @@ const HomePage = () => {
   let likeTracks = [];
   if (userData.isLogged) {
     likeTracks = userData.userLogged.liked_tracks;
-    console.log(likeTracks);
   }
 
   return (
@@ -20,34 +20,13 @@ const HomePage = () => {
         userData.isLogged ?
           <div className="mx-2 titleCards">
             <Slider
-              slidesPerView={2}
+              slidesPerView={1}
               spaceBetween={100}
               size='small'
               img='img__small'
               array={likeTracks}
               title='Liked tracks'
-              breakpoints={{
-                600: {
-                  slidesPerView: 3,
-                  spaceBetween: 10,
-                },
-                768: {
-                  slidesPerView: 4,
-                  spaceBetween: 10,
-                },
-                992: {
-                  slidesPerView: 5,
-                  spaceBetween: 10,
-                },
-                1200: {
-                  slidesPerView: 7,
-                  spaceBetween: 10,
-                },
-                1400: {
-                  slidesPerView: 8,
-                  spaceBetween: 10,
-                }
-              }}
+              breakpoints={breakpoints_small}
             />
           </div>
           : ''
@@ -60,24 +39,7 @@ const HomePage = () => {
           img='img__big'
           array={albums.list}
           title='Albums'
-          breakpoints={{
-            600: {
-              slidesPerView: 1,
-              spaceBetween: 10,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 10,
-            },
-            992: {
-              slidesPerView: 3,
-              spaceBetween: 10,
-            },
-            1200: {
-              slidesPerView: 4,
-              spaceBetween: 10,
-            }
-          }}
+          breakpoints={breakpoints_album}
         />
       </div>
 
@@ -88,40 +50,27 @@ const HomePage = () => {
           img='img__small'
           array={tracks.list}
           title='Tracks'
-          breakpoints={{
-            325: {
-              slidesPerView: 2,
-              spaceBetween: 10,
-            },
-            480: {
-              slidesPerView: 3,
-              spaceBetween: 10,
-            },
-            800: {
-              slidesPerView: 4,
-              spaceBetween: 10,
-            },
-            1035: {
-              slidesPerView: 5,
-              spaceBetween: 10,
-            },
-            1240: {
-              slidesPerView: 6,
-              spaceBetween: 10,
-            },
-            1450: {
-              slidesPerView: 7,
-              spaceBetween: 10,
-            },
-            1635: {
-              slidesPerView: 8,
-              spaceBetween: 10,
-            },
-            1825: {
-              slidesPerView: 9,
-              spaceBetween: 10,
-            }
-          }}
+          breakpoints={breakpoints_small}
+        />
+      </div>
+      <div className="mx-2 titleCards">
+        <Slider
+          slidesPerView={1}
+          size='small'
+          img='img__small'
+          array={tracks.list}
+          title='Tracks'
+          breakpoints={breakpoints_small}
+        />
+      </div>
+      <div className="mx-2 titleCards">
+        <Slider
+          slidesPerView={1}
+          size='small'
+          img='img__small'
+          array={tracks.list}
+          title='Tracks'
+          breakpoints={breakpoints_small}
         />
       </div>
 

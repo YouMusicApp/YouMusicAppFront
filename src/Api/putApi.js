@@ -1,6 +1,7 @@
 import axios from "axios";
 import { setNewPassword } from "../redux/features/user/userSlice";
 
+
 export const fetchPutUser = async (id, userEdited, dispatch) => {
     try {
         await axios.put(`http://localhost:4000/users/${id}`, userEdited);
@@ -10,7 +11,7 @@ export const fetchPutUser = async (id, userEdited, dispatch) => {
 
 export const fetchLikeTrack = async (userEdited) => {
     try {
-        const response = await axios.put(`http://localhost:4000/users/${userEdited.id}`, userEdited);
+        await axios.put(`http://localhost:4000/users/${userEdited.id}`, userEdited);
     } catch (error) {
         console.log(error)
     }
@@ -18,8 +19,16 @@ export const fetchLikeTrack = async (userEdited) => {
 
 export const fetchLikeAlbum = async (userEdited) => {
     try {
-        const response = await axios.put(`http://localhost:4000/users/${userEdited.id}`, userEdited)
+        await axios.put(`http://localhost:4000/users/${userEdited.id}`, userEdited)
     } catch (error) {
         console.log(error);
+    }
+}
+
+export const fetchUserEdited = async (id, editUser) => {
+    try {
+        await axios.put(`http://localhost:4000/users/${id}`, editUser);
+    } catch (error) {
+        console.log(error)
     }
 }

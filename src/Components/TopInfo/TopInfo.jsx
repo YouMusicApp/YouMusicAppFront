@@ -1,7 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { setTrack } from '../../redux/features/player/playerSlice';
-import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
+import { BsSuitHeart, BsSuitHeartFill } from "react-icons/bs";
 import { BsFillPlayFill } from "react-icons/bs";
 import { setPlayer } from '../../helpers/functions/setPlayer';
 
@@ -27,7 +26,7 @@ export const TopInfo = ({data}) => {
                         </div>
                         <div className='containerButton--songpage'>
                             <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true" onClick={() => setPlayer(data.tracks, dispatch, UsersData)} ><BsFillPlayFill /></button>
-                            <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true"  > <AiOutlineHeart /></button>
+                            <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true"  > <BsSuitHeartFill /></button>
                         </div>
                     </div>
                 </div>

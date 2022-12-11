@@ -42,7 +42,7 @@ export const ModalRecoveryPassword = () => {
 
     return (
         <>
-            <MainBtn name='Forgot Password?' className='text-center text-decoration-none' variant='link' openModal={handleShow} />
+            <MainBtn name='Forgot Password?' className='text-center text-decoration-none color-pink' variant='link' openModal={handleShow} />
 
 
             <Modal className='p-0' show={show} fullscreen={fullscreen} onHide={() => setShow(false)} >

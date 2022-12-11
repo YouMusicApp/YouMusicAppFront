@@ -40,7 +40,7 @@
 }
 
 .btnplay:hover {
-    color: #01ffea !important;
+    color: var(--purple) !important;
 }
 
 .small .btnheart {
@@ -53,7 +53,7 @@
 
 .btnheart svg {
     font-size: 2rem;
-    color: #00eeff;
+    color: var(--purple);
 }
 
 .small:hover button {

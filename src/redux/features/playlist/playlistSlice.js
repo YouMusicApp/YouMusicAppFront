@@ -3,11 +3,10 @@ import { createSlice } from "@reduxjs/toolkit";
 export const playlistSlice = createSlice({
     name: "",
     initialState: {
-        followers: [],
-        playlist: []
+        list: []
     },
     reducers: {
-        addPlaylist: (state, action) => {
+        setPlaylist: (state, action) => {
             state.playlist = action.payload;
         }
     },
