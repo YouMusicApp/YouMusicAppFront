@@ -7,6 +7,7 @@ import { BsFillPlayFill } from "react-icons/bs";
 import { setPlayer } from '../helpers/functions/setPlayer';
 import { breakpoints_small } from '../helpers/functions/breackpoint';
 
+
 const SongPage = () => {
     const { id } = useParams();
     const tracks = useSelector(state => state.trackSlice);
@@ -29,8 +30,13 @@ const SongPage = () => {
                             </div>
                             <div className='containerButton--songpage'>
                                 <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true" onClick={() => setPlayer([song], dispatch, usersData)} ><BsFillPlayFill /></button>
-                                <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true"  > <BsSuitHeart /></button>
-                            </div>
+                                {
+                                    usersData.isLogged ? <button className='m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button'>{
+                                        usersData.userLogged.liked_tracks.find((like) => like.id === song.id) ? <BsSuitHeartFill /> : <BsSuitHeart />
+                                    }</button> : ""
+                                }
+                                {/* <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true"  > <BsSuitHeart /></button>
+ */}                            </div>
                         </div>
                     </div>
                 </div>
