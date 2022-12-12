@@ -23,7 +23,7 @@ const PlaylistCard = ({ data, size, img }) => {
        
 
         if (!checkLiked) {
-
+            console.log("hola")
             const userEdited = {
                 ...usersData.userLogged,
                 'myplaylists': [...usersData.userLogged.myplaylists, data]
@@ -31,7 +31,7 @@ const PlaylistCard = ({ data, size, img }) => {
             fetchLikePlaylist(userEdited);
             dispatch(setUserLikedPlaylist(data));
         } else {
-
+            console.log("hola2")
             const unlikedPlaylist = usersData.userLogged.myplaylists.filter((playlist) => {
                 return playlist.id !== data.id
             })
