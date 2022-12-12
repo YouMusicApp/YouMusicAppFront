@@ -4,12 +4,12 @@ import { BsSuitHeart, BsSuitHeartFill } from "react-icons/bs";
 import { BsFillPlayFill } from "react-icons/bs";
 import { setPlayer } from '../../helpers/functions/setPlayer';
 
-export const TopInfo = ({data}) => {
+export const TopInfo = ({ data }) => {
     const dispatch = useDispatch();
-    const UsersData = useSelector(state => state.userSlice);
+    const usersData = useSelector(state => state.userSlice);
 
 
-    
+
 
 
     return (
@@ -25,8 +25,13 @@ export const TopInfo = ({data}) => {
                             <p>{data.artist}</p>
                         </div>
                         <div className='containerButton--songpage'>
-                            <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true" onClick={() => setPlayer(data.tracks, dispatch, UsersData)} ><BsFillPlayFill /></button>
-                            <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true"  > <BsSuitHeartFill /></button>
+                            <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true" onClick={() => setPlayer(data.tracks, dispatch, usersData)} ><BsFillPlayFill /></button>
+                            {
+                                usersData.isLogged ? <button className='m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button'>{
+                                    usersData.userLogged.liked_album.find((like) => like.id === data.id) ? <BsSuitHeartFill /> : <BsSuitHeart />
+                                }</button> : ""
+                            }
+                            {/* <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true"  > <BsSuitHeartFill /></button> */}
                         </div>
                     </div>
                 </div>
