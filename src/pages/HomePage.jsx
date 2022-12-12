@@ -53,26 +53,6 @@ const HomePage = () => {
           breakpoints={breakpoints_small}
         />
       </div>
-      <div className="mx-2 titleCards">
-        <Slider
-          slidesPerView={1}
-          size='small'
-          img='img__small'
-          array={tracks.list}
-          title='Tracks'
-          breakpoints={breakpoints_small}
-        />
-      </div>
-      <div className="mx-2 titleCards">
-        <Slider
-          slidesPerView={1}
-          size='small'
-          img='img__small'
-          array={tracks.list}
-          title='Tracks'
-          breakpoints={breakpoints_small}
-        />
-      </div>
 
 
 
