@@ -5,7 +5,7 @@ import Slider from '../Components/Slider/Slider'
 import { BsSuitHeart, BsSuitHeartFill } from "react-icons/bs";
 import { BsFillPlayFill } from "react-icons/bs";
 import { setPlayer } from '../helpers/functions/setPlayer';
-import { breakpoints_small } from '../helpers/functions/breackpoint';
+import { breakpoints_small } from '../helpers/functions/breakpoint';
 
 
 const SongPage = () => {
