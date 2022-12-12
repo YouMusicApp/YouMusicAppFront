@@ -2,7 +2,7 @@
   "playlists": [
     {
       "id": 1,
-      "userId":"2",
+      "userId": "2",
       "name": "Road trip! All the masters I need!",
       "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644625060/tracks-thumbnails-dev/car_yx6ld1.jpg",
       "description": "Get your mic on with this beats. You are going to sing all the way down",
@@ -29,7 +29,7 @@
     },
     {
       "id": 2,
-      "userId":"admin",
+      "userId": "admin",
       "name": "Motorcycle Mama!",
       "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644625058/tracks-thumbnails-dev/driving_g56eyw.jpg",
       "description": "Take it easy on the wheels with this hits",
@@ -395,7 +395,7 @@
         "profilePicture": "https://uploads-ssl.webflow.com/6321fa4eb9021afb4a237ebb/63518b3451899cb324570c0e_IMA0000460000046712.jpg"
       },
       "myplaylists": [],
-          "primaryColor": "#fbdc00",
+      "primaryColor": "#fbdc00",
       "liked_tracks": [
         {
           "id": 6,
@@ -598,6 +598,55 @@
           ],
           "thumbnail": "https://i.scdn.co/image/ab67616d0000b273cfb34a37cfed6297d8c18231",
           "artist": "Kim Cesarion"
+        }
+      ],
+      "profilePicture": ""
+    },
+    {
+      "id": "f582a40a-6305-4a6a-8d68-5e3874c98e4d",
+      "userData": {
+        "username": "juanx",
+        "firstname": "juan",
+        "lastname": "solano",
+        "email": "juan@gmail.com",
+        "password": "123"
+      },
+      "myplaylists": [],
+      "liked_tracks": [],
+      "liked_album": [
+        {
+          "id": 2,
+          "name": "C.Gambino",
+          "genres": [
+            "classical",
+            "folk",
+            "indie"
+          ],
+          "popularity": 56,
+          "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb9fb2b5ff325f43536a2a4ae2"
+        }
+      ],
+      "liked_artist": [
+        {
+          "id": 1,
+          "name": "Kim Cesarion",
+          "genres": [
+            "rock",
+            "pop"
+          ],
+          "popularity": 38,
+          "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb842fae710a21f648e26dd910"
+        },
+        {
+          "id": 2,
+          "name": "C.Gambino",
+          "genres": [
+            "classical",
+            "folk",
+            "indie"
+          ],
+          "popularity": 56,
+          "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb9fb2b5ff325f43536a2a4ae2"
         }
       ],
       "profilePicture": ""

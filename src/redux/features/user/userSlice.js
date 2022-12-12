@@ -54,16 +54,7 @@ export const userSlice = createSlice({
         setUserLikedArtist: (state, action) => {
             state.userLogged = {
                 ...state.userLogged,
-                'liked_album': [...state.userLogged.liked_artist, action.payload]
-            }
-        },
-        setUserUnlikedArtist: (state, action) => {
-            state.userLogged = action.payload       
-        },
-        setUserLikedArtist: (state, action) => {
-            state.userLogged = {
-                ...state.userLogged,
-                'liked_album': [...state.userLogged.liked_artist, action.payload]
+                'liked_artist': [...state.userLogged.liked_artist, action.payload]
             }
         },
         setUserUnlikedArtist: (state, action) => {
