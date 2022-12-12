@@ -73,6 +73,10 @@
     object-fit: cover;
 }
 
+.img__small--circle {
+    border-radius: 50%;
+}
+
 .big {
     width: 26rem;
     border: none !important;
