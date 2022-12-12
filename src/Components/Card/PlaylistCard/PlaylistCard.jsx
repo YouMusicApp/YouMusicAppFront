@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { setUserLikedAlbum, setUserLikedPlaylist, setUserUnlikedAlbum } from '../../../redux/features/user/userSlice';
+import { setUserLikedPlaylist, setUserUnlikedPlaylist } from '../../../redux/features/user/userSlice';
 import { setTrack } from '../../../redux/features/player/playerSlice';
 import { BsFillPlayCircleFill, BsSuitHeart, BsSuitHeartFill } from "react-icons/bs";
 import { useNavigate } from 'react-router-dom';
@@ -20,27 +20,23 @@ const PlaylistCard = ({ data, size, img }) => {
 
     const likedPlaylist = (data) => {
         const checkLiked = usersData.userLogged.myplaylists.find((like) => like.id === data.id);
-       
 
         if (!checkLiked) {
-            console.log("hola")
             const userEdited = {
                 ...usersData.userLogged,
                 'myplaylists': [...usersData.userLogged.myplaylists, data]
             }
-            fetchLikePlaylist(userEdited);
+
             dispatch(setUserLikedPlaylist(data));
+            fetchLikePlaylist(userEdited);
         } else {
-            console.log("hola2")
-            const unlikedPlaylist = usersData.userLogged.myplaylists.filter((playlist) => {
-                return playlist.id !== data.id
-            })
+            const unlikedPlaylist = usersData.userLogged.myplaylists.filter((playlist) => playlist.id !== data.id )
             const userEdited = {
                 ...usersData.userLogged,
                 'myplaylists': unlikedPlaylist
             }
+            dispatch(setUserUnlikedPlaylist(userEdited))
             fetchLikePlaylist(userEdited);
-            dispatch(setUserLikedPlaylist(userEdited))
         }
     }
 

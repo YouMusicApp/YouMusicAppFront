@@ -1,7 +1,7 @@
 // axios
 import axios from "axios";
 import { setAlbumsList } from "../redux/features/albums/albumsSlice";
-import { setPlaylist, setPlaylistsList } from "../redux/features/playlist/playlistSlice";
+import { setPlaylistsList } from "../redux/features/playlist/playlistSlice";
 import { setTracksList } from "../redux/features/tracks/tracksSlice";
 import { setUserList, setUserLogged } from "../redux/features/user/userSlice";
 
