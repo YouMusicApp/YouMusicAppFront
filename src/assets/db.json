@@ -381,42 +381,8 @@
         "profilePicture": "https://uploads-ssl.webflow.com/6321fa4eb9021afb4a237ebb/63518b3451899cb324570c0e_IMA0000460000046712.jpeg"
       },
       "myplaylists": [],
-      "liked_tracks": [
-        {
-          "id": 2,
-          "name": "Alone",
-          "artist": "Color Out",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
-          "genre": "poprock"
-        }
-      ],
-      "liked_album": [
-        {
-          "id": 1,
-          "name": "Flyga",
-          "tracks": [
-            {
-              "id": 1,
-              "name": "Better of alone",
-              "artist": "Kim Cesarion",
-              "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
-              "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
-              "genre": "piano"
-            },
-            {
-              "id": 2,
-              "name": "Alone",
-              "artist": "Color Out",
-              "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
-              "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
-              "genre": "poprock"
-            }
-          ],
-          "thumbnail": "https://i.scdn.co/image/ab67616d0000b273cfb34a37cfed6297d8c18231",
-          "artist": "Kim Cesarion"
-        }
-      ]
+      "liked_tracks": [],
+      "liked_album": []
     },
     {
       "id": 2,
@@ -429,9 +395,7 @@
         "profilePicture": "https://uploads-ssl.webflow.com/6321fa4eb9021afb4a237ebb/63518b3451899cb324570c0e_IMA0000460000046712.jpg"
       },
       "myplaylists": [],
-          "primaryColor": "#fbdc00"
-        }
-      ],
+          "primaryColor": "#fbdc00",
       "liked_tracks": [
         {
           "id": 6,
@@ -1341,62 +1305,77 @@
   "genres": [
     {
       "id": 1,
-      "name": "blues"
+      "name": "blues",
+      "img": ""
     },
     {
       "id": 2,
+      "img": "",
       "name": "rock"
     },
     {
       "id": 3,
+      "img": "",
       "name": "pop"
     },
     {
       "id": 4,
+      "img": "",
       "name": "soul"
     },
     {
       "id": 5,
+      "img": "",
       "name": "funk"
     },
     {
       "id": 6,
+      "img": "",
       "name": "folk"
     },
     {
       "id": 7,
+      "img": "",
       "name": "tango"
     },
     {
       "id": 8,
+      "img": "",
       "name": "indie"
     },
     {
       "id": 9,
+      "img": "",
       "name": "metal"
     },
     {
       "id": 10,
+      "img": "",
       "name": "classical"
     },
     {
       "id": 11,
+      "img": "",
       "name": "country"
     },
     {
       "id": 12,
+      "img": "",
       "name": "electronic"
     },
     {
       "id": 13,
+      "img": "",
       "name": "lounge"
     },
     {
       "id": 14,
+      "img": "",
       "name": "grunge"
     },
     {
       "id": 15,
+      "img": "",
       "name": "jazz"
     }
   ]
