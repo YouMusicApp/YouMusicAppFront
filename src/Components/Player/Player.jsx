@@ -24,7 +24,7 @@ const Player = () => {
 
     return (
         <div className='fixfooter'>
-            <img src={playlist[currentTrack].thumbnail} alt={playlist[currentTrack].id} className='img__player' />
+            {playlist !== '' ? <img src={playlist[currentTrack].thumbnail} alt={playlist[currentTrack].id} className='img__player' /> : ''}
             <AudioPlayer
                 header={playlist !== '' ? `${playlist[currentTrack].name} - ${playlist[currentTrack].artist}` : ''}
                 autoPlay

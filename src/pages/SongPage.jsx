@@ -15,9 +15,7 @@ const SongPage = () => {
     const song = tracks.list.find((track) => track.id === parseInt(id));
     const dispatch = useDispatch();
     const genreSong = tracks.list.filter((track) => track.genre === song.genre);
-    const listSameGenre = genreSong.filter((track) => {
-        return track.id !== song.id
-    })
+    const listSameGenre = genreSong.filter((track) => track.id !== song.id)
 
     return (
         <>
