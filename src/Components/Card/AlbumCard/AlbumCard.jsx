@@ -20,10 +20,7 @@ const AlbumCard = ({ data, size, img }) => {
 
     const likedAlbum = (data) => {
         const checkLiked = usersData.userLogged.liked_album.find((like) => like.id === data.id);
-        console.log(usersData.userLogged.liked_album);
-        console.log(checkLiked);
         if (!checkLiked) {
-            console.log('like');
             const userEdited = {
                 ...usersData.userLogged,
                 'liked_album': [...usersData.userLogged.liked_album, data]
@@ -31,7 +28,6 @@ const AlbumCard = ({ data, size, img }) => {
             fetchLikeAlbum(userEdited);
             dispatch(setUserLikedAlbum(data));
         } else {
-            console.log('dislike');
             const unlikedAlbum = usersData.userLogged.liked_album.filter((album) => {
                 return album.id !== data.id
             })
@@ -56,7 +52,7 @@ const AlbumCard = ({ data, size, img }) => {
 
             <img onClick={() => openSong(data)} className={img} src={data.thumbnail} alt='img' />
 
-            <div className="card-text imghover card-body">
+            <div className="card-text card-body">
                 <h5 className="card-title">{data.name}</h5>
                 <p className="card-text">{data.artist}</p>
             </div>

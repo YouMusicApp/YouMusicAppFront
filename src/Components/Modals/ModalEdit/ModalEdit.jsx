@@ -39,12 +39,11 @@ export const ModalEdit = () => {
         fetchLikeTrack(editUser)
 
         dispatch(setUserEdit(editUser))
-        console.log(user.profilePicture)
     }
 
     return (
         <>
-            <Button onClick={handleShow} className='mt-1 btn-color'>Edit </Button>
+            <Button onClick={() => handleShow('sm-down')} className='mt-1 btn-color'>Edit </Button>
 
             <Modal className='p-0' show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
                 <Modal.Header>

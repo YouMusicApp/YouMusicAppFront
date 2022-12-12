@@ -49,7 +49,7 @@ const SongPage = () => {
                     </thead>
                     <tbody>
                         <tr className='cursor-pointer'>
-                            <td onClick={() => setPlayer(song)} className='cursor-pointer tdhover'><BsFillPlayFill /></td>
+                            <td onClick={() => setPlayer([song], dispatch, usersData)} className='cursor-pointer tdhover'><BsFillPlayFill /></td>
                             <td>{song.name}</td>
                             <td>{song.artist}</td>
                             <td>{song.genre}</td>

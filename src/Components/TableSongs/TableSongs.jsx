@@ -2,17 +2,13 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { setTrack } from '../../redux/features/player/playerSlice';
 import { BsFillPlayFill } from "react-icons/bs";
+import { setPlayer } from '../../helpers/functions/setPlayer';
 
 
 export const TableSongs = ({ song }) => {
     const UsersData = useSelector(state => state.userSlice);
     const dispatch = useDispatch();
 
-    console.log(song);
-
-    const setPlayer = (song) => {
-        UsersData.isLogged ? dispatch(setTrack(song)) : console.log('Tienes que logearte para escuchar la cancion');
-    }
 
     return (
         <div className='mx-2 mb-4'>

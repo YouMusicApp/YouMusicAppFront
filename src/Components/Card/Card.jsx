@@ -15,16 +15,13 @@ const Card = ({ data, size, img }) => {
     const likedTrack = (data) => {
         const checkLiked = usersData.userLogged.liked_tracks.find((like) => like.id === data.id)
         if (!checkLiked) {
-            console.log('if is true');
             const userEdited = {
-
                 ...usersData.userLogged,
                 'liked_tracks': [...usersData.userLogged.liked_tracks, data]
             }
             fetchLikeTrack(userEdited);
             dispatch(setUserLikedTrack(data));
         } else {
-            console.log('if is false');
             const unlikedTrack = usersData.userLogged.liked_tracks.filter((track) => {
                 return track.id !== data.id
             })
@@ -40,18 +37,6 @@ const Card = ({ data, size, img }) => {
     const openSong = (data) => {
         navigate(`/song/${data.id}`)
     }
-    /* const heartToggle = () => {
-        const filter = usersData.userLogged.liked_tracks.find((like) => like.id === data.id)
-        if (filter) {
-            return (
-                <AiOutlineHeart />
-            )
-        } else {
-            return (
-                <AiFillHeart />
-            )
-        }
-    } */
 
     return (
 
@@ -65,7 +50,7 @@ const Card = ({ data, size, img }) => {
 
             <img onClick={() => openSong(data)} className={img} src={data.thumbnail} alt='img' />
 
-            <div className="card-text imghover card-body">
+            <div className="card-text card-body">
                 <h5 className="card-title">{data.name}</h5>
                 <p className="card-text">{data.artist}</p>
             </div>

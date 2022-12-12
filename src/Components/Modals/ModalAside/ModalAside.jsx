@@ -39,7 +39,7 @@ const ModalAside = () => {
             <Modal className='p-0' show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
                 <Modal.Header className=''>
                     <IoIosArrowBack onClick={() => setShow(false)} className='cursor-pointer' />
-                    <Modal.Title onClick={() => navigate_home_show(navigate, setShow)}><SiYoutubemusic /> YouMusic</Modal.Title>
+                    <Modal.Title onClick={() => navigate_home_show(navigate, setShow)} className='cursor-pointer'><SiYoutubemusic /> YouMusic</Modal.Title>
                     <div>{usersData.isLogged ? <AvatarUser /> : <ModalLogin />}</div>
                 </Modal.Header>
                 <Modal.Body>

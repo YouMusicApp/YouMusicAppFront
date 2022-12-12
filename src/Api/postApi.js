@@ -25,6 +25,5 @@ export const functionRegister = async (e, dispatch) => {
         liked_album:[],
         profilePicture:''
     }
-    console.log(new_user);
     await fetchPostUser(new_user, dispatch);
 }

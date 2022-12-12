@@ -91,7 +91,7 @@ body {
 }
 
 .tdhover svg :hover {
-        color: #ff008c;
+        color: var(--pink);
 }
 
 

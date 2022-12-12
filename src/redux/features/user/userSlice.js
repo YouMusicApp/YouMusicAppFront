@@ -19,7 +19,6 @@ export const userSlice = createSlice({
         setUserLogOut: (state) => {
             state.isLogged = false;
             state.userLogged = null;
-            console.log('Te deslogeaste wey');
         },
         registerUser: (state, action) => {
             state.list = [...state.list, action.payload];

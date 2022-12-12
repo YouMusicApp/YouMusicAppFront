@@ -11,6 +11,11 @@
     border: none !important;
     margin-right: 50px !important;
 }
+.small :hover{
+    color: var(--pink);
+    cursor: pointer;
+
+}
 
 /* img btn */
 .small:before {
@@ -24,7 +29,7 @@
 }
 
 .small:hover::before {
-    background-color: #ff008c52;
+    background-color: var(--pink);
 }
 
 .small img {
@@ -91,7 +96,10 @@
 }
 
 .imgbig:hover::before {
-    background-color: #ff008c52;
+    background-color: var(--pink);
+}
+.small:hover::before {
+    background-color: var(--pink);
 }
 
 .imgbig img {
@@ -107,7 +115,8 @@
 }
 
 .imgbig:hover {
-    color: #ff5b9f !important;
+    color: var(--pink);
+    cursor: pointer;
 }
 
 .imgbig .btnheart {

@@ -43,7 +43,6 @@ export const functionLogin = (e, userData, dispatch) => {
         
 
     if (interim_user && interim_user.userData.password === new_user.password) {
-        console.log("Te has logueado correctamente pisha");
         dispatch(setUserLogged(interim_user));
         
     } else { alert("Incorrect Password"); }

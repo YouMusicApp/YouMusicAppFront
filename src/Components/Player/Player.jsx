@@ -6,10 +6,8 @@ import { useSelector } from 'react-redux';
 const Player = () => {
     const playlist = useSelector(state => state.playerSlice.track)
     const [currentTrack, setTrackIndex] = useState(0)
-    console.log(playlist);
 
     const handleClickNext = () => {
-        console.log('click next')
         setTrackIndex((currentTrack) =>
             currentTrack < playlist.length - 1 ? currentTrack + 1 : 0
         );
