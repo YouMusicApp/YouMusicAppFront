@@ -98,3 +98,13 @@ body {
         text-decoration: none;
         padding: 1px 24px !important;
 }
+
+.icon__popularity--star {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.icon__popularity--star svg {
+        color: #D4AF37;
+}

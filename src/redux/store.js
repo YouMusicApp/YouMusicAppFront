@@ -3,6 +3,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import userSlice from './features/user/userSlice';
 import trackSlice from './features/tracks/tracksSlice';
 import albumSlice from './features/albums/albumsSlice';
+import artistSlice from './features/artists/artistsSlice';
 import playerSlice from './features/player/playerSlice';
 
 export default configureStore({
@@ -10,6 +11,7 @@ export default configureStore({
         userSlice,
         trackSlice,
         albumSlice,
-        playerSlice
+        playerSlice,
+        artistSlice
     }
 });

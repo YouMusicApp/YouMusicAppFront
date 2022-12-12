@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import { AlbumPage } from '../pages/AlbumPage'
+import { ArtistPage } from '../pages/ArtistPage'
 import HomePage from '../pages/HomePage'
 import { ProfilePage } from '../pages/ProfilePage'
 import SongPage from '../pages/SongPage'
@@ -14,6 +15,7 @@ const AppRouter = () => {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/song/:id" element={<SongPage />} />
                 <Route path="/album/:id" element={<AlbumPage />} />
+                <Route path="/artist/:id" element={<ArtistPage />} />
 
 
                 <Route path='/profile' element={<PrivateRoutes><ProfilePage /></PrivateRoutes>} />

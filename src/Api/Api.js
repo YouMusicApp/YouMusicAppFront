@@ -2,6 +2,7 @@
 import axios from "axios";
 import { setAlbumsList } from "../redux/features/albums/albumsSlice";
 import { setTracksList } from "../redux/features/tracks/tracksSlice";
+import { setArtistsList } from "../redux/features/artists/artistsSlice";
 import { setUserList, setUserLogged } from "../redux/features/user/userSlice";
 
 export const fetchGetUsers = () => async (dispatch) => {
@@ -27,6 +28,15 @@ export const fetchGetAlbums = async (dispatch) => {
         const resp = await axios.get('http://localhost:4000/albums')
         await dispatch(setAlbumsList(resp.data))
 
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+export const fetchGetArtists = async (dispatch) => {
+    try {
+        const resp = await axios.get('http://localhost:4000/artists')
+        await dispatch(setArtistsList(resp.data))
     } catch (error) {
         console.log(error);
     }
