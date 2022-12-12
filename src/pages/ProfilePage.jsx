@@ -7,6 +7,7 @@ export const ProfilePage = () => {
     const userData = useSelector(state => state.userSlice);
     const likedTracks = userData.userLogged.liked_tracks;
     const likedAlbums = userData.userLogged.liked_album;
+    const myplaylists = userData.userLogged.myplaylists
     
     return (
         <>
@@ -42,6 +43,8 @@ export const ProfilePage = () => {
                         }
                     }}
                 />
+
+
                 <div className="titleCards">
                     <AlbumSlider
                         slidesPerView={1}
@@ -73,6 +76,42 @@ export const ProfilePage = () => {
                         }}
                     />
                 </div>
+
+               
+                <Slider
+                    slidesPerView={2}
+                    spaceBetween={100}
+                    size='small'
+                    img='img__small'
+                    array={myplaylists}
+                    title='Liked playlists'
+                    breakpoints={{
+                        600: {
+                            slidesPerView: 3,
+                            spaceBetween: 10,
+                        },
+                        768: {
+                            slidesPerView: 4,
+                            spaceBetween: 10,
+                        },
+                        992: {
+                            slidesPerView: 5,
+                            spaceBetween: 10,
+                        },
+                        1200: {
+                            slidesPerView: 7,
+                            spaceBetween: 10,
+                        },
+                        1400: {
+                            slidesPerView: 8,
+                            spaceBetween: 10,
+                        }
+                    }}
+                />
+            
+
+
+
             </div>
         </>
     )
