@@ -16,11 +16,11 @@ import { Link, useNavigate } from 'react-router-dom';
 import { navigate_home_show } from '../../../helpers/functions/navigate_home_show';
 
 const ModalAside = () => {
-    const usersData = useSelector(state => state.userSlice);
-    const navigate = useNavigate();
-
     const [fullscreen, setFullscreen] = useState(true);
     const [show, setShow] = useState(false);
+    const navigate = useNavigate();
+    const usersData = useSelector(state => state.userSlice);
+    
     function handleShow(v) {
         setFullscreen(v);
         setShow(true);
@@ -36,7 +36,7 @@ const ModalAside = () => {
                 variant='link'
             />
 
-            <Modal className='p-0' show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
+            <Modal centered className='p-0' show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
                 <Modal.Header className=''>
                     <IoIosArrowBack onClick={() => setShow(false)} className='cursor-pointer' />
                     <Modal.Title onClick={() => navigate_home_show(navigate, setShow)} className='cursor-pointer'><SiYoutubemusic /> YouMusic</Modal.Title>
@@ -53,7 +53,7 @@ const ModalAside = () => {
                         <ul className="sidebar-nav2">
                             <li onClick={() => setShow(false)}><Link to='/'><AiOutlineHome className='me-1' /> Home</Link></li>
                             <li onClick={() => setShow(false)}><Link to='/'><AiOutlinePlayCircle className='me-1' /> Listen</Link></li>
-                            <li onClick={() => setShow(false)}><Link to='/'><GiCheckboxTree className='me-1' /> Explore</Link></li>
+                            <li onClick={() => setShow(false)}><Link to='/explore'><GiCheckboxTree className='me-1' /> Explore</Link></li>
                             <li onClick={() => setShow(false)}><Link to='/'><IoIosRadio className='me-1' /> Radio</Link></li>
                         </ul>
                     </div>

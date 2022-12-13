@@ -6,6 +6,7 @@ import albumSlice from './features/albums/albumsSlice';
 import artistSlice from './features/artists/artistsSlice';
 import playerSlice from './features/player/playerSlice';
 import playlistSlice from './features/playlist/playlistSlice';
+import genresSlice from './features/genres/genresSlice';
 
 export default configureStore({
     reducer: {
@@ -14,6 +15,7 @@ export default configureStore({
         albumSlice,
         playerSlice,
         playlistSlice,
-        artistSlice
+        artistSlice,
+        genresSlice
     }
 });

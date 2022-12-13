@@ -25,7 +25,7 @@ const SongPage = () => {
                         <div className="card-body little-profile p-4">
                             <div className='text-center'>
                                 <div className="song">
-                                    <img src={song.thumbnail} alt="user" />
+                                    {/* <img src={song.thumbnail} alt="user" /> */}
                                 </div>
                                 <h3 className="m-b-0">{song.name}</h3>
                                 <p>{song.artist}</p>
