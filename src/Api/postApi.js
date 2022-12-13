@@ -10,7 +10,7 @@ export const fetchPostUser = async (newUser, dispatch) => {
     } catch (error) { console.log(error) }
 }
 
-export const functionRegister = async (e, dispatch) => {
+export const functionRegister = async (e, userData, dispatch, setShow, setError) => {
     const new_user = {
         id: uuidv4(),
         userData: {
@@ -26,5 +26,15 @@ export const functionRegister = async (e, dispatch) => {
         liked_artist:[],
         profilePicture:''
     }
-    await fetchPostUser(new_user, dispatch);
+
+    const interim_user = (userData.list).find(user => user.userData.email === new_user.userData.email);
+    if (!interim_user) {
+        setShow(false);
+        await fetchPostUser(new_user, dispatch);
+    } else {
+        setError('Email already exist');
+        setTimeout(() => {
+            setError('')
+        }, 5000)
+    }
 }

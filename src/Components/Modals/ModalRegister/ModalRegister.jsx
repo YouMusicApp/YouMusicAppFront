@@ -1,5 +1,5 @@
 // redux
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 
 import { useState } from "react";
@@ -12,6 +12,8 @@ export const ModalRegister = () => {
     const [fullscreen, setFullscreen] = useState(true);
     const [show, setShow] = useState(false);
     const dispatch = useDispatch();
+    const userData = useSelector(state => state.userSlice);
+    const [error, setError] = useState('');
 
     function handleShow(v) {
         setFullscreen(v);
@@ -19,9 +21,8 @@ export const ModalRegister = () => {
     }
     const register = (e) => {
         e.preventDefault();
-        setShow(false)
         // Call backend
-        functionRegister(e, dispatch, setShow);
+        functionRegister(e, userData, dispatch, setShow, setError);
     }
     return (
         <>
@@ -54,7 +55,7 @@ export const ModalRegister = () => {
                                 </div>
 
                                 <div className="form-floating mb-3">
-                                    <input type="email" name="email" className="form-control" id="floatingInput" placeholder="name@example.com" autoFocus />
+                                    <input type="email" name="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
                                     <label htmlFor="floatingInput">Email address</label>
                                 </div>
 
@@ -70,7 +71,8 @@ export const ModalRegister = () => {
                                     Agree to Terms & Conditions
                                 </label>
                             </div>
-                            <button className="mt-4 w-100 btn btn-color btn-lg" type="submit">Create Account</button>
+                            <h6 className='register__email--error mt-2'>{error}</h6>
+                            <button className="mt-2 w-100 btn btn-color btn-lg" type="submit">Create Account</button>
                         </form>
                     </div>
                 </Modal.Body>

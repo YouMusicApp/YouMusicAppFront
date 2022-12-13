@@ -650,6 +650,66 @@
         }
       ],
       "profilePicture": ""
+    },
+    {
+      "id": "10afaac6-252d-4619-8596-6700981b0040",
+      "userData": {
+        "username": "juanx",
+        "firstname": "juan",
+        "lastname": "solano",
+        "email": "hola@hola",
+        "password": "123"
+      },
+      "myplaylists": [],
+      "liked_tracks": [],
+      "liked_album": [],
+      "liked_artist": [],
+      "profilePicture": ""
+    },
+    {
+      "id": "6505c40c-625e-483b-949e-c86ddfe8de77",
+      "userData": {
+        "username": "juanxxxxxxxxx",
+        "firstname": "juan",
+        "lastname": "solano",
+        "email": "hola@hola12",
+        "password": "123"
+      },
+      "myplaylists": [],
+      "liked_tracks": [],
+      "liked_album": [],
+      "liked_artist": [],
+      "profilePicture": ""
+    },
+    {
+      "id": "b018c401-3326-4592-a745-5bdd85c2d187",
+      "userData": {
+        "username": "juanxxxxxxxxx",
+        "firstname": "juan",
+        "lastname": "solano",
+        "email": "hola@hol",
+        "password": "123"
+      },
+      "myplaylists": [],
+      "liked_tracks": [],
+      "liked_album": [],
+      "liked_artist": [],
+      "profilePicture": ""
+    },
+    {
+      "id": "0803abb8-3886-4605-b9de-4abd216f1f99",
+      "userData": {
+        "username": "juanxxxxxxxxx",
+        "firstname": "123",
+        "lastname": "123",
+        "email": "lidia@gmail.co",
+        "password": "123"
+      },
+      "myplaylists": [],
+      "liked_tracks": [],
+      "liked_album": [],
+      "liked_artist": [],
+      "profilePicture": ""
     }
   ],
   "albums": [

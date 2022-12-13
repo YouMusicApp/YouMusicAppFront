@@ -136,3 +136,11 @@ body {
 .icon__popularity--star svg {
         color: #D4AF37;
 }
+
+/* Register page */
+.register__email--error {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FF0000;
+}

@@ -18,7 +18,7 @@ export const ArtistPage = () => {
     const album = albums.list.filter((album) => album.artist === artist.name);
 
     let listGenreArtist = [];
-    const genreSong = artist.genres.map((genre) => listGenreArtist = [...listGenreArtist, tracks.list.filter((track) => track.genre === genre)]);
+    artist.genres.map((genre) => listGenreArtist = [...listGenreArtist, tracks.list.filter((track) => track.genre === genre)]);
     const similarSongs = listGenreArtist.flat()
 
     return (
@@ -117,7 +117,7 @@ export const ArtistPage = () => {
                 listGenreArtist.map((e) => {
                     if (e.length > 0) {
                         const capitalizeGenre = e[0].genre.charAt(0).toUpperCase() + e[0].genre.slice(1);
-                        
+
                         return (
                             <div key={uuidv4()} className="container mt-2 mb-4">
                                 <Slider
@@ -152,8 +152,9 @@ export const ArtistPage = () => {
                             </div>
                         )
                     }
+                    
                 })
             }
-            </>
-            )
+        </>
+    )
 }

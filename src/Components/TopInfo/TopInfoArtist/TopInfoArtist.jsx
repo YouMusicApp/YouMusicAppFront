@@ -1,7 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { setTrack } from '../../../redux/features/player/playerSlice';
-import { AiOutlineHeart, AiFillHeart, AiFillStar } from "react-icons/ai";
+import { AiOutlineHeart, AiFillStar } from "react-icons/ai";
 import { BsFillPlayFill } from "react-icons/bs";
 import { setPlayer } from '../../../helpers/functions/setPlayer';
 
