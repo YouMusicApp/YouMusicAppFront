@@ -9,7 +9,6 @@ export const TopInfoArtist = ({data, arraySongs}) => {
     const dispatch = useDispatch();
     const UsersData = useSelector(state => state.userSlice);
 
-    console.log(arraySongs);
     return (
         <div className="mx-0 song">
             <div className="">
