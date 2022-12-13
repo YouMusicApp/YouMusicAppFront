@@ -23,6 +23,7 @@ export const functionRegister = async (e, dispatch) => {
         myplaylists:[],
         liked_tracks:[],
         liked_album:[],
+        liked_artist:[],
         profilePicture:''
     }
     await fetchPostUser(new_user, dispatch);

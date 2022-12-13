@@ -677,6 +677,55 @@
         }
       ],
       "profilePicture": ""
+    },
+    {
+      "id": "f582a40a-6305-4a6a-8d68-5e3874c98e4d",
+      "userData": {
+        "username": "juanx",
+        "firstname": "juan",
+        "lastname": "solano",
+        "email": "juan@gmail.com",
+        "password": "123"
+      },
+      "myplaylists": [],
+      "liked_tracks": [],
+      "liked_album": [
+        {
+          "id": 2,
+          "name": "C.Gambino",
+          "genres": [
+            "classical",
+            "folk",
+            "indie"
+          ],
+          "popularity": 56,
+          "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb9fb2b5ff325f43536a2a4ae2"
+        }
+      ],
+      "liked_artist": [
+        {
+          "id": 1,
+          "name": "Kim Cesarion",
+          "genres": [
+            "rock",
+            "pop"
+          ],
+          "popularity": 38,
+          "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb842fae710a21f648e26dd910"
+        },
+        {
+          "id": 2,
+          "name": "C.Gambino",
+          "genres": [
+            "classical",
+            "folk",
+            "indie"
+          ],
+          "popularity": 56,
+          "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb9fb2b5ff325f43536a2a4ae2"
+        }
+      ],
+      "profilePicture": ""
     }
   ],
   "albums": [
