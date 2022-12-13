@@ -21,7 +21,7 @@ const HomePage = () => {
   return (
     <div className="cardContainer">
       {
-        userData.isLogged ?
+        likeTracks.length > 0 && userData.isLogged ?
           <div className="mx-2 titleCards">
             <Slider
               slidesPerView={1}
