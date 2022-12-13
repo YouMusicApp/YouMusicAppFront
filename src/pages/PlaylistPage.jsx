@@ -3,6 +3,9 @@ import { BsFillPlayFill, BsSuitHeartFill } from 'react-icons/bs';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { setPlayer } from '../helpers/functions/setPlayer';
+import { v4 as uuidv4 } from 'uuid';
+import PlaylistSlider from '../Components/Slider/PlaylistSlider/PlaylistSlider';
+import { breakpoints_small } from '../helpers/functions/breakpoint';
 
 
 export const PlaylistPage = () => {
@@ -53,25 +56,33 @@ export const PlaylistPage = () => {
 
                     <tbody>
 
-                        {info.map((item) =>{
-                        return (
-                            <>
-                            <tr className='cursor-pointer' key={item.id}>
-                                <td onClick={() => setPlayer(playlist)} className='cursor-pointer tdhover'><BsFillPlayFill /></td>
-                                <td>{item.name} </td>
-                                <td>{item.artist}</td>
-                                <td>{item.genre}</td>
+                        {info.map((item) => {
+                            return (
+                                    <tr className='cursor-pointer' key={uuidv4()}>
+                                        <td onClick={() => setPlayer(playlist)} className='cursor-pointer tdhover'><BsFillPlayFill /></td>
+                                        <td>{item.name} </td>
+                                        <td>{item.artist}</td>
+                                        <td>{item.genre}</td>
 
-                            </tr>
-                            </>
-                        )})}
+                                    </tr>
+                            )
+                        })}
 
 
                     </tbody>
                 </table>
             </div>
 
-
+            <div className="mx-2 titleCards">
+                <PlaylistSlider
+                    slidesPerView={1}
+                    size='small'
+                    img='img__small'
+                    array={playlists}
+                    title='Playlists'
+                    breakpoints={breakpoints_small}
+                />
+            </div>
         </>
     )
 }

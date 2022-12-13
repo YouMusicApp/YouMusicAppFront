@@ -23,7 +23,8 @@ export const ArtistPage = () => {
 
     return (
         <>
-            <TopInfoArtist data={artist} />
+            <TopInfoArtist data={artist} arraySongs={tracksArtist}/>
+
             <div className='container mb-4'>
                 <table className="table">
                     <thead className="thead-dark">
