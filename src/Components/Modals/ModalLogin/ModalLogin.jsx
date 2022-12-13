@@ -68,7 +68,7 @@ const ModalLogin = () => {
                         </form>
                         <div className="mt-4 row">
                             <ModalRegister />
-                            <ModalRecoveryPassword setShow={setShow} />
+                            <ModalRecoveryPassword />
                         </div>
                     </div>
                 </Modal.Body>

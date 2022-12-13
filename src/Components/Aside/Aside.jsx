@@ -25,7 +25,7 @@ export const Aside = () => {
                     <ul className="sidebar-nav">
                         <li><Link to='/'><AiOutlineHome className='me-1' /> Home</Link></li>
                         <li><Link to='/'><AiOutlinePlayCircle className='me-1' /> Listen</Link></li>
-                        <li><Link to='/'><GiCheckboxTree className='me-1' /> Explore</Link></li>
+                        <li><Link to='/explore'><GiCheckboxTree className='me-1' /> Explore</Link></li>
                         <li><Link to='/'><IoIosRadio className='me-1' /> Radio</Link></li>
                     </ul>
                 </div>
