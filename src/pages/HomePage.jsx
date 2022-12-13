@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux"
 import AlbumSlider from "../Components/Slider/AlbumSlider/AlbumSlider";
 import PlaylistSlider from "../Components/Slider/PlaylistSlider/PlaylistSlider";
+import SearchSlider from "../Components/Slider/SearchSlider/SearchSlider";
 import Slider from "../Components/Slider/Slider"
 import { breakpoints_album, breakpoints_small } from "../helpers/functions/breakpoint";
 
@@ -33,6 +34,19 @@ const HomePage = () => {
           </div>
           : ''
       }
+
+
+      <div className="mx-2 titleCards">
+        <SearchSlider
+          slidesPerView={1}
+          size='big'
+          img='img__big'
+          array={tracks.list}
+          title='Tracks'
+          breakpoints={breakpoints_album}
+        />
+      </div>
+
 
       <div className="mx-2 titleCards">
         <AlbumSlider
