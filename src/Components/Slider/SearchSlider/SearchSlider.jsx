@@ -14,18 +14,10 @@ import { useState } from "react";
 
 export default function SearchSlider({ array, title, size, slidesPerView, img, breakpoints, filter }) {
 
-    /* const [searchParams, setSearchParams] = useSearchParams();
-    const filter = searchParams.get("filter") ?? "";
 
-    const handleFilter = (e) => {
-        setSearchParams({ filter: e.target.value });
-
-    } */
-    console.log();
     return (
         <>
-
-            <h2>{title}</h2>
+                <h2>{title}</h2>
 
             <Swiper
                 slidesPerView={slidesPerView}
@@ -37,12 +29,10 @@ export default function SearchSlider({ array, title, size, slidesPerView, img, b
 
                 <div className="row">
 
-
                     {array.filter((items) => {
                         if (!filter) return true;
                         else {
                             const itemName = items.name.toLowerCase()
-
                             return itemName.includes(filter.toLocaleLowerCase())
                         }
                     })
@@ -65,6 +55,6 @@ export default function SearchSlider({ array, title, size, slidesPerView, img, b
 
                 </div>
             </Swiper>
-        </>
+            </>
     );
 }
