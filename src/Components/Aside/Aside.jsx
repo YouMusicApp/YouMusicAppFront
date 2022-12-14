@@ -5,6 +5,7 @@ import { GiCheckboxTree } from "react-icons/gi";
 import { IoIosRadio } from "react-icons/io";
 import { BsMusicNoteList } from "react-icons/bs";
 import { GiMedallist } from "react-icons/gi";
+import ModalEditedPlaylist from '../Modals/ModalEditedPlaylist/ModalEditedPlaylist';
 
 export const Aside = () => {
     const navigate = useNavigate();
@@ -27,12 +28,13 @@ export const Aside = () => {
                         <li><Link to='/'><AiOutlinePlayCircle className='me-1' /> Listen</Link></li>
                         <li><Link to='/explore'><GiCheckboxTree className='me-1' /> Explore</Link></li>
                         <li><Link to='/'><IoIosRadio className='me-1' /> Radio</Link></li>
+                        <li><Link to='/'><GiMedallist className='me-1' /> Artist?</Link></li>
                     </ul>
                 </div>
                 <div className="">
                     <ul className="sidebar-nav">
-                        <li><Link to='/'><BsMusicNoteList className='me-1' /> Playlist</Link></li>
-                        <li><Link to='/'><GiMedallist className='me-1' /> Artist?</Link></li>
+                        <ModalEditedPlaylist />
+                        
                     </ul>
                 </div>
 
