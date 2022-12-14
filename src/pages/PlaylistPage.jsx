@@ -1,8 +1,13 @@
 import React from 'react'
-import { BsFillPlayFill, BsSuitHeartFill } from 'react-icons/bs';
+import { BsFillPlayFill, BsSuitHeart, BsSuitHeartFill } from 'react-icons/bs';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { setPlayer } from '../helpers/functions/setPlayer';
+import { v4 as uuidv4 } from 'uuid';
+import PlaylistSlider from '../Components/Slider/PlaylistSlider/PlaylistSlider';
+import { breakpoints_small } from '../helpers/functions/breakpoint';
+import { likedPlaylist } from '../helpers/functions/likeTrack';
+import { TableSongs } from '../Components/TableSongs/TableSongs';
 
 
 export const PlaylistPage = () => {
@@ -14,7 +19,6 @@ export const PlaylistPage = () => {
 
 
     const info = playlist.tracks;
-
 
 
     return (
@@ -32,46 +36,30 @@ export const PlaylistPage = () => {
                                 <p>{playlist.name}</p>
                             </div>
                             <div className='containerButton--songpage'>
-                                <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true" onClick={() => setPlayer([playlist], dispatch, usersData)} ><BsFillPlayFill /></button>
-                                <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true"  > <BsSuitHeartFill /></button>
+                                <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true" onClick={() => setPlayer(info, dispatch, usersData)} ><BsFillPlayFill /></button>
+                                {
+                                    usersData.isLogged ? <button className='m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button' onClick={() => likedPlaylist(info, usersData, dispatch)}>{
+                                        usersData.userLogged.myplaylists.find((like) => like.id === info.id) ? <BsSuitHeartFill /> : <BsSuitHeart />
+                                    }</button> : ""
+                                }
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className='mx-2 mb-4'>
-                <table className="table">
-                    <thead className="thead-dark">
-                        <tr>
-                            <th scope="col"></th>
-                            <th scope="col">Title</th>
-                            <th scope="col">Artist</th>
-                            <th scope="col">Genre</th>
-                        </tr>
-                    </thead>
+            <TableSongs songList={info} />
 
-                    <tbody>
-
-                        {info.map((item) =>{
-                        return (
-                            <>
-                            <tr className='cursor-pointer' key={item.id}>
-                                <td onClick={() => setPlayer(playlist)} className='cursor-pointer tdhover'><BsFillPlayFill /></td>
-                                <td>{item.name} </td>
-                                <td>{item.artist}</td>
-                                <td>{item.genre}</td>
-
-                            </tr>
-                            </>
-                        )})}
-
-
-                    </tbody>
-                </table>
+            <div className="cardContainer titleCards">
+                <PlaylistSlider
+                    slidesPerView={1}
+                    size='small'
+                    img='img__small'
+                    array={playlists}
+                    title='Playlists'
+                    breakpoints={breakpoints_small}
+                />
             </div>
-
-
         </>
     )
 }

@@ -1,29 +1,26 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import { v4 as uuidv4 } from 'uuid';
 import '../Slider.css'
-import PlaylistCard from "../../Card/PlaylistCard/PlaylistCard";
+import ArtistCard from "../../Card/ArtistCard/ArtistCard";
 
-export default function PlaylistSlider({ array, title, size, slidesPerView, img, breakpoints }) {
-
-
+export default function ArtistSlider({ array, title, size, slidesPerView, img, breakpoints }) {
     return (
         <>
-            <h2 className="titleCards">{title}</h2>
+            <h2>{title}</h2>
             <Swiper
                 slidesPerView={slidesPerView}
                 breakpoints={breakpoints}
                 modules={[Pagination]}
                 className="mySwiper"
             >
-
                 <div className="row">
                     {array.map((data) => {
                         return (
-                            <SwiperSlide
-                                key={uuidv4()}
-                                className='bigSlide' >
-                                <PlaylistCard
+                            <SwiperSlide key={uuidv4()}>
+                                <ArtistCard
                                     data={data}
                                     size={size}
                                     img={img}
@@ -32,14 +29,9 @@ export default function PlaylistSlider({ array, title, size, slidesPerView, img,
                                 />
                             </SwiperSlide>
                         )
-
                     })}
-
-
-
                 </div>
             </Swiper>
         </>
     );
 }
-

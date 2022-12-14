@@ -5,7 +5,7 @@ import { setUserEdit } from '../../../redux/features/user/userSlice';
 import { useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 import { IoIosArrowBack } from "react-icons/io";
-
+import { BsThreeDots } from "react-icons/bs";
 
 
 export const ModalEdit = () => {
@@ -43,8 +43,8 @@ export const ModalEdit = () => {
 
     return (
         <>
-            <Button onClick={() => handleShow('sm-down')} className='mt-1 btn-color'>Edit </Button>
-
+            <Button onClick={() => handleShow('sm-down')} className='btn text-dark border-none btn-outline-link' variant='btn-link'><BsThreeDots /></Button>
+            
             <Modal className='p-0' show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
                 <Modal.Header>
                     <Modal.Title><IoIosArrowBack onClick={() => setShow(false)} className='cursor-pointer' /></Modal.Title>

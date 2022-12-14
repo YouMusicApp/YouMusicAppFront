@@ -29,12 +29,13 @@ export const breakpoints_small = {
     }
 }
 export const breakpoints_album = {
-    775: {
+    1000: {
+        // 775
         slidesPerView: 2,
         spaceBetween: 10,
     },
-    1350: {
-        slidesPerView: 3,
-        spaceBetween: 10,
-    }
+    // 1350: {
+    //     slidesPerView: 3,
+    //     spaceBetween: 10,
+    // }
 }

@@ -6,6 +6,8 @@ import { BsSuitHeart, BsSuitHeartFill } from "react-icons/bs";
 import { BsFillPlayFill } from "react-icons/bs";
 import { setPlayer } from '../helpers/functions/setPlayer';
 import { breakpoints_small } from '../helpers/functions/breakpoint';
+import { likedTrack } from '../helpers/functions/likeTrack';
+import { TableSongs } from '../Components/TableSongs/TableSongs';
 
 
 const SongPage = () => {
@@ -33,61 +35,39 @@ const SongPage = () => {
                             <div className='containerButton--songpage'>
                                 <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true" onClick={() => setPlayer([song], dispatch, usersData)} ><BsFillPlayFill /></button>
                                 {
-                                    usersData.isLogged ? <button className='m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button'>{
+                                    usersData.isLogged ? <button className='m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button' onClick={() => likedTrack(song, usersData, dispatch)}>{
                                         usersData.userLogged.liked_tracks.find((like) => like.id === song.id) ? <BsSuitHeartFill /> : <BsSuitHeart />
                                     }</button> : ""
                                 }
-                                {/* <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true"  > <BsSuitHeart /></button>
- */}                            </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <TableSongs songList={[song]} />
 
-            <div className='mx-2 mb-4'>
-                <table className="table">
-                    <thead className="thead-dark">
-                        <tr>
-                            <th scope="col"></th>
-                            <th scope="col">Title</th>
-                            <th scope="col">Artist</th>
-                            <th scope="col">Genre</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr className='cursor-pointer'>
-                            <td onClick={() => setPlayer([song], dispatch, usersData)} className='cursor-pointer tdhover'><BsFillPlayFill /></td>
-                            <td>{song.name}</td>
-                            <td>{song.artist}</td>
-                            <td>{song.genre}</td>
-
-                        </tr>
-
-                    </tbody>
-                </table>
-            </div>
-
-
-            <div className='mx-2 mt-2'>
-                <Slider
-                    slidesPerView={1}
-                    size='small'
-                    img='img__small'
-                    array={listSameGenre}
-                    title='Songs of the same genre'
-                    breakpoints={breakpoints_small}
-                />
-            </div>
-            <div className='mx-2 mt-2'>
-                <Slider
-                    slidesPerView={1}
-                    size='small'
-                    img='img__small'
-                    array={tracks.list}
-                    title='Tracks'
-                    breakpoints={breakpoints_small}
-                />
+            <div className='cardContainer titleCards'>
+                <div className='mt-2'>
+                    <Slider
+                        slidesPerView={1}
+                        size='small'
+                        img='img__small'
+                        array={listSameGenre}
+                        title='Songs of the same genre'
+                        breakpoints={breakpoints_small}
+                    />
+                </div>
+                <div className='mt-2'>
+                    <Slider
+                        slidesPerView={1}
+                        size='small'
+                        img='img__small'
+                        array={tracks.list}
+                        title='Tracks'
+                        breakpoints={breakpoints_small}
+                    />
+                </div>
             </div>
         </>
     )

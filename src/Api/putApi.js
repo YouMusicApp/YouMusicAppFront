@@ -40,3 +40,11 @@ export const fetchUserEdited = async (id, editUser) => {
         console.log(error)
     }
 }
+
+export const fetchLikeArtist = async (userEdited) => {
+    try {
+        await axios.put(`http://localhost:4000/users/${userEdited.id}`, userEdited)
+    } catch (error) {
+        console.log(error);
+    }
+}

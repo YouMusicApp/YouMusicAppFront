@@ -11,6 +11,10 @@ body {
         overflow-x: hidden;
 }
 
+.border-none {
+        border: none !important;
+}
+
 .color-purple {
         color: var(--purple) !important;
 }
@@ -91,10 +95,6 @@ body {
         max-height: 200px;
 }
 
-/* .btn__login--home svg {
-        font-size: 2.5rem;
-} */
-
 .btn-svg svg {
         font-size: 1.5rem;
 }
@@ -125,4 +125,22 @@ body {
         border: none !important;
         text-decoration: none;
         padding: 1px 24px !important;
+}
+
+.icon__popularity--star {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.icon__popularity--star svg {
+        color: #D4AF37;
+}
+
+/* Register page */
+.register__email--error {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FF0000;
 }
