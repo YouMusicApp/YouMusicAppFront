@@ -17,7 +17,7 @@ export const ExplorePage = () => {
                     {
                         genres.map(e => {
                             return (
-                                <div key={uuidv4()} onClick={() => navigate(`/explore/${e.name}`)} className="bg-light cursor-pointer bg-light.bg-gradient border rounded me-2 mt-2 col p-3 grid-center">{e.name}</div>
+                                <div key={uuidv4()} onClick={() => navigate(`/explore/${e.name}`)} className="bg-light cursor-pointer border rounded me-2 mt-2 col p-3 grid-center">{e.name}</div>
                             )
                         })
                     }

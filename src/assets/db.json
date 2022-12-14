@@ -382,6 +382,7 @@
       },
       "myplaylists": [],
       "liked_tracks": [],
+      "liked_artist": [],
       "liked_album": []
     },
     {
@@ -520,6 +521,7 @@
           "artist": "Kim Cesarion"
         }
       ],
+      "liked_artist": [],
       "profilePicture": "https://uploads-ssl.webflow.com/6321fa4eb9021afb4a237ebb/63518b3451899cb324570c0e_IMA0000460000046712.jpeg"
     },
     {
@@ -674,6 +676,19 @@
             }
           ],
           "artist": "Dimitri Vangelis & Wyman"
+        }
+      ],
+      "liked_artist": [
+        {
+          "id": 2,
+          "name": "C.Gambino",
+          "genres": [
+            "classical",
+            "folk",
+            "indie"
+          ],
+          "popularity": 56,
+          "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb9fb2b5ff325f43536a2a4ae2"
         }
       ],
       "profilePicture": ""
