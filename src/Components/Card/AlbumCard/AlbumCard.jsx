@@ -18,7 +18,7 @@ const AlbumCard = ({ data, size, img }) => {
     return (
 
         <div className='imgbig' >
-            <div className="card-text card-body">
+            <div className="card-text card-body mb-2">
                 <h5 className="card-title">{data.name}</h5>
                 <p className="card-text">{data.artist}</p>
             </div>

@@ -9,7 +9,7 @@ export const ExplorePage = () => {
     const artists = useSelector(state => state.artistSlice);
 
     return (
-        <div className="mx-2">
+        <div className="titleCards cardContainer">
             <div className="mx-4">
                 <h2>Genres</h2>
                 <div className="containerB row">
@@ -24,8 +24,8 @@ export const ExplorePage = () => {
                 </div>
 
             </div >
-
-            <div className="mx-2 mt-3 titleCards">
+            
+            <div className="mx-4 mt-3 titleCards">
                 <ArtistSlider
                     slidesPerView={2}
                     size='small'

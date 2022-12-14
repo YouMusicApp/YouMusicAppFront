@@ -13,8 +13,6 @@ const ArtistCard = ({ data, size, img }) => {
     const tracks = useSelector(state => state.trackSlice);
     const tracksArtist = tracks.list.filter((track) => track.artist === data.name);
 
-    console.log(tracksArtist);
-
     const openSong = (data) => {
         navigate(`/artist/${data.id}`)
     }
@@ -32,8 +30,7 @@ const ArtistCard = ({ data, size, img }) => {
             <img onClick={() => openSong(data)} className={img} src={data.photoUrl} alt={data.artist} />
 
             <div className="card-text imghover card-body">
-                <h5 className="card-title">{data.name}</h5>
-                <p className="card-text">{data.artist}</p>
+                <h5 className="card-title mt-2 grid-center">{data.name}</h5>
             </div>
         </div>
 

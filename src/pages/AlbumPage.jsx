@@ -1,47 +1,23 @@
 import React from 'react'
-import { BsFillPlayFill } from 'react-icons/bs';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { TopInfo } from '../Components/TopInfo/TopInfo';
-import { setPlayer } from '../helpers/functions/setPlayer';
-import { v4 as uuidv4 } from 'uuid';
 import Slider from '../Components/Slider/Slider';
+import { TableSongs } from '../Components/TableSongs/TableSongs';
 
 export const AlbumPage = () => {
     const { id } = useParams();
     const albums = useSelector(state => state.albumSlice.list);
     const album = albums.find((element) => element.id === parseInt(id));
     const tracks = useSelector(state => state.trackSlice);
-
+    console.log(album);
 
     return (
         <>
 
             <TopInfo data={album} />
-            <div className='mx-2 mb-4'>
-                <table className="table">
-                    <thead className="thead-dark">
-                        <tr>
-                            <th scope="col"></th>
-                            <th scope="col">Title</th>
-                            <th scope="col">Artist</th>
-                            <th scope="col">Genre</th>
-                        </tr>
-                    </thead>
-                    {album.tracks.map((data) => {
-                        return (
-                            <tbody key={uuidv4()}>
-                                <tr className='cursor-pointer'>
-                                    <td onClick={() => setPlayer(data)} className='cursor-pointer tdhover'><BsFillPlayFill /></td>
-                                    <td>{data.name}</td>
-                                    <td>{data.artist}</td>
-                                    <td>{data.genre}</td>
-                                </tr>
-                            </tbody>
-                        )
-                    })}
-                </table>
-                <div className="mx-2 titleCards">
+                <TableSongs songList={album.tracks} />
+                <div className="titleCards cardContainer">
                     <Slider
                         slidesPerView={1}
                         size='small'
@@ -84,7 +60,6 @@ export const AlbumPage = () => {
                         }}
                     />
                 </div>
-            </div>
         </>
     )
 }

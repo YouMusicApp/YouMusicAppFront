@@ -9,7 +9,7 @@ export default function PlaylistSlider({ array, title, size, slidesPerView, img,
 
     return (
         <>
-            <h2>{title}</h2>
+            <h2 className="titleCards">{title}</h2>
             <Swiper
                 slidesPerView={slidesPerView}
                 breakpoints={breakpoints}

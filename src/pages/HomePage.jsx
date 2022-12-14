@@ -12,30 +12,8 @@ const HomePage = () => {
   const userData = useSelector(state => state.userSlice);
   const playlists = useSelector(state => state.playlistSlice);
 
-  let likeTracks = [];
-  if (userData.isLogged) {
-    likeTracks = userData.userLogged.liked_tracks;
-  }
-
-
   return (
     <div className="cardContainer">
-      {
-        likeTracks.length > 0 && userData.isLogged ?
-          <div className="mx-2 titleCards">
-            <Slider
-              slidesPerView={1}
-              spaceBetween={100}
-              size='small'
-              img='img__small'
-              array={likeTracks}
-              title='Liked tracks'
-              breakpoints={breakpoints_small}
-            />
-          </div>
-          : ''
-      }
-
       <div className="mx-2 titleCards">
         <AlbumSlider
           slidesPerView={1}

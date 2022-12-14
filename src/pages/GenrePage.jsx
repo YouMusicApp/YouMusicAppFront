@@ -6,6 +6,7 @@ import { setPlayer } from '../helpers/functions/setPlayer';
 import { v4 as uuidv4 } from 'uuid';
 import Slider from '../Components/Slider/Slider';
 import { breakpoints_small } from '../helpers/functions/breakpoint';
+import { TableSongs } from '../Components/TableSongs/TableSongs';
 
 
 const GenrePage = () => {
@@ -41,36 +42,9 @@ const GenrePage = () => {
                             </div>
                         </div>
 
-                        <div className='mx-2 mb-4'>
-                            <table className="table">
-                                <thead className="thead-dark">
-                                    <tr>
-                                        <th scope="col"></th>
-                                        <th scope="col">Title</th>
-                                        <th scope="col">Artist</th>
-                                        <th scope="col">Genre</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
+                        <TableSongs songList={song_same_genre} />
 
-                                    {
-                                        song_same_genre.map((track) => {
-                                            return (
-                                                <tr key={uuidv4()} className='cursor-pointer'>
-                                                    <td onClick={() => setPlayer(track)} className='cursor-pointer tdhover'><BsFillPlayFill /></td>
-                                                    <td>{track.name}</td>
-                                                    <td>{track.artist}</td>
-                                                    <td>{track.genre}</td>
-                                                </tr>
-                                            )
-                                        })
-                                    }
-
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <div className="mx-2 titleCards">
+                        <div className="cardContainer titleCards">
                             <Slider
                                 slidesPerView={1}
                                 size='small'

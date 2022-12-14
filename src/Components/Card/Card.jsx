@@ -30,7 +30,7 @@ const Card = ({ data, size, img }) => {
             <img onClick={() => openSong(data)} className={img} src={data.thumbnail} alt='img' />
 
             <div className="card-text card-body">
-                <h5 className="card-title">{data.name}</h5>
+                <h5 className="card-title mt-2">{data.name}</h5>
                 <p className="card-text">{data.artist}</p>
             </div>
         </div>

@@ -2,6 +2,7 @@ import './TopProfile.css'
 import { useSelector } from 'react-redux';
 import { ModalEdit } from '../Modals/ModalEdit/ModalEdit';
 
+
 export const TopProfile = () => {
 
     const userData = useSelector(state => state.userSlice);
@@ -15,7 +16,7 @@ export const TopProfile = () => {
                     <div className="">
                         <img className="card-img-top" src="https://www.fotocasion.es/media/img/articulos/35203-fondo-colorama-rose-pink-84-27-FOTOCASION-OFERTA-DESCUENTO.jpg" alt="Cimage" />
                         <div className="card-body little-profile text-center p-2">
-                            <div className="pro-img"><img src={user.profilePicture ? user.profilePicture : 'https://bootdey.com/img/Content/avatar/avatar7.png'} alt="user" /></div>
+                            <div className="pro-img"><img src={user.profilePicture ? user.profilePicture : 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/1200px-Default_pfp.svg.png'} alt="user" /></div>
                             <div >
                                 <h2>{user.userData.username} </h2>
                                 <p>{user.userData.first_name} {user.userData.last_name}</p>

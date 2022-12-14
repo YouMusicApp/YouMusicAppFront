@@ -1,5 +1,5 @@
-import { fetchLikeAlbum, fetchLikeArtist, fetchLikeTrack } from "../../Api/putApi";
-import { setUserLikedAlbum, setUserLikedArtist, setUserLikedTrack, setUserUnlikedAlbum, setUserUnlikedArtist, setUserUnlikedTrack } from "../../redux/features/user/userSlice";
+import { fetchLikeAlbum, fetchLikeArtist, fetchLikePlaylist, fetchLikeTrack } from "../../Api/putApi";
+import { setUserLikedAlbum, setUserLikedArtist, setUserLikedPlaylist, setUserLikedTrack, setUserUnlikedAlbum, setUserUnlikedArtist, setUserUnlikedPlaylist, setUserUnlikedTrack } from "../../redux/features/user/userSlice";
 
 export const likedTrack = (data, usersData, dispatch) => {
     const checkLiked = usersData.userLogged.liked_tracks.find((like) => like.id === data.id)
@@ -67,5 +67,27 @@ export const likedArtist = (data, usersData, dispatch) => {
         }
         fetchLikeArtist(userEdited);
         dispatch(setUserUnlikedArtist(userEdited))
+    }
+}
+
+export const likedPlaylist = (data, usersData, dispatch) => {
+    const checkLiked = usersData.userLogged.myplaylists.find((like) => like.id === data.id);
+
+    if (!checkLiked) {
+        const userEdited = {
+            ...usersData.userLogged,
+            'myplaylists': [...usersData.userLogged.myplaylists, data]
+        }
+
+        dispatch(setUserLikedPlaylist(data));
+        fetchLikePlaylist(userEdited);
+    } else {
+        const unlikedPlaylist = usersData.userLogged.myplaylists.filter((playlist) => playlist.id !== data.id)
+        const userEdited = {
+            ...usersData.userLogged,
+            'myplaylists': unlikedPlaylist
+        }
+        dispatch(setUserUnlikedPlaylist(userEdited))
+        fetchLikePlaylist(userEdited);
     }
 }

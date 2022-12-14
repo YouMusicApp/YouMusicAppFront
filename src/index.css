@@ -11,6 +11,10 @@ body {
         overflow-x: hidden;
 }
 
+.border-none {
+        border: none !important;
+}
+
 .color-purple {
         color: var(--purple) !important;
 }
