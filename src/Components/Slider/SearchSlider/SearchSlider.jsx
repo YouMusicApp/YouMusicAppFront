@@ -9,6 +9,7 @@ import Card from "../../Card/Card";
 import Search from "../../Search/Search";
 import { useSearchParams } from "react-router-dom";
 import { useState } from "react";
+import { data } from "dom7";
 
 
 
@@ -21,7 +22,9 @@ export default function SearchSlider({ array, title, size, slidesPerView, img, b
         setSearchParams({ filter: e.target.value });
 
     } */
-    console.log();
+    console.log(data);
+    console.log(title);
+    console.log(filter);
     return (
         <>
 
@@ -49,6 +52,7 @@ export default function SearchSlider({ array, title, size, slidesPerView, img, b
                         .map((data) => {
                             return (
                                 <SwiperSlide key={uuidv4()}>
+                                    <h2>{title}</h2>
                                     <Card
                                         data={data}
                                         size={size}
