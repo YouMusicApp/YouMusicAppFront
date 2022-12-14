@@ -18,7 +18,7 @@ export const TopInfoArtist = ({ data }) => {
                     <div className="card-body little-profile p-4">
                         <div className='text-center'>
                             <div className="song">
-                                <img src={data.photoUrl} className='rounded-circle' alt="user" />
+                                <img src={data.thumbnail} className='rounded-circle' alt="user" />
                             </div>
                             <h3 className="m-b-0">{data.name}</h3>
                             <p className='icon__popularity--star'>{data.popularity}/100 <AiFillStar /></p>

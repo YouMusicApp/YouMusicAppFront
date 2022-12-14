@@ -49,7 +49,6 @@ export const likedArtist = (data, usersData, dispatch) => {
     const checkLiked = usersData.userLogged.liked_artist.find((like) => like.id === data.id);
 
     if (!checkLiked) {
-        console.log('like');
         const userEdited = {
             ...usersData.userLogged,
             'liked_artist': [...usersData.userLogged.liked_artist, data]
@@ -57,7 +56,6 @@ export const likedArtist = (data, usersData, dispatch) => {
         fetchLikeArtist(userEdited);
         dispatch(setUserLikedArtist(data));
     } else {
-        console.log('dislike');
         const unlikedArtist = usersData.userLogged.liked_artist.filter((artist) => {
             return artist.id !== data.id
         })

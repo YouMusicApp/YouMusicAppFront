@@ -8,32 +8,28 @@ import '../Slider.css'
 import Card from "../../Card/Card";
 import Search from "../../Search/Search";
 import { useSearchParams } from "react-router-dom";
+import { useState } from "react";
 
 
 
-export default function SearchSlider({ array, title, size, slidesPerView, img, breakpoints }) {
-    console.log(array);
+export default function SearchSlider({ array, title, size, slidesPerView, img, breakpoints, filter }) {
 
-    const [searchParams, setSearchParams] = useSearchParams();
+    /* const [searchParams, setSearchParams] = useSearchParams();
     const filter = searchParams.get("filter") ?? "";
 
     const handleFilter = (e) => {
         setSearchParams({ filter: e.target.value });
 
-    }
+    } */
+    console.log();
     return (
         <>
-            <Search
-                handleFilter={handleFilter}
-                filter={filter}
-            />
+
             <h2>{title}</h2>
+
             <Swiper
                 slidesPerView={slidesPerView}
                 spaceBetween={12}
-                // pagination={{
-                //     clickable: true,
-                // }}
                 breakpoints={breakpoints}
                 modules={[Pagination]}
                 className="mySwiper"

@@ -491,7 +491,7 @@
             "pop"
           ],
           "popularity": 38,
-          "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb842fae710a21f648e26dd910"
+          "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb842fae710a21f648e26dd910"
         }
       ],
       "profilePicture": "https://uploads-ssl.webflow.com/6321fa4eb9021afb4a237ebb/63518b3451899cb324570c0e_IMA0000460000046712.jpeg"
@@ -684,7 +684,7 @@
             "indie"
           ],
           "popularity": 56,
-          "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb9fb2b5ff325f43536a2a4ae2"
+          "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb9fb2b5ff325f43536a2a4ae2"
         }
       ],
       "profilePicture": ""
@@ -836,7 +836,7 @@
             "pop"
           ],
           "popularity": 38,
-          "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb842fae710a21f648e26dd910"
+          "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb842fae710a21f648e26dd910"
         },
         {
           "id": 2,
@@ -847,7 +847,7 @@
             "indie"
           ],
           "popularity": 56,
-          "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb9fb2b5ff325f43536a2a4ae2"
+          "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb9fb2b5ff325f43536a2a4ae2"
         },
         {
           "id": 4,
@@ -859,7 +859,7 @@
             "swedish trap pop"
           ],
           "popularity": 51,
-          "photoUrl": "https://i.scdn.co/image/ab6761610000e5ebda71714b11b7c451281e54ca"
+          "thumbnail": "https://i.scdn.co/image/ab6761610000e5ebda71714b11b7c451281e54ca"
         }
       ],
       "profilePicture": ""
@@ -980,7 +980,7 @@
             "indie"
           ],
           "popularity": 56,
-          "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb9fb2b5ff325f43536a2a4ae2"
+          "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb9fb2b5ff325f43536a2a4ae2"
         }
       ],
       "profilePicture": ""
@@ -1586,7 +1586,7 @@
         "pop"
       ],
       "popularity": 38,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb842fae710a21f648e26dd910"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb842fae710a21f648e26dd910"
     },
     {
       "id": 2,
@@ -1597,7 +1597,7 @@
         "indie"
       ],
       "popularity": 56,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb9fb2b5ff325f43536a2a4ae2"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb9fb2b5ff325f43536a2a4ae2"
     },
     {
       "id": 3,
@@ -1615,7 +1615,7 @@
         "tropical house"
       ],
       "popularity": 63,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb8d683372296589f7c718dea6"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb8d683372296589f7c718dea6"
     },
     {
       "id": 4,
@@ -1627,14 +1627,14 @@
         "swedish trap pop"
       ],
       "popularity": 51,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5ebda71714b11b7c451281e54ca"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5ebda71714b11b7c451281e54ca"
     },
     {
       "id": 5,
       "name": "Jesper Swärd",
       "genres": [],
       "popularity": 19,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb9acc7db8348539634e585144"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb9acc7db8348539634e585144"
     },
     {
       "id": 6,
@@ -1649,7 +1649,7 @@
         "swedish house"
       ],
       "popularity": 39,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb19cd7b26fa38886bd6355b3c"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb19cd7b26fa38886bd6355b3c"
     },
     {
       "id": 7,
@@ -1658,7 +1658,7 @@
         "swedish pop rap"
       ],
       "popularity": 31,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb470a02669d59859a21676ed0"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb470a02669d59859a21676ed0"
     },
     {
       "id": 8,
@@ -1672,7 +1672,7 @@
         "progressive house"
       ],
       "popularity": 55,
-      "photoUrl": "https://i.scdn.co/image/d3e1ce67d48fa05431bdd2b0f14ffc294960f0bf"
+      "thumbnail": "https://i.scdn.co/image/d3e1ce67d48fa05431bdd2b0f14ffc294960f0bf"
     },
     {
       "id": 9,
@@ -1681,7 +1681,7 @@
         "swedish pop"
       ],
       "popularity": 34,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb014c22b80be73cee9c7835b1"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb014c22b80be73cee9c7835b1"
     },
     {
       "id": 10,
@@ -1690,7 +1690,7 @@
         "swedish trap pop"
       ],
       "popularity": 37,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5ebf913a1de42e743a6f462dfe1"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5ebf913a1de42e743a6f462dfe1"
     },
     {
       "id": 11,
@@ -1700,7 +1700,7 @@
         "swedish trap pop"
       ],
       "popularity": 44,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb6dca4eb1f2347310b27c3000"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb6dca4eb1f2347310b27c3000"
     },
     {
       "id": 12,
@@ -1711,14 +1711,14 @@
         "swedish trap pop"
       ],
       "popularity": 44,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb5c1a2d5e3c93fe46ff18878d"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb5c1a2d5e3c93fe46ff18878d"
     },
     {
       "id": 13,
       "name": "Chapee",
       "genres": [],
       "popularity": 22,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb8d4c9938258d04640bf9f091"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb8d4c9938258d04640bf9f091"
     },
     {
       "id": 14,
@@ -1730,7 +1730,7 @@
         "swedish psychedelic rock"
       ],
       "popularity": 33,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5ebb7ed50718dfd36111ab26f40"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5ebb7ed50718dfd36111ab26f40"
     },
     {
       "id": 15,
@@ -1742,7 +1742,7 @@
         "trap antillais"
       ],
       "popularity": 62,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5ebbeffebd066171f03029a3c2a"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5ebbeffebd066171f03029a3c2a"
     },
     {
       "id": 16,
@@ -1751,14 +1751,14 @@
         "swedish trap pop"
       ],
       "popularity": 24,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb5c33b372d2ef6275ed536450"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb5c33b372d2ef6275ed536450"
     },
     {
       "id": 17,
       "name": "Prof. Stranger",
       "genres": [],
       "popularity": 19,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb559babce20a71e8210990c29"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb559babce20a71e8210990c29"
     },
     {
       "id": 18,
@@ -1769,14 +1769,14 @@
         "swedish trap pop"
       ],
       "popularity": 41,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5ebd093354b1da8c7c55c4cee9f"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5ebd093354b1da8c7c55c4cee9f"
     },
     {
       "id": 19,
       "name": "Arre",
       "genres": [],
       "popularity": 25,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5ebf6b060d446495921bd200593"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5ebf6b060d446495921bd200593"
     },
     {
       "id": 20,
@@ -1789,7 +1789,7 @@
         "swedish trap pop"
       ],
       "popularity": 42,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb31b2c3d4c8866b38310591be"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb31b2c3d4c8866b38310591be"
     }
   ],
   "genres": [

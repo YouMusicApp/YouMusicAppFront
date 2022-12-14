@@ -7,8 +7,16 @@ import { BsMusicNoteList } from "react-icons/bs";
 import { GiMedallist } from "react-icons/gi";
 import Search from '../Search/Search';
 
-export const Aside = ({ handleFilter, filter }) => {
+export const Aside = () => {
     const navigate = useNavigate();
+
+    const [searchParams, setSearchParams] = useSearchParams();
+    const filter = searchParams.get("filter") ?? "";
+
+    const handleFilter = (e) => {
+        setSearchParams({ filter: e.target.value });
+
+    }
 
     return (
         <nav id="sidebar">
