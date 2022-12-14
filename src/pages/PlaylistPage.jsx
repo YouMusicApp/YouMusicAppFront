@@ -19,7 +19,6 @@ export const PlaylistPage = () => {
     const info = playlist.tracks;
 
 
-
     return (
         <>
 
@@ -35,7 +34,7 @@ export const PlaylistPage = () => {
                                 <p>{playlist.name}</p>
                             </div>
                             <div className='containerButton--songpage'>
-                                <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true" onClick={() => setPlayer([playlist], dispatch, usersData)} ><BsFillPlayFill /></button>
+                                <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true" onClick={() => setPlayer(info, dispatch, usersData)} ><BsFillPlayFill /></button>
                                 <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true"  > <BsSuitHeartFill /></button>
                             </div>
                         </div>
@@ -58,13 +57,13 @@ export const PlaylistPage = () => {
 
                         {info.map((item) => {
                             return (
-                                    <tr className='cursor-pointer' key={uuidv4()}>
-                                        <td onClick={() => setPlayer(playlist)} className='cursor-pointer tdhover'><BsFillPlayFill /></td>
-                                        <td>{item.name} </td>
-                                        <td>{item.artist}</td>
-                                        <td>{item.genre}</td>
+                                <tr className='cursor-pointer' key={uuidv4()}>
+                                    <td onClick={() => setPlayer(playlist)} className='cursor-pointer tdhover'><BsFillPlayFill /></td>
+                                    <td>{item.name} </td>
+                                    <td>{item.artist}</td>
+                                    <td>{item.genre}</td>
 
-                                    </tr>
+                                </tr>
                             )
                         })}
 

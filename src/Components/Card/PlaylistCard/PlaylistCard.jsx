@@ -1,19 +1,16 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { setUserLikedPlaylist, setUserUnlikedPlaylist } from '../../../redux/features/user/userSlice';
-import { setTrack } from '../../../redux/features/player/playerSlice';
 import { BsFillPlayCircleFill, BsSuitHeart, BsSuitHeartFill } from "react-icons/bs";
 import { useNavigate } from 'react-router-dom';
 import { fetchLikePlaylist } from '../../../Api/putApi';
 import '../Card.css'
+import { setPlayer } from '../../../helpers/functions/setPlayer';
 
 const PlaylistCard = ({ data, size, img }) => {
     const dispatch = useDispatch();
     const usersData = useSelector(state => state.userSlice);
     const navigate = useNavigate();
 
-    const setPlayer = (listSong) => {
-        usersData.isLogged ? dispatch(setTrack(listSong)) : console.log('Tienes que logearte para escuchar la cancion');
-    }
     const openSong = (data) => {
         navigate(`/playlist/${data.id}`)
     }
@@ -30,7 +27,7 @@ const PlaylistCard = ({ data, size, img }) => {
             dispatch(setUserLikedPlaylist(data));
             fetchLikePlaylist(userEdited);
         } else {
-            const unlikedPlaylist = usersData.userLogged.myplaylists.filter((playlist) => playlist.id !== data.id )
+            const unlikedPlaylist = usersData.userLogged.myplaylists.filter((playlist) => playlist.id !== data.id)
             const userEdited = {
                 ...usersData.userLogged,
                 'myplaylists': unlikedPlaylist
@@ -42,13 +39,13 @@ const PlaylistCard = ({ data, size, img }) => {
 
     return (
 
-        <div className='imgbig' >
+        <div className='small'>
             {
                 usersData.isLogged ? <button className='btnheart btn' onClick={() => likedPlaylist(data)}>{
                     usersData.userLogged.myplaylists.find((like) => like.id === data.id) ? <BsSuitHeartFill /> : <BsSuitHeart />
                 }</button> : ""
             }
-            <button className='btn btnplay' onClick={() => setPlayer(data.tracks)}><BsFillPlayCircleFill /></button>
+            <button className='btn btnplay' onClick={() => setPlayer(data.tracks, dispatch, usersData)}><BsFillPlayCircleFill /></button>
 
             <img onClick={() => openSong(data)} className={img} src={data.thumbnail} alt='img' />
 

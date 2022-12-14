@@ -1,12 +1,13 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { AiOutlineHeart, AiFillStar } from "react-icons/ai";
-import { BsFillPlayFill } from "react-icons/bs";
+import { AiFillStar } from "react-icons/ai";
+import { BsFillPlayFill, BsSuitHeart, BsSuitHeartFill } from "react-icons/bs";
 import { setPlayer } from '../../../helpers/functions/setPlayer';
+import { likedArtist } from '../../../helpers/functions/likeTrack';
 
-export const TopInfoArtist = ({data, arraySongs}) => {
+export const TopInfoArtist = ({ data, arraySongs }) => {
     const dispatch = useDispatch();
-    const UsersData = useSelector(state => state.userSlice);
+    const usersData = useSelector(state => state.userSlice);
 
     return (
         <div className="mx-0 song">
@@ -21,8 +22,12 @@ export const TopInfoArtist = ({data, arraySongs}) => {
                             <p className='icon__popularity--star'>{data.popularity}/100 <AiFillStar /></p>
                         </div>
                         <div className='containerButton--songpage'>
-                            <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true" onClick={() => setPlayer(arraySongs, dispatch, UsersData)} ><BsFillPlayFill /></button>
-                            <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true"  > <AiOutlineHeart /></button>
+                            <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true" onClick={() => setPlayer(arraySongs, dispatch, usersData)} ><BsFillPlayFill /></button>
+                            {
+                                usersData.isLogged ? <button className='m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button' onClick={() => likedArtist(data, usersData, dispatch)}>{
+                                    usersData.userLogged.liked_tracks.find((like) => like.id === data.id) ? <BsSuitHeartFill /> : <BsSuitHeart />
+                                }</button> : ""
+                            }
                         </div>
                     </div>
                 </div>

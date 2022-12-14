@@ -399,63 +399,15 @@
       "primaryColor": "#fbdc00",
       "liked_tracks": [
         {
-          "id": 6,
-          "name": "Tantalizing Youth",
-          "artist": "Social Square",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Social_Square_-_Tantalizing_Youth_eykq87.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/Tantalizing_Youth_bfshzo.jpg",
-          "genre": "rock"
-        },
-        {
-          "id": 2,
-          "name": "Alone",
-          "artist": "Color Out",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
-          "genre": "poprock"
-        },
-        {
-          "id": 3,
-          "name": "Mahidevran - Maze of sorrow",
-          "artist": "MAHIDEVRAN ROCK BAND",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583928/tracks-dev/Mahidevran_Rock_Band_-_Mahidevran_-_Maze_of_sorrow_ips3zs.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/Maze_of_sorrow_r1crlr.jpg",
-          "genre": "chillout"
-        },
-        {
-          "id": 4,
-          "name": "Aurora",
-          "artist": "Smoking with poets",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583928/tracks-dev/Smoking_With_Poets_-_to__Aurora_t2qnaw.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/aurora_omys8y.jpg",
-          "genre": "indie"
+          "id": 1,
+          "name": "Better of alone",
+          "artist": "Kim Cesarion",
+          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
+          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
+          "genre": "piano"
         }
       ],
       "liked_album": [
-        {
-          "id": 2,
-          "name": "XXX (Bow Wow Wow)",
-          "tracks": [
-            {
-              "id": 1,
-              "name": "Better of alone",
-              "artist": "Kim Cesarion",
-              "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
-              "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
-              "genre": "piano"
-            },
-            {
-              "id": 2,
-              "name": "Alone",
-              "artist": "Color Out",
-              "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
-              "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
-              "genre": "poprock"
-            }
-          ],
-          "thumbnail": "https://i.scdn.co/image/ab67616d0000b273256e16efc88a39e4795d5f32",
-          "artist": "C.Gambino"
-        },
         {
           "id": 3,
           "name": "Stay A Little Longer",
@@ -521,7 +473,29 @@
           "artist": "Kim Cesarion"
         }
       ],
-      "liked_artist": [],
+      "liked_artist": [
+        {
+          "id": 1,
+          "name": "Kim Cesarion",
+          "genres": [
+            "rock",
+            "pop"
+          ],
+          "popularity": 38,
+          "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb842fae710a21f648e26dd910"
+        },
+        {
+          "id": 2,
+          "name": "C.Gambino",
+          "genres": [
+            "classical",
+            "folk",
+            "indie"
+          ],
+          "popularity": 56,
+          "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb9fb2b5ff325f43536a2a4ae2"
+        }
+      ],
       "profilePicture": "https://uploads-ssl.webflow.com/6321fa4eb9021afb4a237ebb/63518b3451899cb324570c0e_IMA0000460000046712.jpeg"
     },
     {
