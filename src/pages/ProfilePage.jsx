@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import AlbumSlider from "../Components/Slider/AlbumSlider/AlbumSlider";
+import PlaylistSlider from "../Components/Slider/PlaylistSlider/PlaylistSlider";
 import Slider from "../Components/Slider/Slider"
 import { TopProfile } from "../Components/TopProfile/TopProfile"
 
@@ -8,7 +9,7 @@ export const ProfilePage = () => {
     const likedTracks = userData.userLogged.liked_tracks;
     const likedAlbums = userData.userLogged.liked_album;
     const myplaylists = userData.userLogged.myplaylists
-    console.log(likedAlbums);
+
     return (
         <>
             <TopProfile />
@@ -83,7 +84,7 @@ export const ProfilePage = () => {
                 }
                 {
                     myplaylists.length > 0 &&
-                    <Slider
+                    <PlaylistSlider
                         slidesPerView={2}
                         spaceBetween={100}
                         size='small'

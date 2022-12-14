@@ -862,8 +862,45 @@
         "email": "hola@hola",
         "password": "123"
       },
-      "myplaylists": [],
-      "liked_tracks": [],
+      "myplaylists": [
+        {
+          "id": 2,
+          "userId": "admin",
+          "name": "Motorcycle Mama!",
+          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644625058/tracks-thumbnails-dev/driving_g56eyw.jpg",
+          "description": "Take it easy on the wheels with this hits",
+          "publicAccessible": "public",
+          "tracks": [
+            {
+              "id": 2,
+              "name": "Alone",
+              "artist": "Color Out",
+              "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
+              "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
+              "genre": "poprock"
+            }
+          ],
+          "primaryColor": "#fbdc00"
+        }
+      ],
+      "liked_tracks": [
+        {
+          "id": 5,
+          "name": "Sensitive",
+          "artist": "Infraction",
+          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583922/tracks-dev/Infraction_-_Sensitive_vsu6qr.mp3",
+          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583756/tracks-thumbnails-dev/Sensitive_unevif.jpg",
+          "genre": "pop"
+        },
+        {
+          "id": 1,
+          "name": "Better of alone",
+          "artist": "Kim Cesarion",
+          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
+          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
+          "genre": "piano"
+        }
+      ],
       "liked_album": [],
       "liked_artist": [],
       "profilePicture": ""
@@ -878,8 +915,42 @@
         "password": "123"
       },
       "myplaylists": [],
-      "liked_tracks": [],
-      "liked_album": [],
+      "liked_tracks": [
+        {
+          "id": 2,
+          "name": "Alone",
+          "artist": "Color Out",
+          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
+          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
+          "genre": "poprock"
+        }
+      ],
+      "liked_album": [
+        {
+          "id": 2,
+          "name": "XXX (Bow Wow Wow)",
+          "tracks": [
+            {
+              "id": 1,
+              "name": "Better of alone",
+              "artist": "Kim Cesarion",
+              "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
+              "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
+              "genre": "piano"
+            },
+            {
+              "id": 2,
+              "name": "Alone",
+              "artist": "Color Out",
+              "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
+              "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
+              "genre": "poprock"
+            }
+          ],
+          "thumbnail": "https://i.scdn.co/image/ab67616d0000b273256e16efc88a39e4795d5f32",
+          "artist": "C.Gambino"
+        }
+      ],
       "liked_artist": [],
       "profilePicture": ""
     },

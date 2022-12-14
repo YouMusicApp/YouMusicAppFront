@@ -43,6 +43,10 @@ const AlbumCard = ({ data, size, img }) => {
     return (
 
         <div className='imgbig' >
+            <div className="card-text card-body">
+                <h5 className="card-title">{data.name}</h5>
+                <p className="card-text">{data.artist}</p>
+            </div>
             {
                 usersData.isLogged ? <button className='btnheart btn' onClick={() => likedAlbum(data)}>{
                     usersData.userLogged.liked_album.find((like) => like.id === data.id) ? <BsSuitHeartFill /> : <BsSuitHeart />
@@ -52,10 +56,6 @@ const AlbumCard = ({ data, size, img }) => {
 
             <img onClick={() => openSong(data)} className={img} src={data.thumbnail} alt='img' />
 
-            <div className="card-text card-body">
-                <h5 className="card-title">{data.name}</h5>
-                <p className="card-text">{data.artist}</p>
-            </div>
         </div>
 
     )

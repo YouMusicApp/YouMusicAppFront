@@ -82,6 +82,7 @@ export const ArtistPage = () => {
                     }}
                 />
             </div>
+            { similarSongs.length > 0 && 
             <div className="container mt-2 mb-4">
                 <Slider
                     slidesPerView={2}
@@ -111,8 +112,9 @@ export const ArtistPage = () => {
                             spaceBetween: 10,
                         }
                     }}
-                />
+                    />
             </div>
+            }
             {
                 listGenreArtist.map((e) => {
                     if (e.length > 0) {
