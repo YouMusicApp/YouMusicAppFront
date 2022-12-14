@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import { AlbumPage } from '../pages/AlbumPage'
 import { ArtistPage } from '../pages/ArtistPage'
+import EditedPlaylistPage from '../pages/EditedPlaylistPage'
 import { ExplorePage } from '../pages/ExplorePage'
 import GenrePage from '../pages/GenrePage'
 import HomePage from '../pages/HomePage'
@@ -22,7 +23,9 @@ const AppRouter = () => {
                 <Route path="/artist/:id" element={<ArtistPage />} />
                 <Route path="/explore/:genre" element={<GenrePage />} />
                 <Route path="/explore" element={<ExplorePage />} />
-
+                <Route path="/newplaylist" element={<EditedPlaylistPage />} />
+                
+                
 
                 <Route path='/profile' element={<PrivateRoutes><ProfilePage /></PrivateRoutes>} />
             </Routes>

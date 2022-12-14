@@ -1,6 +1,7 @@
 import axios from "axios";
 import { registerUser } from "../redux/features/user/userSlice";
 import { v4 as uuidv4 } from 'uuid';
+import { createNewPlaylist } from "../redux/features/playlist/playlistSlice";
 
 
 export const fetchPostUser = async (newUser, dispatch) => {
@@ -37,4 +38,12 @@ export const functionRegister = async (e, userData, dispatch, setShow, setError)
             setError('')
         }, 5000)
     }
+
+}
+
+export const fetchPostEditedPlaylist = async (newPlaylist) => {
+    try {
+        await axios.post('http://localhost:4000/playlists', newPlaylist);
+    
+    } catch (error) { console.log(error) }
 }
