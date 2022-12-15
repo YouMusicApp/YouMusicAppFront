@@ -6,28 +6,12 @@ import { Pagination } from "swiper";
 import { v4 as uuidv4 } from 'uuid';
 import '../Slider.css'
 import Card from "../../Card/Card";
-import Search from "../../Search/Search";
-import { useSearchParams } from "react-router-dom";
-import { useState } from "react";
-import { data } from "dom7";
-
-
 
 export default function SearchSlider({ array, title, size, slidesPerView, img, breakpoints, filter }) {
 
-    /* const [searchParams, setSearchParams] = useSearchParams();
-    const filter = searchParams.get("filter") ?? "";
 
-    const handleFilter = (e) => {
-        setSearchParams({ filter: e.target.value });
-
-    } */
-    console.log(data);
-    console.log(title);
-    console.log(filter);
     return (
         <>
-
             <h2>{title}</h2>
 
             <Swiper
@@ -40,12 +24,10 @@ export default function SearchSlider({ array, title, size, slidesPerView, img, b
 
                 <div className="row">
 
-
                     {array.filter((items) => {
                         if (!filter) return true;
                         else {
                             const itemName = items.name.toLowerCase()
-
                             return itemName.includes(filter.toLocaleLowerCase())
                         }
                     })
