@@ -13,6 +13,7 @@ body {
 
 .border-none {
         border: none !important;
+        text-decoration: none !important;
 }
 
 .color-purple {

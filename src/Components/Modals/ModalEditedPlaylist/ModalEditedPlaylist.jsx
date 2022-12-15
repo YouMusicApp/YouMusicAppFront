@@ -20,7 +20,7 @@ const ModalEditedPlaylist = () => {
         setFullscreen(v);
         setShow(true);
     }
-    console.log(usersData.userLogged)
+    
 
     const functionPlaylistEdited = (e) => {
         e.preventDefault();
@@ -37,7 +37,7 @@ const ModalEditedPlaylist = () => {
             tracks: [],
         }
 
-        console.log(newPlaylist);
+
         dispatch(createNewPlaylist(newPlaylist));
         fetchPostEditedPlaylist(newPlaylist)
         setShow(false);
