@@ -27,7 +27,7 @@ const ArtistCard = ({ data, size, img }) => {
             }
             <button className='btn btnplay' onClick={() => setPlayer(tracksArtist, dispatch, usersData)}><BsFillPlayCircleFill /></button>
 
-            <img onClick={() => openSong(data)} className={img} src={data.photoUrl} alt={data.artist} />
+            <img onClick={() => openSong(data)} className={img} src={data.thumbnail} alt={data.artist} />
 
             <div className="card-text imghover card-body">
                 <h5 className="card-title mt-2 grid-center">{data.name}</h5>

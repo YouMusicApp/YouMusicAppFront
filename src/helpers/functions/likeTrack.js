@@ -49,8 +49,6 @@ export const likedArtist = (data, usersData, dispatch) => {
     const checkLiked = usersData.userLogged.liked_artist.find((like) => like.id === data.id);
 
     if (!checkLiked) {
-
-
         const userEdited = {
             ...usersData.userLogged,
             'liked_artist': [...usersData.userLogged.liked_artist, data]
