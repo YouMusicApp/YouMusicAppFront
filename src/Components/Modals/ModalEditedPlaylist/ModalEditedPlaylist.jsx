@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
-import { Button, Modal } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 import { BsMusicNoteList } from 'react-icons/bs';
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import { IoIosArrowBack } from 'react-icons/io';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import { fetchPostEditedPlaylist } from '../../../Api/postApi';
 import { createNewPlaylist } from '../../../redux/features/playlist/playlistSlice';
@@ -26,11 +25,10 @@ const ModalEditedPlaylist = () => {
             userId: usersData.userLogged.id,
             name: e.target.name.value,
             description: e.target.description.value,
-            thumbnail: e.target.img.value,
+            thumbnail: e.target.img.value ? e.target.img.value : 'https://larepublica.pe/resizer/632M9vfX7i5PUUkywOaFjXBmzE0=/480x282/top/smart/cloudfront-us-east-1.images.arcpublishing.com/gruporepublica/RW25RRXAFZFHZCPDX4K2RPLFOY.jpg',
             // publicAccessible: e.target.public.value,
             tracks: [],
         }
-
         dispatch(createNewPlaylist(newPlaylist));
         fetchPostEditedPlaylist(newPlaylist)
         setShow(false);
@@ -39,7 +37,7 @@ const ModalEditedPlaylist = () => {
     return (
         <>
 
-            <li onClick={() => handleShow('sm-down')}>
+            <li className='cursor-pointer' onClick={() => handleShow('sm-down')}>
                 <BsMusicNoteList
                 /> New Playlist 
             </li>

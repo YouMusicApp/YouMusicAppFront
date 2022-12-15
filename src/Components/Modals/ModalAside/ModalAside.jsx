@@ -14,18 +14,19 @@ import { BsMusicNoteList } from "react-icons/bs";
 import { GiMedallist } from "react-icons/gi";
 import { Link, useNavigate } from 'react-router-dom';
 import { navigate_home_show } from '../../../helpers/functions/navigate_home_show';
+import ModalEditedPlaylist from '../ModalEditedPlaylist/ModalEditedPlaylist';
 
 const ModalAside = () => {
     const [fullscreen, setFullscreen] = useState(true);
     const [show, setShow] = useState(false);
     const navigate = useNavigate();
     const usersData = useSelector(state => state.userSlice);
-    
+
     function handleShow(v) {
         setFullscreen(v);
         setShow(true);
     }
-    
+
 
     return (
         <>
@@ -39,7 +40,7 @@ const ModalAside = () => {
             <Modal centered className='p-0' show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
                 <Modal.Header className=''>
                     <IoIosArrowBack onClick={() => setShow(false)} className='cursor-pointer' />
-                    <Modal.Title onClick={() => navigate_home_show(navigate, setShow)} className='cursor-pointer'><SiYoutubemusic /> YouMusic</Modal.Title>
+                    <Modal.Title onClick={() => navigate_home_show(navigate, setShow)} className='cursor-pointer'>YouMusic</Modal.Title>
                     <div>{usersData.isLogged ? <AvatarUser /> : <ModalLogin />}</div>
                 </Modal.Header>
                 <Modal.Body>
@@ -50,17 +51,19 @@ const ModalAside = () => {
                         </div>
                     </div>
                     <div className="">
-                        <ul className="sidebar-nav2">
+                        <ul className="sidebar-nav">
                             <li onClick={() => setShow(false)}><Link to='/'><AiOutlineHome className='me-1' /> Home</Link></li>
                             <li onClick={() => setShow(false)}><Link to='/'><AiOutlinePlayCircle className='me-1' /> Listen</Link></li>
                             <li onClick={() => setShow(false)}><Link to='/explore'><GiCheckboxTree className='me-1' /> Explore</Link></li>
                             <li onClick={() => setShow(false)}><Link to='/'><IoIosRadio className='me-1' /> Radio</Link></li>
+                            <li onClick={() => setShow(false)}><Link to='/'><GiMedallist className='me-1' /> Artist?</Link></li>
                         </ul>
                     </div>
                     <div className="">
-                        <ul className="sidebar-nav2">
-                            <li><Link to='/'><BsMusicNoteList className='me-1' /> Playlist</Link></li>
-                            <li><Link to='/'><GiMedallist className='me-1' /> Artist?</Link></li>
+                        <ul onClick={() => setShow(false)} className="sidebar-nav">
+
+                            <ModalEditedPlaylist />
+
                         </ul>
                     </div>
 
