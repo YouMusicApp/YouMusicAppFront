@@ -133,6 +133,31 @@
           "genre": "piano"
         }
       ]
+    },
+    {
+      "id": "3019c89f-a328-4283-a55f-2f9034846c39",
+      "userId": 2,
+      "name": "Coding music",
+      "description": "Coding music",
+      "thumbnail": "https://larepublica.pe/resizer/632M9vfX7i5PUUkywOaFjXBmzE0=/480x282/top/smart/cloudfront-us-east-1.images.arcpublishing.com/gruporepublica/RW25RRXAFZFHZCPDX4K2RPLFOY.jpg",
+      "tracks": [
+        {
+          "id": 17,
+          "name": "Un Ratito Nama (Prod: Duran The Coach)",
+          "artist": "Igor Pumphonia",
+          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644587219/tracks-dev/Lessky_-_Un_Ratito_Nama__Prod__Duran_The_Coach__npuws5.mp3",
+          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644587222/tracks-thumbnails-dev/Un_ratito_m2aeq0.jpg",
+          "genre": "reggaeton"
+        },
+        {
+          "id": 37,
+          "name": "Un Ratito Nama (Prod: Duran The Coach)",
+          "artist": "Igor Pumphonia",
+          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644587219/tracks-dev/Lessky_-_Un_Ratito_Nama__Prod__Duran_The_Coach__npuws5.mp3",
+          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644602996/tracks-thumbnails-dev/Monday_8am_amfdta.jpg",
+          "genre": "reggaeton"
+        }
+      ]
     }
   ],
   "tracks": [
