@@ -34,13 +34,8 @@ export const TableSongs = ({ songList }) => {
                                     <td>{track.artist}</td>
                                     <td>{track.genre}</td>
                                     <td>
-                                        <DropdownDot
-                                            data={track}
-                                            
-                                        /></td>
-
-
-                                    {/* <button className='border-none'><BsThreeDots /> </button> */}
+                                        <DropdownDot data={track} />
+                                    </td>
 
                                 </tr>
                             )

@@ -10,7 +10,6 @@ export const AlbumPage = () => {
     const albums = useSelector(state => state.albumSlice.list);
     const album = albums.find((element) => element.id === parseInt(id));
     const tracks = useSelector(state => state.trackSlice);
-    console.log(album);
 
     return (
         <>

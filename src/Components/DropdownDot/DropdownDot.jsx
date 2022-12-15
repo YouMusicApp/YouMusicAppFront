@@ -8,22 +8,20 @@ import { v4 as uuidv4 } from 'uuid';
 import ModalEditedPlaylist from '../Modals/ModalEditedPlaylist/ModalEditedPlaylist';
 import { addSongToPlaylist } from '../../redux/features/playlist/playlistSlice';
 import { fetchAddPlaylist } from '../../Api/putApi';
+import { useEffect } from 'react';
+import { useState } from 'react';
 
 const DropdownDot = ({ data }) => {
 
     const dispatch = useDispatch();
     const usersData = useSelector(state => state.userSlice)
-    const songs = useSelector(state => state.trackSlice)
-
     const playlists = useSelector(state => state.playlistSlice.list);
-    const playlist = playlists.filter((element) => element.userId === (usersData.userLogged.id));
+    const playlist = usersData.isLogged ? playlists.filter((element) => element.userId === (usersData.userLogged.id)) : '';
+
 
     const addToPlaylist = (song, playlist) => {
-
         const selectedPlaylist = playlist.tracks.find((e) => e.id === song.id)
-
         if (!selectedPlaylist) {
-
             const playlistAdded = {
                 ...playlist,
                 'tracks': [...playlist.tracks, song]
@@ -32,7 +30,6 @@ const DropdownDot = ({ data }) => {
                 ...p,
                 tracks: [...playlist.tracks, song]
             } : p)
-
             dispatch(addSongToPlaylist(playlistTotal))
             fetchAddPlaylist(playlistAdded)
         } else {
@@ -57,13 +54,14 @@ const DropdownDot = ({ data }) => {
                 <Dropdown.Item > <ModalEditedPlaylist /> </Dropdown.Item>
 
                 <NavDropdown.Divider />
-                {playlist.map((p) => {
-                    return (
+                {usersData.isLogged &&
+                    playlist.map((p) => {
+                        return (
 
-                        <NavDropdown.Item key={uuidv4()} onClick={() => addToPlaylist(data, p)} eventKey="1" > {p.name} </NavDropdown.Item>
+                            <NavDropdown.Item key={uuidv4()} onClick={() => addToPlaylist(data, p)} eventKey="1" > {p.name} </NavDropdown.Item>
 
-                    )
-                })
+                        )
+                    })
                 }
 
             </DropdownButton>
