@@ -14,16 +14,14 @@ export const PlaylistPage = () => {
     const { id } = useParams();
     const usersData = useSelector(state => state.userSlice);
     const playlists = useSelector(state => state.playlistSlice.list);
-    const playlist = playlists.find((element) => element.id === parseInt(id));
+    const playlist = playlists.find((element) => element.id === id);
     const dispatch = useDispatch();
-
 
     const info = playlist.tracks;
 
-
     return (
         <>
-
+          
             <div className="mx-0 song">
                 <div className="">
                     <div className="">

@@ -20,37 +20,25 @@ const DropdownDot = ({ data }) => {
 
     const addToPlaylist = (song, playlist) => {
 
-
         const selectedPlaylist = playlist.tracks.find((e) => e.id === song.id)
-        console.log(!!selectedPlaylist)
-        // console.log(selectedPlaylist)
 
         if (!selectedPlaylist) {
 
             const playlistAdded = {
                 ...playlist,
                 'tracks': [...playlist.tracks, song]
-
             }
-            console.log(playlistAdded)
-            dispatch(addSongToPlaylist(playlistAdded))
+            const playlistTotal = playlists.map(p => playlistAdded.id === p.id ? {
+                ...p,
+                tracks: [...playlist.tracks, song]
+            } : p)
+
+            dispatch(addSongToPlaylist(playlistTotal))
             fetchAddPlaylist(playlistAdded)
-            
-
-
-
-
         } else {
             console.log("ya la tienes")
-            //     const unselectedPlaylist = usersData.userLogged.songs.filter((s) => {
-            //         return s.id !== data.id
-            //     })
-            //     const playlistEdited = {
-            //         ...usersData.userLogged,
-            //         'myplaylists': unselectedPlaylist
-            //     }
-            //     fetchPostEditedPlaylist(playlistEdited);
-            //     dispatch(deleteNewPlaylist(playlistEdited))  //esto no esta bien planteado, falta aqui hacer una funcion de
+            //add two buttons for add again and don't do i
+            //quit from this playlist 
         }
     }
 
