@@ -72,7 +72,7 @@ const SearchPage = ({ handleFilter, filter }) => {
                         breakpoints={breakpoints_small}
                         handleFilter={handleFilter}
                         filter={filter}
-                        />
+                    />
                 </div>
             }
             {
@@ -87,7 +87,7 @@ const SearchPage = ({ handleFilter, filter }) => {
                         breakpoints={breakpoints_small}
                         handleFilter={handleFilter}
                         filter={filter}
-                        />
+                    />
                 </div>
             }
             {
@@ -102,8 +102,15 @@ const SearchPage = ({ handleFilter, filter }) => {
                         breakpoints={breakpoints_small}
                         handleFilter={handleFilter}
                         filter={filter}
-                        />
+                    />
                 </div>
+            }
+            {
+                filterTracks.length === 0 &&
+                filterAlbums.length === 0 &&
+                filterArtist.length === 0 &&
+                filterPlaylist.length === 0 &&
+                <h4>No files found</h4>
             }
         </>
     )
