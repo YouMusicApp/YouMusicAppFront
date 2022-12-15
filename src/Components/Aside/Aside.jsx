@@ -33,6 +33,7 @@ export const Aside = () => {
                 </div>
                 <div className="">
                     <ul className="sidebar-nav">
+
                         <ModalEditedPlaylist />
                         
                     </ul>

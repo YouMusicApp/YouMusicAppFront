@@ -12,9 +12,16 @@ export const playlistSlice = createSlice({
         createNewPlaylist: (state, action) => {
             state.list = [...state.list, action.payload];
         },
-    },
-});
+        deletePlaylist: (state, action) => {
+            state.list = [...state.list, action.payload];
+        },
+        addSongToPlaylist: (state, action) => {
+            // state.list = [action.payload];
+            console.log(action.payload)
+            console.log(state)
+        }
+    }});
 
-export const { setPlaylistsList, createNewPlaylist } = playlistSlice.actions;
+export const { setPlaylistsList, createNewPlaylist, deletePlaylist, addSongToPlaylist } = playlistSlice.actions;
 
 export default playlistSlice.reducer;

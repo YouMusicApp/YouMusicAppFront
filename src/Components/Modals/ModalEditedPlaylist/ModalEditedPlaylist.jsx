@@ -14,18 +14,12 @@ const ModalEditedPlaylist = () => {
     const dispatch = useDispatch();
     const usersData = useSelector(state => state.userSlice);
 
-
-
     function handleShow(v) {
         setFullscreen(v);
         setShow(true);
     }
-    
-
     const functionPlaylistEdited = (e) => {
         e.preventDefault();
-
-
 
         const newPlaylist = {
             id: uuidv4(),
@@ -37,7 +31,6 @@ const ModalEditedPlaylist = () => {
             tracks: [],
         }
 
-
         dispatch(createNewPlaylist(newPlaylist));
         fetchPostEditedPlaylist(newPlaylist)
         setShow(false);
@@ -46,9 +39,9 @@ const ModalEditedPlaylist = () => {
     return (
         <>
 
-            <li><Link to='/' onClick={() => handleShow('sm-down')} >
+            <li onClick={() => handleShow('sm-down')}>
                 <BsMusicNoteList
-                /> New Playlist </Link>
+                /> New Playlist 
             </li>
 
             <Modal centered className='p-0' show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>

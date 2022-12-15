@@ -15,35 +15,39 @@ export const TableSongs = ({ songList }) => {
     return (
         <div className='mx-2 mb-4'>
             <table className="table">
-                    <thead className="thead-dark">
-                        <tr>
-                            <th scope="col"></th>
-                            <th scope="col">Title</th>
-                            <th scope="col">Artist</th>
-                            <th scope="col">Genre</th>
-                            <th scope="col"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {
-                            songList.map((track) => {
-                                return (
-                                    <tr key={uuidv4()} className='cursor-pointer'>
-                                        <td onClick={() => setPlayer([track], dispatch, usersData)} className='cursor-pointer tdhover'><BsFillPlayFill /></td>
-                                        <td>{track.name}</td>
-                                        <td>{track.artist}</td>
-                                        <td>{track.genre}</td>
-                                        <td><DropdownDot /></td>
-                                        
+                <thead className="thead-dark">
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Artist</th>
+                        <th scope="col">Genre</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        songList.map((track) => {
+                            return (
+                                <tr key={uuidv4()} className='cursor-pointer'>
+                                    <td onClick={() => setPlayer([track], dispatch, usersData)} className='cursor-pointer tdhover'><BsFillPlayFill /></td>
+                                    <td>{track.name}</td>
+                                    <td>{track.artist}</td>
+                                    <td>{track.genre}</td>
+                                    <td>
+                                        <DropdownDot
+                                            data={track}
+                                            
+                                        /></td>
 
-                                        {/* <button className='border-none'><BsThreeDots /> </button> */}
 
-                                    </tr>
-                                )
-                            })
-                        }
-                    </tbody>
-                </table>
+                                    {/* <button className='border-none'><BsThreeDots /> </button> */}
+
+                                </tr>
+                            )
+                        })
+                    }
+                </tbody>
+            </table>
         </div>
     )
 }

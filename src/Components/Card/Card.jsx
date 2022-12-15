@@ -12,7 +12,6 @@ const Card = ({ data, size, img }) => {
     const usersData = useSelector(state => state.userSlice);
     const navigate = useNavigate();
 
-
     const openSong = (data) => {
         navigate(`/song/${data.id}`)
     }

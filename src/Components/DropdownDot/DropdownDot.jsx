@@ -3,42 +3,55 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { BsThreeDots } from "react-icons/bs";
 import { useDispatch, useSelector } from 'react-redux';
-
-
-
 import { NavDropdown } from 'react-bootstrap';
 import { v4 as uuidv4 } from 'uuid';
+import ModalEditedPlaylist from '../Modals/ModalEditedPlaylist/ModalEditedPlaylist';
+import { addSongToPlaylist } from '../../redux/features/playlist/playlistSlice';
+import { fetchAddPlaylist } from '../../Api/putApi';
 
-const DropdownDot = () => {
+const DropdownDot = ({ data }) => {
 
     const dispatch = useDispatch();
     const usersData = useSelector(state => state.userSlice)
-  
+    const songs = useSelector(state => state.trackSlice)
 
     const playlists = useSelector(state => state.playlistSlice.list);
     const playlist = playlists.filter((element) => element.userId === (usersData.userLogged.id));
 
-    const addedTrackToPlaylist = (data) => {
-        // const checkEdited = usersData.userLogged.edited_playlists.find((like) => like.id === data.id)
-        // if (!checkEdited) {
-        //     const userEdited = {
-        //         ...usersData.userLogged,
-        //         'edited_playlists': [...usersData.userLogged.edited_playlists, data]
-        //     }
-        //     fetchEditedPlaylist(userEdited);
-        //     dispatch(setUserEditedPlaylist(data));
-        // } else {
+    const addToPlaylist = (song, playlist) => {
 
-        //     const unlikedTrack = usersData.userLogged.edited_playlists.filter((track) => {
-        //         return track.id !== data.id
-        //     })
-        //     const deleteTrack = {
-        //         ...usersData.userLogged,
-        //         'edited_playlists': deleteTrack
-        //     }
-        //     fetchEditedPlaylist(deleteTrack);
-        //     dispatch(setUserDeletedPlaylist(deleteTrack))
-        // }
+
+        const selectedPlaylist = playlist.tracks.find((e) => e.id === song.id)
+        console.log(!!selectedPlaylist)
+        // console.log(selectedPlaylist)
+
+        if (!selectedPlaylist) {
+
+            const playlistAdded = {
+                ...playlist,
+                'tracks': [...playlist.tracks, song]
+
+            }
+            console.log(playlistAdded)
+            dispatch(addSongToPlaylist(playlistAdded))
+            fetchAddPlaylist(playlistAdded)
+            
+
+
+
+
+        } else {
+            console.log("ya la tienes")
+            //     const unselectedPlaylist = usersData.userLogged.songs.filter((s) => {
+            //         return s.id !== data.id
+            //     })
+            //     const playlistEdited = {
+            //         ...usersData.userLogged,
+            //         'myplaylists': unselectedPlaylist
+            //     }
+            //     fetchPostEditedPlaylist(playlistEdited);
+            //     dispatch(deleteNewPlaylist(playlistEdited))  //esto no esta bien planteado, falta aqui hacer una funcion de
+        }
     }
 
     return (
@@ -48,22 +61,23 @@ const DropdownDot = () => {
                 drop=''
                 variant=""
                 title=<BsThreeDots className=''
-                
+
                 />
-                
+
             >
-            
-                <Dropdown.Item eventKey="1" >Add to new playlist</Dropdown.Item>
+
+                <Dropdown.Item > <ModalEditedPlaylist /> </Dropdown.Item>
+
                 <NavDropdown.Divider />
-                    {playlist.map((p) => {
-                        return (
-                            <>
-                                <NavDropdown.Item key={uuidv4()} eventKey="1" > {p.name} </NavDropdown.Item>
-                            </>
-                        )
-                    })
-                    }
-                
+                {playlist.map((p) => {
+                    return (
+
+                        <NavDropdown.Item key={uuidv4()} onClick={() => addToPlaylist(data, p)} eventKey="1" > {p.name} </NavDropdown.Item>
+
+                    )
+                })
+                }
+
             </DropdownButton>
         </>
     )
