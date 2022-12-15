@@ -34,7 +34,6 @@ export default function SearchSlider({ array, title, size, slidesPerView, img, b
                         .map((data) => {
                             return (
                                 <SwiperSlide key={uuidv4()}>
-                                    <h2>{title}</h2>
                                     <Card
                                         data={data}
                                         size={size}
