@@ -3,15 +3,20 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { BsThreeDots } from "react-icons/bs";
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchEditedPlaylist } from '../../Api/putApi';
-import { setUserDeletedPlaylist, setUserEditedPlaylist } from '../../redux/features/user/userSlice';
-import DropdownMap from './DropdownMap';
+
+
+
+import { NavDropdown } from 'react-bootstrap';
+import { v4 as uuidv4 } from 'uuid';
 
 const DropdownDot = () => {
 
     const dispatch = useDispatch();
     const usersData = useSelector(state => state.userSlice)
-   
+  
+
+    const playlists = useSelector(state => state.playlistSlice.list);
+    const playlist = playlists.filter((element) => element.userId === (usersData.userLogged.id));
 
     const addedTrackToPlaylist = (data) => {
         // const checkEdited = usersData.userLogged.edited_playlists.find((like) => like.id === data.id)
@@ -48,8 +53,16 @@ const DropdownDot = () => {
                 
             >
             
-                <Dropdown.Item eventKey="1" ><DropdownMap /></Dropdown.Item>
-                <Dropdown.Item eventKey="2">Share</Dropdown.Item>
+                <Dropdown.Item eventKey="1" >Add to new playlist</Dropdown.Item>
+                <NavDropdown.Divider />
+                    {playlist.map((p) => {
+                        return (
+                            <>
+                                <NavDropdown.Item key={uuidv4()} eventKey="1" > {p.name} </NavDropdown.Item>
+                            </>
+                        )
+                    })
+                    }
                 
             </DropdownButton>
         </>
