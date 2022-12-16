@@ -1,7 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import { AlbumPage } from '../pages/AlbumPage'
 import { ArtistPage } from '../pages/ArtistPage'
-import EditedPlaylistPage from '../pages/EditedPlaylistPage'
 import { ExplorePage } from '../pages/ExplorePage'
 import GenrePage from '../pages/GenrePage'
 import HomePage from '../pages/HomePage'

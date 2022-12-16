@@ -25,6 +25,7 @@ export const ArtistPage = () => {
             <TopInfoArtist data={artist} />
 
             <TableSongs songList={tracksArtist} />
+            
             <div className='titleCards cardContainer'>
                 <div>
                     <AlbumSlider

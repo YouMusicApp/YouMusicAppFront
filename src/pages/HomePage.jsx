@@ -6,10 +6,10 @@ import Slider from "../Components/Slider/Slider"
 import { breakpoints_album, breakpoints_small } from "../helpers/functions/breakpoint";
 
 const HomePage = () => {
+  const userData = useSelector(state => state.userSlice);
   const albums = useSelector(state => state.albumSlice);
   const tracks = useSelector(state => state.trackSlice);
   const artists = useSelector(state => state.artistSlice);
-  const userData = useSelector(state => state.userSlice);
   const playlists = useSelector(state => state.playlistSlice);
 
   return (
@@ -68,7 +68,7 @@ const HomePage = () => {
         />
       </div>
 
-      <div className="mx-2 titleCards">
+      {/* <div className="mx-2 titleCards">
         <Slider
           slidesPerView={1}
           size='small'
@@ -77,7 +77,8 @@ const HomePage = () => {
           title='Tracks'
           breakpoints={breakpoints_small}
         />
-      </div>
+      </div> */}
+
     </div>
 
   )

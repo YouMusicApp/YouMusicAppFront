@@ -4,6 +4,8 @@ import { useParams } from 'react-router-dom';
 import { TopInfo } from '../Components/TopInfo/TopInfo';
 import Slider from '../Components/Slider/Slider';
 import { TableSongs } from '../Components/TableSongs/TableSongs';
+import { breakpoints_small } from '../helpers/functions/breakpoint';
+import AlbumSlider from '../Components/Slider/AlbumSlider/AlbumSlider';
 
 export const AlbumPage = () => {
     const { id } = useParams();
@@ -15,50 +17,49 @@ export const AlbumPage = () => {
         <>
 
             <TopInfo data={album} />
-                <TableSongs songList={album.tracks} />
-                <div className="titleCards cardContainer">
-                    <Slider
-                        slidesPerView={1}
-                        size='small'
-                        img='img__small'
-                        array={tracks.list}
-                        title='Tracks'
-                        breakpoints={{
-                            325: {
-                                slidesPerView: 2,
-                                spaceBetween: 10,
-                            },
-                            480: {
-                                slidesPerView: 3,
-                                spaceBetween: 10,
-                            },
-                            800: {
-                                slidesPerView: 4,
-                                spaceBetween: 10,
-                            },
-                            1035: {
-                                slidesPerView: 5,
-                                spaceBetween: 10,
-                            },
-                            1240: {
-                                slidesPerView: 6,
-                                spaceBetween: 10,
-                            },
-                            1450: {
-                                slidesPerView: 7,
-                                spaceBetween: 10,
-                            },
-                            1635: {
-                                slidesPerView: 8,
-                                spaceBetween: 10,
-                            },
-                            1825: {
-                                slidesPerView: 9,
-                                spaceBetween: 10,
-                            }
-                        }}
-                    />
-                </div>
+            <TableSongs songList={album.tracks} />
+
+            <div>
+                <AlbumSlider
+                    slidesPerView={2}
+                    size='small'
+                    img='img__small'
+                    array={albums}
+                    title='Artist albums'
+                    breakpoints={{
+                        600: {
+                            slidesPerView: 3,
+                            spaceBetween: 10,
+                        },
+                        768: {
+                            slidesPerView: 4,
+                            spaceBetween: 10,
+                        },
+                        992: {
+                            slidesPerView: 5,
+                            spaceBetween: 10,
+                        },
+                        1200: {
+                            slidesPerView: 7,
+                            spaceBetween: 10,
+                        },
+                        1400: {
+                            slidesPerView: 8,
+                            spaceBetween: 10,
+                        }
+                    }}
+                />
+            </div>
+            <div className="titleCards cardContainer">
+                <Slider
+                    slidesPerView={1}
+                    size='small'
+                    img='img__small'
+                    array={tracks.list}
+                    title='Tracks'
+                    breakpoints={breakpoints_small}
+                />
+            </div>
         </>
     )
 }
