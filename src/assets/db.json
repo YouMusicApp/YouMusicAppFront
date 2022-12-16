@@ -4,9 +4,10 @@
       "id": "1",
       "userId": "2",
       "name": "Road trip! All the masters I need!",
+      "isFollowed": true,
       "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644625060/tracks-thumbnails-dev/car_yx6ld1.jpg",
       "description": "Get your mic on with this beats. You are going to sing all the way down",
-      "publicAccessible": "public",
+      "publicAccessible": true,
       "tracks": [
         {
           "id": 1,
@@ -31,9 +32,10 @@
       "id": "2",
       "userId": "admin",
       "name": "Motorcycle Mama!",
+      "isFollowed": true,
       "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644625058/tracks-thumbnails-dev/driving_g56eyw.jpg",
       "description": "Take it easy on the wheels with this hits",
-      "publicAccessible": "public",
+      "publicAccessible": false,
       "tracks": [
         {
           "id": 2,
@@ -610,43 +612,23 @@
         "email": "airuritac@gmail.com",
         "password": "123"
       },
-      "myplaylists": [
-        {
-          "id": 1,
-          "userId": "2",
-          "name": "Road trip! All the masters I need!",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644625060/tracks-thumbnails-dev/car_yx6ld1.jpg",
-          "description": "Get your mic on with this beats. You are going to sing all the way down",
-          "publicAccessible": "public",
-          "tracks": [
-            {
-              "id": 1,
-              "name": "Better of alone",
-              "artist": "RXBYN",
-              "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
-              "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
-              "genre": "piano"
-            },
-            {
-              "id": 2,
-              "name": "Alone",
-              "artist": "Color Out",
-              "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
-              "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
-              "genre": "poprock"
-            }
-          ],
-          "primaryColor": "#fbdc00"
-        }
-      ],
+      "myplaylists": [],
       "liked_tracks": [
         {
-          "id": 1,
-          "name": "Better of alone",
-          "artist": "Kim Cesarion",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
-          "genre": "piano"
+          "id": 4,
+          "name": "Aurora",
+          "artist": "Smoking with poets",
+          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583928/tracks-dev/Smoking_With_Poets_-_to__Aurora_t2qnaw.mp3",
+          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/aurora_omys8y.jpg",
+          "genre": "indie"
+        },
+        {
+          "id": 5,
+          "name": "Sensitive",
+          "artist": "Infraction",
+          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583922/tracks-dev/Infraction_-_Sensitive_vsu6qr.mp3",
+          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583756/tracks-thumbnails-dev/Sensitive_unevif.jpg",
+          "genre": "pop"
         },
         {
           "id": 6,
@@ -655,57 +637,9 @@
           "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Social_Square_-_Tantalizing_Youth_eykq87.mp3",
           "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/Tantalizing_Youth_bfshzo.jpg",
           "genre": "rock"
-        },
-        {
-          "id": 15,
-          "name": "Bebe go",
-          "artist": "P Steve Officiel",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644586823/tracks-dev/P_Steve_Officiel_-_Bebe_go_r0hlbl.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644586816/tracks-thumbnails-dev/bebe_go_zdfn6e.jpg",
-          "genre": "reggaeton"
         }
       ],
       "liked_album": [
-        {
-          "id": 1,
-          "name": "Flyga",
-          "tracks": [
-            {
-              "id": 1,
-              "name": "Better of alone",
-              "artist": "Kim Cesarion",
-              "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
-              "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
-              "genre": "piano"
-            },
-            {
-              "id": 2,
-              "name": "Alone",
-              "artist": "Color Out",
-              "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
-              "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
-              "genre": "poprock"
-            },
-            {
-              "id": 3,
-              "name": "Mahidevran - Maze of sorrow",
-              "artist": "MAHIDEVRAN ROCK BAND",
-              "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583928/tracks-dev/Mahidevran_Rock_Band_-_Mahidevran_-_Maze_of_sorrow_ips3zs.mp3",
-              "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/Maze_of_sorrow_r1crlr.jpg",
-              "genre": "chillout"
-            },
-            {
-              "id": 4,
-              "name": "Aurora",
-              "artist": "Smoking with poets",
-              "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583928/tracks-dev/Smoking_With_Poets_-_to__Aurora_t2qnaw.mp3",
-              "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/aurora_omys8y.jpg",
-              "genre": "indie"
-            }
-          ],
-          "thumbnail": "https://i.scdn.co/image/ab67616d0000b273cfb34a37cfed6297d8c18231",
-          "artist": "Kim Cesarion"
-        },
         {
           "id": 2,
           "name": "XXX (Bow Wow Wow)",
@@ -753,6 +687,46 @@
             }
           ],
           "artist": "Dimitri Vangelis & Wyman"
+        },
+        {
+          "id": 1,
+          "name": "Flyga",
+          "tracks": [
+            {
+              "id": 1,
+              "name": "Better of alone",
+              "artist": "Kim Cesarion",
+              "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
+              "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
+              "genre": "piano"
+            },
+            {
+              "id": 2,
+              "name": "Alone",
+              "artist": "Color Out",
+              "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
+              "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
+              "genre": "poprock"
+            },
+            {
+              "id": 3,
+              "name": "Mahidevran - Maze of sorrow",
+              "artist": "MAHIDEVRAN ROCK BAND",
+              "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583928/tracks-dev/Mahidevran_Rock_Band_-_Mahidevran_-_Maze_of_sorrow_ips3zs.mp3",
+              "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/Maze_of_sorrow_r1crlr.jpg",
+              "genre": "chillout"
+            },
+            {
+              "id": 4,
+              "name": "Aurora",
+              "artist": "Smoking with poets",
+              "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583928/tracks-dev/Smoking_With_Poets_-_to__Aurora_t2qnaw.mp3",
+              "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/aurora_omys8y.jpg",
+              "genre": "indie"
+            }
+          ],
+          "thumbnail": "https://i.scdn.co/image/ab67616d0000b273cfb34a37cfed6297d8c18231",
+          "artist": "Kim Cesarion"
         }
       ],
       "liked_artist": [
@@ -765,7 +739,7 @@
             "indie"
           ],
           "popularity": 56,
-          "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb9fb2b5ff325f43536a2a4ae2"
+          "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb9fb2b5ff325f43536a2a4ae2"
         }
       ],
       "profilePicture": ""
@@ -917,7 +891,7 @@
             "pop"
           ],
           "popularity": 38,
-          "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb842fae710a21f648e26dd910"
+          "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb842fae710a21f648e26dd910"
         },
         {
           "id": 2,
@@ -928,7 +902,7 @@
             "indie"
           ],
           "popularity": 56,
-          "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb9fb2b5ff325f43536a2a4ae2"
+          "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb9fb2b5ff325f43536a2a4ae2"
         },
         {
           "id": 4,
@@ -940,7 +914,7 @@
             "swedish trap pop"
           ],
           "popularity": 51,
-          "photoUrl": "https://i.scdn.co/image/ab6761610000e5ebda71714b11b7c451281e54ca"
+          "thumbnail": "https://i.scdn.co/image/ab6761610000e5ebda71714b11b7c451281e54ca"
         }
       ],
       "profilePicture": ""
@@ -1061,7 +1035,7 @@
             "indie"
           ],
           "popularity": 56,
-          "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb9fb2b5ff325f43536a2a4ae2"
+          "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb9fb2b5ff325f43536a2a4ae2"
         }
       ],
       "profilePicture": ""
@@ -1143,6 +1117,20 @@
       "liked_tracks": [],
       "liked_album": [],
       "liked_artist": [],
+      "profilePicture": ""
+    },
+    {
+      "id": "cbd15559-c6b3-4374-b429-7ee1f1736611",
+      "userData": {
+        "username": "jcmginer",
+        "firstname": "Juan Carlos",
+        "lastname": "M G",
+        "email": "jc@gmail.com",
+        "password": "123"
+      },
+      "myplaylists": [],
+      "liked_tracks": [],
+      "liked_album": [],
       "profilePicture": ""
     }
   ],
@@ -1653,7 +1641,7 @@
         "pop"
       ],
       "popularity": 38,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb842fae710a21f648e26dd910"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb842fae710a21f648e26dd910"
     },
     {
       "id": 2,
@@ -1664,7 +1652,7 @@
         "indie"
       ],
       "popularity": 56,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb9fb2b5ff325f43536a2a4ae2"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb9fb2b5ff325f43536a2a4ae2"
     },
     {
       "id": 3,
@@ -1682,7 +1670,7 @@
         "tropical house"
       ],
       "popularity": 63,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb8d683372296589f7c718dea6"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb8d683372296589f7c718dea6"
     },
     {
       "id": 4,
@@ -1694,14 +1682,14 @@
         "swedish trap pop"
       ],
       "popularity": 51,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5ebda71714b11b7c451281e54ca"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5ebda71714b11b7c451281e54ca"
     },
     {
       "id": 5,
       "name": "Jesper Swärd",
       "genres": [],
       "popularity": 19,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb9acc7db8348539634e585144"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb9acc7db8348539634e585144"
     },
     {
       "id": 6,
@@ -1716,7 +1704,7 @@
         "swedish house"
       ],
       "popularity": 39,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb19cd7b26fa38886bd6355b3c"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb19cd7b26fa38886bd6355b3c"
     },
     {
       "id": 7,
@@ -1725,7 +1713,7 @@
         "swedish pop rap"
       ],
       "popularity": 31,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb470a02669d59859a21676ed0"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb470a02669d59859a21676ed0"
     },
     {
       "id": 8,
@@ -1739,7 +1727,7 @@
         "progressive house"
       ],
       "popularity": 55,
-      "photoUrl": "https://i.scdn.co/image/d3e1ce67d48fa05431bdd2b0f14ffc294960f0bf"
+      "thumbnail": "https://i.scdn.co/image/d3e1ce67d48fa05431bdd2b0f14ffc294960f0bf"
     },
     {
       "id": 9,
@@ -1748,7 +1736,7 @@
         "swedish pop"
       ],
       "popularity": 34,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb014c22b80be73cee9c7835b1"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb014c22b80be73cee9c7835b1"
     },
     {
       "id": 10,
@@ -1757,7 +1745,7 @@
         "swedish trap pop"
       ],
       "popularity": 37,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5ebf913a1de42e743a6f462dfe1"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5ebf913a1de42e743a6f462dfe1"
     },
     {
       "id": 11,
@@ -1767,7 +1755,7 @@
         "swedish trap pop"
       ],
       "popularity": 44,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb6dca4eb1f2347310b27c3000"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb6dca4eb1f2347310b27c3000"
     },
     {
       "id": 12,
@@ -1778,14 +1766,14 @@
         "swedish trap pop"
       ],
       "popularity": 44,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb5c1a2d5e3c93fe46ff18878d"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb5c1a2d5e3c93fe46ff18878d"
     },
     {
       "id": 13,
       "name": "Chapee",
       "genres": [],
       "popularity": 22,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb8d4c9938258d04640bf9f091"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb8d4c9938258d04640bf9f091"
     },
     {
       "id": 14,
@@ -1797,7 +1785,7 @@
         "swedish psychedelic rock"
       ],
       "popularity": 33,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5ebb7ed50718dfd36111ab26f40"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5ebb7ed50718dfd36111ab26f40"
     },
     {
       "id": 15,
@@ -1809,7 +1797,7 @@
         "trap antillais"
       ],
       "popularity": 62,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5ebbeffebd066171f03029a3c2a"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5ebbeffebd066171f03029a3c2a"
     },
     {
       "id": 16,
@@ -1818,14 +1806,14 @@
         "swedish trap pop"
       ],
       "popularity": 24,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb5c33b372d2ef6275ed536450"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb5c33b372d2ef6275ed536450"
     },
     {
       "id": 17,
       "name": "Prof. Stranger",
       "genres": [],
       "popularity": 19,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb559babce20a71e8210990c29"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb559babce20a71e8210990c29"
     },
     {
       "id": 18,
@@ -1836,14 +1824,14 @@
         "swedish trap pop"
       ],
       "popularity": 41,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5ebd093354b1da8c7c55c4cee9f"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5ebd093354b1da8c7c55c4cee9f"
     },
     {
       "id": 19,
       "name": "Arre",
       "genres": [],
       "popularity": 25,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5ebf6b060d446495921bd200593"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5ebf6b060d446495921bd200593"
     },
     {
       "id": 20,
@@ -1856,7 +1844,7 @@
         "swedish trap pop"
       ],
       "popularity": 42,
-      "photoUrl": "https://i.scdn.co/image/ab6761610000e5eb31b2c3d4c8866b38310591be"
+      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb31b2c3d4c8866b38310591be"
     }
   ],
   "genres": [

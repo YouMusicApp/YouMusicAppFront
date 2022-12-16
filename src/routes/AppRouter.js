@@ -6,6 +6,7 @@ import GenrePage from '../pages/GenrePage'
 import HomePage from '../pages/HomePage'
 import { PlaylistPage } from '../pages/PlaylistPage'
 import { ProfilePage } from '../pages/ProfilePage'
+import SearchPage from '../pages/SearchPage'
 import SongPage from '../pages/SongPage'
 import { PrivateRoutes } from './PrivateRoutes'
 
@@ -22,8 +23,7 @@ const AppRouter = () => {
                 <Route path="/artist/:id" element={<ArtistPage />} />
                 <Route path="/explore/:genre" element={<GenrePage />} />
                 <Route path="/explore" element={<ExplorePage />} />
-                
-                
+                <Route path="/search" element={<SearchPage />} />
 
                 <Route path='/profile' element={<PrivateRoutes><ProfilePage /></PrivateRoutes>} />
             </Routes>
