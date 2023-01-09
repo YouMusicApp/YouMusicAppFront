@@ -10,6 +10,8 @@ import { IoIosArrowBack } from "react-icons/io";
 import { functionLogin } from "../../../Api/Api";
 
 
+import { useAuth0 } from '@auth0/auth0-react';
+
 const ModalLogin = () => {
     const [fullscreen, setFullscreen] = useState(true);
     const [show, setShow] = useState(false);
@@ -27,7 +29,8 @@ const ModalLogin = () => {
         setShow(false);
     }
 
-    
+    // const { user } = useAuth0()
+    // console.log(user)
 
     return (
         <>

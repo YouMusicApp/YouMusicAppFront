@@ -1132,6 +1132,21 @@
       "liked_tracks": [],
       "liked_album": [],
       "profilePicture": ""
+    },
+    {
+      "id": "4443a02d-3ee7-4be3-a2c3-3baff1ec2c7f",
+      "userData": {
+        "username": "pepe",
+        "firstname": "",
+        "lastname": "",
+        "email": "",
+        "password": "pepe"
+      },
+      "myplaylists": [],
+      "liked_tracks": [],
+      "liked_album": [],
+      "liked_artist": [],
+      "profilePicture": ""
     }
   ],
   "albums": [
