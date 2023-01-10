@@ -28,18 +28,18 @@ function App() {
     return <div>Oops... {error.message}</div>;
   }
 
-  if (isAuthenticated) {
-    return (
-      <div>
-        Hello {user.name}{' '}
-        <button onClick={() => logout({ returnTo: window.location.origin })}>
-          Log out
-        </button>
-      </div>
-    );
-  } else {
-    // return <button onClick={loginWithRedirect}>Log in</button>;
-  }
+  // if (isAuthenticated) {
+  //   return (
+  //     <div>
+  //       Hello {user.name}{' '}
+  //       <button onClick={() => logout({ returnTo: window.location.origin })}>
+  //         Log out
+  //       </button>
+  //     </div>
+  //   );
+  // } else {
+  //   // return <button onClick={loginWithRedirect}>Log in</button>;
+  // }
 
 
 

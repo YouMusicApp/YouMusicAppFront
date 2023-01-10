@@ -3,6 +3,8 @@ import ModalAside from '../Modals/ModalAside/ModalAside';
 import { useSelector } from 'react-redux';
 import { AvatarUser } from '../AvatarUser/AvatarUser';
 import MediaQuery from 'react-responsive'
+import LoginAuth0Button from '../Auth0/LoginAuthButton';
+import AuthenticationButton from '../Auth0/AuthenticationButton';
 
 export function Header() {
     const usersData = useSelector(state => state.userSlice);
@@ -15,7 +17,8 @@ export function Header() {
                         <ModalAside />
                     </MediaQuery>
                 </div>
-                {usersData.isLogged ? <AvatarUser /> : <ModalLogin />}
+                {/* {usersData.isLogged ? <AvatarUser /> : <ModalLogin />} */}
+                <AuthenticationButton />
             </div>
         </nav>
     );
