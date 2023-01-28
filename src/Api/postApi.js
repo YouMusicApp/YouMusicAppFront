@@ -38,7 +38,6 @@ export const functionRegister = async (e, userData, dispatch, setShow, setError)
             setError('')
         }, 5000)
     }
-
 }
 
 export const fetchPostEditedPlaylist = async (newPlaylist) => {
