@@ -4,6 +4,7 @@ import { AiFillStar } from "react-icons/ai";
 import { BsFillPlayFill, BsSuitHeart, BsSuitHeartFill } from "react-icons/bs";
 import { setPlayer } from '../../../helpers/functions/setPlayer';
 import { likedArtist } from '../../../helpers/functions/likeTrack';
+import { getRandomInt } from '../../../helpers/functions/getRandom';
 
 export const TopInfoArtist = ({ data }) => {
     const dispatch = useDispatch();
@@ -21,7 +22,7 @@ export const TopInfoArtist = ({ data }) => {
                                 <img src={data.thumbnail} className='rounded-circle' alt="user" />
                             </div>
                             <h3 className="m-b-0">{data.name}</h3>
-                            <p className='icon__popularity--star'>{data.popularity}/100 <AiFillStar /></p>
+                            <p className='icon__popularity--star'>{getRandomInt(100)}/100 <AiFillStar /></p>
                         </div>
                         <div className='containerButton--songpage'>
                             <button className="m-t-10 mx-2 waves-effect waves-dark btn btn-dark btn-svg btn-md btn-rounded containerButton--songpage__button" data-abc="true" onClick={() => setPlayer(tracksArtist, dispatch, usersData)} ><BsFillPlayFill /></button>

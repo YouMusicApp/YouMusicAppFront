@@ -10,7 +10,6 @@ import SearchPage from '../pages/SearchPage'
 import SongPage from '../pages/SongPage'
 import { PrivateRoutes } from './PrivateRoutes'
 
-
 const AppRouter = () => {
     return (
         <>
