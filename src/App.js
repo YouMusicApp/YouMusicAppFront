@@ -28,45 +28,28 @@ function App() {
     return <div>Oops... {error.message}</div>;
   }
 
-  // if (isAuthenticated) {
-  //   return (
-  //     <div>
-  //       Hello {user.name}{' '}
-  //       <button onClick={() => logout({ returnTo: window.location.origin })}>
-  //         Log out
-  //       </button>
-  //     </div>
-  //   );
-  // } else {
-  //   // return <button onClick={loginWithRedirect}>Log in</button>;
-  // }
 
+  return (
+    <>
+      <Helper />
 
-
-// movidita conflicto return-
-
-
-return (
-  <>
-    <Helper />
-
-    <div className="wrapper">
-      <MediaQuery minWidth={600} >
-        <Aside />
-      </MediaQuery>
-      <div id="content">
-        <Header />
-        <main className="main">
-          <AppRouter />
-        </main>
-        {isLogged ? <Player /> : null}
+      <div className="wrapper">
+        <MediaQuery minWidth={600} >
+          <Aside />
+        </MediaQuery>
+        <div id="content">
+          <Header />
+          <main className="main">
+            <AppRouter />
+          </main>
+          {isLogged ? <Player /> : null}
+        </div>
       </div>
-    </div>
 
 
-  </>
+    </>
 
-);
+  );
 }
 
 export default App;
