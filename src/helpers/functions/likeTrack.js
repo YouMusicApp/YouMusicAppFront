@@ -28,7 +28,7 @@ export const likedTrack = async (data, usersData, dispatch, getAccessTokenSilent
 export const likedAlbum = async (data, usersData, dispatch, getAccessTokenSilently, serverUrl) => {
     const checkLiked = usersData.userLogged.liked_album.find((like) => like._id === data._id);
     const token = await getAccessTokenSilently();
-    
+
     if (!checkLiked) {
         const userEdited = {
             ...usersData.userLogged,
@@ -76,7 +76,7 @@ export const likedArtist = async (data, usersData, dispatch, getAccessTokenSilen
 export const likedPlaylist = async (data, usersData, dispatch, getAccessTokenSilently, serverUrl) => {
     const checkLiked = usersData.userLogged.myplaylists.find((like) => like._id === data._id);
     const token = await getAccessTokenSilently();
-    
+
     if (!checkLiked) {
         const userEdited = {
             ...usersData.userLogged,

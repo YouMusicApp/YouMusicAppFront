@@ -16,7 +16,7 @@ export const Helper = () => {
     const dispatch = useDispatch();
     const { getAccessTokenSilently, user } = useAuth0();
     const serverUrl = process.env.REACT_APP_SERVER_URL;
-
+    console.log(user);
     useEffect(() => {
         // fetchGet(dispatch, "user", setUserList);
         fetchGet(dispatch, "track", setTracksList);
@@ -36,7 +36,7 @@ export const Helper = () => {
     const checkUser = async () => {
         // PETICION AL BACKEND
         const token = await getAccessTokenSilently();
-
+        console.log(token);
         const response = await fetch(`${serverUrl}/api/user/checkuser/${user.email}`, {
             headers: {
                 Authorization: `Bearer ${token}`,
