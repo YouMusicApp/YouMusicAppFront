@@ -6,12 +6,21 @@ import { setUserLogged } from "../redux/features/user/userSlice";
 
 export const fetchGet = async (dispatch, route, setList) => {
     try {
-        const resp = await axios.get(`http://localhost:4000/api/${route}/get`);
+        const resp = await axios.get(`http://localhost:4000/api/${route}/get/`);
         await dispatch(setList(resp.data.info));
     } catch (error) {
         console.log(error);
     }
 }
+
+// export const fetchGetbyId = async (dispatch, route, setList, _id) => {
+//     try {
+//         const resp = await axios.get(`http://localhost:4000/api/${route}/get/${_id}`);
+//         await dispatch(setList(resp.data.info));
+//     } catch (error) {
+//         console.log(error);
+//     }
+// }
 
 
 export const functionLogin = (e, userData, dispatch) => {
@@ -23,6 +32,6 @@ export const functionLogin = (e, userData, dispatch) => {
     const interim_user = (userData.list).find(user => user.userData.email === new_user.email)
     if (interim_user && interim_user.userData.password === new_user.password) {
         dispatch(setUserLogged(interim_user));
-
+        
     } else { alert("Incorrect Password"); }
 }

@@ -8,9 +8,9 @@ import { breakpoints_small } from '../helpers/functions/breakpoint';
 import AlbumSlider from '../Components/Slider/AlbumSlider/AlbumSlider';
 
 export const AlbumPage = () => {
-    const { id } = useParams();
+    const { _id } = useParams();
     const albums = useSelector(state => state.albumSlice.list);
-    const album = albums.find((element) => element.id === parseInt(id));
+    const album = albums.find((element) => element._id === _id);
     const tracks = useSelector(state => state.trackSlice);
 
     return (
@@ -50,8 +50,8 @@ export const AlbumPage = () => {
                     }}
                 />
             </div>
-            <div className="titleCards cardContainer">
-                <Slider
+            // <div className="titleCards cardContainer">
+            //     <Slider
                     slidesPerView={1}
                     size='small'
                     img='img__small'

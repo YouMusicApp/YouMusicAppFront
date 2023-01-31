@@ -11,13 +11,16 @@ import { TableSongs } from '../Components/TableSongs/TableSongs';
 
 
 const SongPage = () => {
-    const { id } = useParams();
+    const { _id } = useParams();
+  
     const tracks = useSelector(state => state.trackSlice);
     const usersData = useSelector(state => state.userSlice);
-    const song = tracks.list.find((track) => track.id === parseInt(id));
+    const song = tracks.list.find((track) => track._id === _id);
     const dispatch = useDispatch();
     const genreSong = tracks.list.filter((track) => track.genre === song.genre);
-    const listSameGenre = genreSong.filter((track) => track.id !== song.id)
+    const listSameGenre = genreSong.filter((track) => track._id !== song._id)
+
+   
 
     return (
         <>

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 // redux
-import { fetchGet } from "../../Api/Api";
+import { fetchGet, fetchGetbyId } from "../../Api/Api";
 import { useDispatch } from 'react-redux';
 import { setTracksList } from "../../redux/features/tracks/tracksSlice";
 import { setArtistsList } from "../../redux/features/artists/artistsSlice";
@@ -16,7 +16,7 @@ export const Helper = () => {
     const dispatch = useDispatch();
     const { getAccessTokenSilently, user } = useAuth0();
     const serverUrl = process.env.REACT_APP_SERVER_URL;
-    console.log(user);
+
     useEffect(() => {
         // fetchGet(dispatch, "user", setUserList);
         fetchGet(dispatch, "track", setTracksList);
@@ -24,6 +24,7 @@ export const Helper = () => {
         fetchGet(dispatch, "playlist", setPlaylistsList);
         fetchGet(dispatch, "artist", setArtistsList);
         fetchGet(dispatch, "genre", setGenresList);
+      
         // fetchGetGenresList(dispatch);
     }, [dispatch])
 
@@ -36,7 +37,7 @@ export const Helper = () => {
     const checkUser = async () => {
         // PETICION AL BACKEND
         const token = await getAccessTokenSilently();
-        console.log(token);
+
         const response = await fetch(`${serverUrl}/api/user/checkuser/${user.email}`, {
             headers: {
                 Authorization: `Bearer ${token}`,

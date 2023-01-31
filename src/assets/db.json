@@ -1151,590 +1151,347 @@
   ],
   "albums": [
     {
-      "id": 1,
-      "name": "Flyga",
+  
+      "name": "Flowers",
       "tracks": [
         {
-          "id": 1,
-          "name": "Better of alone",
-          "artist": "Kim Cesarion",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
-          "genre": "piano"
+          "_id": "63d8e540930e525ca1e2f0bd",
+          "name": "Slide Away",
+          "artist": "Miley Cyrus",
+          "url": "https://res.cloudinary.com/dfz4bu04u/video/upload/v1675115391/mp3/Miley_Cyrus_-_Slide_Away_grldk1.mp3",
+          "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675117457/image/tracks/Miley_Cyrus_-_Slide_Away_wfzcch.jpg",
+          "genre": "pop"
         },
         {
-          "id": 2,
-          "name": "Alone",
-          "artist": "Color Out",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
+          "_id": "63d8e540930e525ca1e2f0ca",
+          "name": "Flowers",
+          "artist": "Miley Cyrus",
+          "url": "https://res.cloudinary.com/dfz4bu04u/video/upload/v1675100907/mp3/Miley_Cyrus_-_Flowers_kbq0ga.mp3",
+          "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675118366/image/tracks/Miley_Cyrus_-_Flowers_qdgwdc.jpg",
+          "genre": "pop"
+        }
+
+
+      ],
+      "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675117187/image/albums/miley_cyrus_bangerz-portada_dsfqwg.jpg",
+      "artist": "Miley Cyrus"
+    },
+    {
+
+      "name": "Rush!",
+      "tracks": [
+        {
+          "_id": "63d8e540930e525ca1e2f0c0",
+          "name": "SUPERMODEL",
+          "artist": "Måneskin",
+          "url": "https://res.cloudinary.com/dfz4bu04u/video/upload/v1675115001/mp3/Ma%CC%8Aneskin_-_SUPERMODEL_g01pzz.mp3",
+          "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675117699/image/tracks/Ma%CC%8Aneskin_-_SUPERMODEL_kaklnn.jpg",
           "genre": "poprock"
         },
         {
-          "id": 3,
-          "name": "Mahidevran - Maze of sorrow",
-          "artist": "MAHIDEVRAN ROCK BAND",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583928/tracks-dev/Mahidevran_Rock_Band_-_Mahidevran_-_Maze_of_sorrow_ips3zs.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/Maze_of_sorrow_r1crlr.jpg",
-          "genre": "chillout"
+          "_id": "63d8e540930e525ca1e2f0cb",
+          "name": "GOSSIP Lyrics ft. Tom Morello",
+          "artist": "Måneskin",
+          "url": "https://res.cloudinary.com/dfz4bu04u/video/upload/v1675100907/mp3/Ma%CC%8Aneskin_-_GOSSIP_Lyrics_ft._Tom_Morello_x4otia.mp3",
+          "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675118432/image/tracks/Ma%CC%8Aneskin_-_GOSSIP_Lyrics_ft._Tom_Morello_stq0gr.jpg",
+          "genre": "poprock"
+        }
+      ],
+      "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675117187/image/albums/Maneskin-Rush-album-cover-header_yye6ag.jpg",
+      "artist": "Mäneskin"
+    },
+    {
+
+      "name": "Being funny in a foreign Language",
+      "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675117187/image/albums/The1975__SELECTS_ItsNotLiving_0006_JH-12_gwsnec.webp",
+      "tracks": [
+        {
+          "_id": "63d8e540930e525ca1e2f0ba",
+          "name": "Somebody Else",
+          "artist": "The 1975",
+          "url": "https://res.cloudinary.com/dfz4bu04u/video/upload/v1675115570/mp3/The_1975_-_Somebody_Else_xitqyw.mp3",
+          "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675116935/image/tracks/the1975_krcyfh.jpg",
+          "genre": "pop"
         },
         {
-          "id": 4,
-          "name": "Aurora",
-          "artist": "Smoking with poets",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583928/tracks-dev/Smoking_With_Poets_-_to__Aurora_t2qnaw.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/aurora_omys8y.jpg",
+          "_id": "63d8e540930e525ca1e2f0c6",
+          "name": "Oh Caroline",
+          "artist": "The 1975",
+          "url": "https://res.cloudinary.com/dfz4bu04u/video/upload/v1675100908/mp3/The_1975_-_Oh_Caroline_jpk0d2.mp3",
+          "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675118135/image/tracks/The_1975_-_Oh_Caroline_l2ljez.jpg",
+          "genre": "pop"
+        }
+
+      ],
+      
+      "artist": "The 1975"
+    },
+    {
+
+      "name": "Monotonía",
+      "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675117187/image/albums/ShakiraAlbum_txbat3.jpg",
+      "tracks": [
+        {
+        "_id": "63d8d066930e525ca1de58c4",
+        "name": "Monotonía",
+        "artist": "Shakira y Ozuna",
+        "url": "https://res.cloudinary.com/dfz4bu04u/video/upload/v1675115957/mp3/Shakira_Ozuna_-_Monotoni%CC%81a_yqgods.mp3",
+        "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675117183/image/tracks/monotonia_fhlwri.jpg",
+        "genre": "urban"
+      },
+      {
+        "_id": "63d8e540930e525ca1e2f0c9",
+        "name": "Sessions 53",
+        "artist": "SHAKIRA BZRP",
+        "url": "https://res.cloudinary.com/dfz4bu04u/video/upload/v1675100907/mp3/SHAKIRA_BZRP_Music_Sessions_53_vl0axn.mp3",
+        "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675118317/image/tracks/SHAKIRA_BZRP_Music_Sessions_53_smvuii.jpg",
+        "genre": "pop"
+      }
+
+      ],
+      "artist": "Shakira"
+    },
+    {
+      "name": "Today",
+      "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675117187/image/albums/Q-TODAY_txigpw.jpg",
+      "tracks": [
+        {
+          "_id": "63d8e540930e525ca1e2f0bf",
+          "name": "Take Me Where Your Heart Is",
+          "artist": "Q",
+          "url": "https://res.cloudinary.com/dfz4bu04u/video/upload/v1675115127/mp3/Q_-_Take_Me_Where_Your_Heart_Is_nreury.mp3",
+          "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675117688/image/tracks/Q_-_Take_Me_Where_Your_Heart_Is_yfgpr9.jpg",
+          "genre": "soul"
+        },
+        {
+          "_id": "63d8e540930e525ca1e2f0c7",
+          "name": "TODAY",
+          "artist": "Q",
+          "url": "https://res.cloudinary.com/dfz4bu04u/video/upload/v1675100908/mp3/Q_-_TODAY_wwfnmj.mp3",
+          "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675118187/image/tracks/Q_-_TODAY_wrbocz.jpg",
+          "genre": "soul"
+        }
+
+      ],
+      "artist": "Q"
+    },
+    {
+  
+      "name": "The complete Anthology",
+      "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675117187/image/albums/Ella_Louis_-_The_Complete_Anthology_Front_02_gsujhn.jpg",
+      "tracks": [
+        {
+          "_id": "63d8e540930e525ca1e2f0be",
+          "name": "Dream a little dream of me",
+          "artist": "Ella Fitzgerald and Louis Armstrong",
+          "url": "https://res.cloudinary.com/dfz4bu04u/video/upload/v1675115341/mp3/Ella_Fitzgerald_Louis_Armstrong-Dream_A_Little_dream_of_me_subtitulada_zqmbcv.mp3",
+          "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675117521/image/tracks/Ella_Fitzgerald_Louis_Armstrong_v9jhnc.jpg",
+          "genre": "jazz"
+        },
+        {
+          "_id": "63d8e540930e525ca1e2f0c5",
+          "name": "Can_t_We_Be_Friends",
+          "artist": "Louis Armstrong and Ella Fitzgerald",
+          "url": "https://res.cloudinary.com/dfz4bu04u/video/upload/v1675100909/mp3/Can_t_We_Be_Friends_-_Louis_Armstrong_Ella_Fitzgerald_HD_qs9dzm.mp3",
+          "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675118080/image/tracks/Can_t_We_Be_Friends_-_Louis_Armstrong_g2wiig.jpg",
+          "genre": "jazz"
+        }
+      ],
+      "artist": "Ella & Louis"
+    },
+    {
+  
+      "name": "Harmless Melodies",
+      "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675117187/image/albums/yellowDaysAlbum_ztqtyv.webp",
+      "tracks": [
+        {
+          "_id": "63d8e540930e525ca1e2f0bc",
+          "name": "How Can I Love You",
+          "artist": "Yellow Days",
+          "url": "https://res.cloudinary.com/dfz4bu04u/video/upload/v1675115447/mp3/Yellow_Days_-_How_Can_I_Love_You_zztxeo.mp3",
+          "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675117375/image/tracks/Yellow_Days_-_How_Can_I_Love_You_lujo9v.jpg",
+          "genre": "soul"
+        },
+        {
+          "_id": "63d8e540930e525ca1e2f0c4",
+          "name": "Soul Smile",
+          "artist": "Yellow Days",
+          "url": "https://res.cloudinary.com/dfz4bu04u/video/upload/v1675100909/mp3/Yellow_Days_-_Soul_Smile_gjsiw4.mp3",
+          "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675117972/image/tracks/Yellow_Days_-_Soul_Smile_uy9z6b.jpg",
+          "genre": "soul"
+        }
+
+      ],
+      "artist": "Yellow days"
+    },
+    {
+
+      "name": "Keep on smiling",
+      "thumbnail":"https://res.cloudinary.com/dfz4bu04u/image/upload/v1675117187/image/albums/twodoorcinemaclubalbum_p8ozh9.jpg",
+      "tracks": [
+        {
+          "_id": "63d8e540930e525ca1e2f0bb",
+          "name": "WHAT YOU KNOW",
+          "artist": "TWO DOOR CINEMA CLUB",
+          "url": "https://res.cloudinary.com/dfz4bu04u/video/upload/v1675115495/mp3/TWO_DOOR_CINEMA_CLUB_WHAT_YOU_KNOW_wqyyy6.mp3",
+          "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675117124/image/tracks/TWO_DOOR_CINEMA_CLUB_dycm6r.jpg",
+          "genre": "indie"
+        },
+        {
+          "_id": "63d8e540930e525ca1e2f0c8",
+          "name": "Lucky",
+          "artist": "TWO DOOR CINEMA CLUB",
+          "url": "https://res.cloudinary.com/dfz4bu04u/video/upload/v1675100907/mp3/Two_Door_Cinema_Club_-_Lucky_e0rhmy.mp3",
+          "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675118241/image/tracks/Two_Door_Cinema_Club_-_Lucky_ujupbr.jpg",
           "genre": "indie"
         }
+
       ],
-      "thumbnail": "https://i.scdn.co/image/ab67616d0000b273cfb34a37cfed6297d8c18231",
-      "artist": "Kim Cesarion"
+      "artist": "Two door cinema club"
     },
     {
-      "id": 2,
-      "name": "XXX (Bow Wow Wow)",
+      "name": "Un verano sin ti",
+      "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675117186/image/albums/bad_bunny_x7x.png_1694538543_mi54x1.webp",
       "tracks": [
         {
-          "id": 1,
-          "name": "Better of alone",
-          "artist": "Kim Cesarion",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
-          "genre": "piano"
+          "_id": "63d8d066930e525ca1de58c2",
+          "name": "Callaíta",
+          "artist": "BAD BUNNY",
+          "url": "https://res.cloudinary.com/dfz4bu04u/video/upload/v1675114920/mp3/BAD_BUNNY_-_CALLAI%CC%81TA_Video_Oficial_kijhqo.mp3",
+          "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675116370/image/tracks/Callaita_njdlo1.jpg",
+          "genre": "urban"
         },
         {
-          "id": 2,
-          "name": "Alone",
-          "artist": "Color Out",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
-          "genre": "poprock"
+          "_id": "63d8e540930e525ca1e2f0c1",
+          "name": "Ojitos Lindos",
+          "artist": "BAD BUNNY",
+          "url": "https://res.cloudinary.com/dfz4bu04u/video/upload/v1675114933/mp3/Ojitos_Lindos_-_Bad_Bunny_Video_Oficial_n4wbzm.mp3",
+          "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675117771/image/tracks/Ojitos_Lindos_-_Bad_Bunny_fqjec0.jpg",
+          "genre": "urban"
+        },
+        {
+          "_id": "63d8e540930e525ca1e2f0c2",
+          "name": "LA_SANTA",
+          "artist": "BAD BUNNY x DADDY YANKEE",
+          "url": "https://res.cloudinary.com/dfz4bu04u/video/upload/v1675114916/mp3/BAD_BUNNY_x_DADDY_YANKEE_-_LA_SANTA_YHLQMDLG_Visualizer_acj7aa.mp3",
+          "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675117848/image/tracks/BAD_BUNNY_x_DADDY_YANKEE_-_LA_SANTA_u50jty.jpg",
+          "genre": "urban"
+        },
+        {
+          "_id": "63d8e540930e525ca1e2f0c3",
+          "name": "La Jumpa",
+          "artist": "Arcangel x Bad Bunny",
+          "url": "https://res.cloudinary.com/dfz4bu04u/video/upload/v1675100910/mp3/Arcangel_Bad_Bunny_-_La_Jumpa_Visualizer_SR._SANTOS_rykmft.mp3",
+          "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675117913/image/tracks/Arcangel_Bad_Bunny_-_La_Jumpa_rjjhdb.jpg",
+          "genre": "urban"
         }
       ],
-      "thumbnail": "https://i.scdn.co/image/ab67616d0000b273256e16efc88a39e4795d5f32",
-      "artist": "C.Gambino"
+      "artist": "BAD BUNNY"
     },
     {
-      "id": 3,
-      "name": "Stay A Little Longer",
-      "thumbnail": "https://i.scdn.co/image/ab67616d0000b2732cf9821eb5087702a63330b5",
+
+      "name": "Midnights",
+      "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675116293/image/albums/taylorswiftALBUM_bcok43.jpg",
       "tracks": [
         {
-          "id": 1,
-          "name": "Better of alone",
-          "artist": "Kim Cesarion",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
-          "genre": "piano"
+          "_id": "63d8d066930e525ca1de58c3",
+          "name": "The Man",
+          "artist": "Taylor Swift",
+          "url": "https://res.cloudinary.com/dfz4bu04u/video/upload/v1675115740/mp3/Taylor_Swift_-_The_Man_mxogoa.mp3",
+          "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675116634/image/tracks/Taylor-Swift_The-Man_Cover-Art_Taylor-Swift-Switzerland_ookinq.png",
+          "genre": "pop"
         },
         {
-          "id": 2,
-          "name": "Alone",
-          "artist": "Color Out",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
-          "genre": "poprock"
+          "_id": "63d8e540930e525ca1e2f0b9",
+          "name": "Anti-Hero",
+          "artist": "Taylor Swift",
+          "url": "https://res.cloudinary.com/dfz4bu04u/video/upload/v1675115659/mp3/Taylor_Swift_-_Anti-Hero_f78kq8.mp3",
+          "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675116786/image/tracks/anti-hero_yel8iw.jpg",
+          "genre": "pop"
+        },   
+        {
+          "_id": "63d8e540930e525ca1e2f0cc",
+          "name": "Lavender Haze",
+          "artist": "Taylor Swift",
+          "url": "https://res.cloudinary.com/dfz4bu04u/video/upload/v1675099604/mp3/Taylor_Swift_-_Lavender_Haze_xa4cx1.mp3",
+          "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675118510/image/tracks/Taylor_Swift_-_Lavender_Haze_magl7q.jpg",
+          "genre": "pop"
         }
+
       ],
-      "artist": "Nicky Romero"
-    },
-    {
-      "id": 4,
-      "name": "WTF",
-      "thumbnail": "https://i.scdn.co/image/ab67616d0000b2730b7020f4bce3fc16f5370df3",
-      "tracks": [
-        {
-          "id": 1,
-          "name": "Better of alone",
-          "artist": "Kim Cesarion",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
-          "genre": "piano"
-        },
-        {
-          "id": 2,
-          "name": "Alone",
-          "artist": "Color Out",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
-          "genre": "poprock"
-        }
-      ],
-      "artist": "Denz"
-    },
-    {
-      "id": 5,
-      "name": "Vivaldi",
-      "thumbnail": "https://i.scdn.co/image/ab67616d0000b273a7fc8699c8a8c6dc4b90c948",
-      "tracks": [
-        {
-          "id": 1,
-          "name": "Better of alone",
-          "artist": "Kim Cesarion",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
-          "genre": "piano"
-        },
-        {
-          "id": 2,
-          "name": "Alone",
-          "artist": "Color Out",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
-          "genre": "poprock"
-        }
-      ],
-      "artist": "Jesper Swärd"
-    },
-    {
-      "id": 6,
-      "name": "Velvet Pony Trax 11 part 2",
-      "thumbnail": "https://i.scdn.co/image/ab67616d0000b27347d2bc41f459a0422c3dfff5",
-      "tracks": [
-        {
-          "id": 1,
-          "name": "Better of alone",
-          "artist": "Kim Cesarion",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
-          "genre": "piano"
-        },
-        {
-          "id": 2,
-          "name": "Alone",
-          "artist": "Color Out",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
-          "genre": "poprock"
-        }
-      ],
-      "artist": "Axel Boman"
-    },
-    {
-      "id": 7,
-      "name": "PARTYPINGLA",
-      "thumbnail": "https://i.scdn.co/image/ab67616d0000b273e467c6a0b070f390daa47693",
-      "tracks": [
-        {
-          "id": 1,
-          "name": "Better of alone",
-          "artist": "Kim Cesarion",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
-          "genre": "piano"
-        },
-        {
-          "id": 2,
-          "name": "Alone",
-          "artist": "Color Out",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
-          "genre": "poprock"
-        }
-      ],
-      "artist": "Rasmus Hultgren"
-    },
-    {
-      "id": 8,
-      "name": "Someone To Love",
-      "thumbnail": "https://i.scdn.co/image/ab67616d0000b273e9e5fbbde2d4147260db99bf",
-      "tracks": [
-        {
-          "id": 1,
-          "name": "Better of alone",
-          "artist": "Kim Cesarion",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
-          "genre": "piano"
-        },
-        {
-          "id": 2,
-          "name": "Alone",
-          "artist": "Color Out",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
-          "genre": "poprock"
-        }
-      ],
-      "artist": "Dimitri Vangelis & Wyman"
-    },
-    {
-      "id": 9,
-      "name": "I samma bil",
-      "thumbnail": "https://i.scdn.co/image/ab67616d0000b27349108981b176704992078242",
-      "tracks": [
-        {
-          "id": 1,
-          "name": "Better of alone",
-          "artist": "Kim Cesarion",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
-          "genre": "piano"
-        },
-        {
-          "id": 2,
-          "name": "Alone",
-          "artist": "Color Out",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
-          "genre": "poprock"
-        }
-      ],
-      "artist": "Hemliga Klubben"
-    },
-    {
-      "id": 10,
-      "name": "Ofiltrerad",
-      "thumbnail": "https://i.scdn.co/image/ab67616d0000b273d43759a300274388d5b3ac7d",
-      "tracks": [
-        {
-          "id": 1,
-          "name": "Better of alone",
-          "artist": "Kim Cesarion",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
-          "genre": "piano"
-        },
-        {
-          "id": 2,
-          "name": "Alone",
-          "artist": "Color Out",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
-          "genre": "poprock"
-        }
-      ],
-      "artist": "Steph K"
-    },
-    {
-      "id": 11,
-      "name": "Closer",
-      "thumbnail": "https://i.scdn.co/image/ab67616d0000b273e04542a5b2f5c4e80b8043f9",
-      "tracks": [
-        {
-          "id": 1,
-          "name": "Better of alone",
-          "artist": "Kim Cesarion",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
-          "genre": "piano"
-        },
-        {
-          "id": 2,
-          "name": "Alone",
-          "artist": "Color Out",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
-          "genre": "poprock"
-        }
-      ],
-      "artist": "Romeo"
-    },
-    {
-      "id": 12,
-      "name": "YOUNG",
-      "thumbnail": "https://i.scdn.co/image/ab67616d0000b27350414c15d3e534effd5840ab",
-      "tracks": [
-        {
-          "id": 1,
-          "name": "Better of alone",
-          "artist": "Kim Cesarion",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
-          "genre": "piano"
-        },
-        {
-          "id": 2,
-          "name": "Alone",
-          "artist": "Color Out",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
-          "genre": "poprock"
-        }
-      ],
-      "artist": "SINAN"
-    },
-    {
-      "id": 13,
-      "name": "THE REAL",
-      "thumbnail": "https://i.scdn.co/image/ab67616d0000b273189b84e563687baf99c8d800",
-      "tracks": [
-        {
-          "id": 1,
-          "name": "Better of alone",
-          "artist": "Kim Cesarion",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
-          "genre": "piano"
-        },
-        {
-          "id": 2,
-          "name": "Alone",
-          "artist": "Color Out",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
-          "genre": "poprock"
-        }
-      ],
-      "artist": "Chapee"
-    },
-    {
-      "id": 14,
-      "name": "Eternal Light Brigade",
-      "thumbnail": "https://i.scdn.co/image/ab67616d0000b2732f4d9bfec9c13fc7979ed942",
-      "tracks": [
-        {
-          "id": 1,
-          "name": "Better of alone",
-          "artist": "Kim Cesarion",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
-          "genre": "piano"
-        },
-        {
-          "id": 2,
-          "name": "Alone",
-          "artist": "Color Out",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
-          "genre": "poprock"
-        }
-      ],
-      "artist": "Les Big Byrd"
-    },
-    {
-      "id": 15,
-      "name": "Tombolo (Réédition)",
-      "thumbnail": "https://i.scdn.co/image/ab67616d0000b273966b2b28801e75d7d293c3a9",
-      "tracks": [
-        {
-          "id": 1,
-          "name": "Better of alone",
-          "artist": "Kim Cesarion",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
-          "genre": "piano"
-        },
-        {
-          "id": 2,
-          "name": "Alone",
-          "artist": "Color Out",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
-          "genre": "poprock"
-        }
-      ],
-      "artist": "Kalash"
-    },
-    {
-      "id": 16,
-      "name": "KARIMO II",
-      "thumbnail": "https://i.scdn.co/image/ab67616d0000b273aa311f30a24a7002e089c379",
-      "tracks": [
-        {
-          "id": 1,
-          "name": "Better of alone",
-          "artist": "Kim Cesarion",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
-          "genre": "piano"
-        },
-        {
-          "id": 2,
-          "name": "Alone",
-          "artist": "Color Out",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
-          "genre": "poprock"
-        }
-      ],
-      "artist": "Karim Alger"
-    },
-    {
-      "id": 17,
-      "name": "Midnight FM",
-      "thumbnail": "https://i.scdn.co/image/ab67616d0000b273d62e4c88ec0df746317863af",
-      "tracks": [
-        {
-          "id": 1,
-          "name": "Better of alone",
-          "artist": "Kim Cesarion",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
-          "genre": "piano"
-        },
-        {
-          "id": 2,
-          "name": "Alone",
-          "artist": "Color Out",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
-          "genre": "poprock"
-        }
-      ],
-      "artist": "Prof. Stranger"
-    },
-    {
-      "id": 18,
-      "name": "Jag såg en kvinna",
-      "thumbnail": "https://i.scdn.co/image/ab67616d0000b273897c8155c64e1436daf8a466",
-      "tracks": [
-        {
-          "id": 1,
-          "name": "Better of alone",
-          "artist": "Kim Cesarion",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
-          "genre": "piano"
-        },
-        {
-          "id": 2,
-          "name": "Alone",
-          "artist": "Color Out",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
-          "genre": "poprock"
-        }
-      ],
-      "artist": "Ken Ring"
-    },
-    {
-      "id": 19,
-      "name": "Alltid varit här",
-      "thumbnail": "https://i.scdn.co/image/ab67616d0000b273940bcb3763667fa773d46a29",
-      "tracks": [
-        {
-          "id": 1,
-          "name": "Better of alone",
-          "artist": "Kim Cesarion",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
-          "genre": "piano"
-        },
-        {
-          "id": 2,
-          "name": "Alone",
-          "artist": "Color Out",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
-          "genre": "poprock"
-        }
-      ],
-      "artist": "Rozh"
-    },
-    {
-      "id": 20,
-      "name": "38",
-      "thumbnail": "https://i.scdn.co/image/ab67616d0000b273a009515d20b39aa065540314",
-      "tracks": [
-        {
-          "id": 1,
-          "name": "Better of alone",
-          "artist": "Kim Cesarion",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
-          "genre": "piano"
-        },
-        {
-          "id": 2,
-          "name": "Alone",
-          "artist": "Color Out",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583929/tracks-dev/Color_Out_-_Alone_aw3gmk.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
-          "genre": "poprock"
-        }
-      ],
-      "artist": "Arre"
+      "artist": "Taylor Switf"
     }
+   
+    
   ],
   "artists": [
     {
-      "id": 1,
-      "name": "Kim Cesarion",
+ 
+      "name": "Taylor Swift",
       "genres": [
-        "rock",
         "pop"
       ],
       "popularity": 38,
-      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb842fae710a21f648e26dd910"
+      "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1675118235/image/artists/taylor_mjltec.jpg"
     },
     {
-      "id": 2,
-      "name": "C.Gambino",
+
+      "name": "Shakira",
       "genres": [
-        "classical",
-        "folk",
-        "indie"
+        "pop"
       ],
       "popularity": 56,
-      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb9fb2b5ff325f43536a2a4ae2"
+      "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1675118068/image/artists/shakira_ksfmdd.png"
     },
     {
-      "id": 3,
-      "name": "Nicky Romero",
+    
+      "name": "The 1975",
       "genres": [
-        "big room",
-        "dance pop",
-        "dutch edm",
-        "edm",
-        "electro house",
-        "pop dance",
-        "pop edm",
-        "progressive electro house",
-        "progressive house",
-        "tropical house"
+        "indie"
       ],
       "popularity": 63,
-      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb8d683372296589f7c718dea6"
+      "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1675118007/image/artists/the-1975_kfp30s.png"
     },
     {
-      "id": 4,
-      "name": "Denz",
+
+      "name": "Two door cinema club",
       "genres": [
-        "swedish gangsta rap",
-        "swedish hip hop",
-        "swedish trap",
-        "swedish trap pop"
+        "pop",
+        "indie"
       ],
       "popularity": 51,
-      "thumbnail": "https://i.scdn.co/image/ab6761610000e5ebda71714b11b7c451281e54ca"
+      "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1675117942/image/artists/twodoorcinemaclub_d747bf.jpg"
     },
     {
-      "id": 5,
-      "name": "Jesper Swärd",
-      "genres": [],
-      "popularity": 19,
-      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb9acc7db8348539634e585144"
-    },
-    {
-      "id": 6,
-      "name": "Axel Boman",
+
+      "name": "Yellow days",
       "genres": [
-        "deep house",
-        "electronica",
-        "float house",
-        "microhouse",
-        "minimal tech house",
-        "swedish electronic",
-        "swedish house"
+        "pop",
+        "indie"
+      ],
+      "popularity": 19,
+      "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1675117881/image/artists/yellowdays_ljtsjp.jpg"
+    },
+    {
+      "name": "Miley Cyrus",
+      "genres": [
+        "pop"
       ],
       "popularity": 39,
-      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb19cd7b26fa38886bd6355b3c"
+      "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1675117818/image/artists/miley-cyrus-rubia-2006_rjsrsp.webp"
     },
     {
-      "id": 7,
-      "name": "Rasmus Hultgren",
+      "name": "Ella & Louis ",
       "genres": [
-        "swedish pop rap"
+        "jazz"
       ],
       "popularity": 31,
-      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb470a02669d59859a21676ed0"
+      "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1675117701/image/artists/ellaylouis_dse53o.jpg"
     },
     {
-      "id": 8,
-      "name": "Dimitri Vangelis & Wyman",
+      "name": "Q",
       "genres": [
-        "edm",
+        "indie",
         "electro house",
         "pop dance",
         "pop edm",
@@ -1742,125 +1499,29 @@
         "progressive house"
       ],
       "popularity": 55,
-      "thumbnail": "https://i.scdn.co/image/d3e1ce67d48fa05431bdd2b0f14ffc294960f0bf"
+      "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1675117533/image/artists/q_khk3w9.jpg"
     },
     {
-      "id": 9,
-      "name": "Hemliga Klubben",
+
+      "name": "Maneskin",
       "genres": [
-        "swedish pop"
+        "pop",
+        "poprock"
       ],
       "popularity": 34,
-      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb014c22b80be73cee9c7835b1"
+      "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1675117383/image/artists/maneskin_tqulb7.webp"
     },
     {
-      "id": 10,
-      "name": "Steph K",
+
+      "name": "BAD BUNNY",
       "genres": [
-        "swedish trap pop"
+        "urban"
       ],
       "popularity": 37,
-      "thumbnail": "https://i.scdn.co/image/ab6761610000e5ebf913a1de42e743a6f462dfe1"
-    },
-    {
-      "id": 11,
-      "name": "Romeo",
-      "genres": [
-        "swedish hip hop",
-        "swedish trap pop"
-      ],
-      "popularity": 44,
-      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb6dca4eb1f2347310b27c3000"
-    },
-    {
-      "id": 12,
-      "name": "SINAN",
-      "genres": [
-        "swedish gangsta rap",
-        "swedish hip hop",
-        "swedish trap pop"
-      ],
-      "popularity": 44,
-      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb5c1a2d5e3c93fe46ff18878d"
-    },
-    {
-      "id": 13,
-      "name": "Chapee",
-      "genres": [],
-      "popularity": 22,
-      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb8d4c9938258d04640bf9f091"
-    },
-    {
-      "id": 14,
-      "name": "Les Big Byrd",
-      "genres": [
-        "neo-kraut",
-        "stockholm indie",
-        "swedish indie rock",
-        "swedish psychedelic rock"
-      ],
-      "popularity": 33,
-      "thumbnail": "https://i.scdn.co/image/ab6761610000e5ebb7ed50718dfd36111ab26f40"
-    },
-    {
-      "id": 15,
-      "name": "Kalash",
-      "genres": [
-        "french hip hop",
-        "pop urbaine",
-        "rap antillais",
-        "trap antillais"
-      ],
-      "popularity": 62,
-      "thumbnail": "https://i.scdn.co/image/ab6761610000e5ebbeffebd066171f03029a3c2a"
-    },
-    {
-      "id": 16,
-      "name": "Karim Alger",
-      "genres": [
-        "swedish trap pop"
-      ],
-      "popularity": 24,
-      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb5c33b372d2ef6275ed536450"
-    },
-    {
-      "id": 17,
-      "name": "Prof. Stranger",
-      "genres": [],
-      "popularity": 19,
-      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb559babce20a71e8210990c29"
-    },
-    {
-      "id": 18,
-      "name": "Ken Ring",
-      "genres": [
-        "swedish gangsta rap",
-        "swedish hip hop",
-        "swedish trap pop"
-      ],
-      "popularity": 41,
-      "thumbnail": "https://i.scdn.co/image/ab6761610000e5ebd093354b1da8c7c55c4cee9f"
-    },
-    {
-      "id": 19,
-      "name": "Arre",
-      "genres": [],
-      "popularity": 25,
-      "thumbnail": "https://i.scdn.co/image/ab6761610000e5ebf6b060d446495921bd200593"
-    },
-    {
-      "id": 20,
-      "name": "Rozh",
-      "genres": [
-        "swedish drill",
-        "swedish gangsta rap",
-        "swedish hip hop",
-        "swedish trap",
-        "swedish trap pop"
-      ],
-      "popularity": 42,
-      "thumbnail": "https://i.scdn.co/image/ab6761610000e5eb31b2c3d4c8866b38310591be"
+      "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1675117330/image/artists/badbunny_trdmkk.jpg"
     }
+    
+
   ],
   "genres": [
     {

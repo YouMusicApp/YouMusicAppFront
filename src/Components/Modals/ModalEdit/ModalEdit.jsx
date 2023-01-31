@@ -36,7 +36,8 @@ export const ModalEdit = () => {
                 username: e.target.username.value,
                 first_name: e.target.first_name.value,
                 last_name: e.target.last_name.value,
-                complete_name: `${e.target.first_name.value} ${e.target.last_name.value}`
+                complete_name: `${e.target.first_name.value} ${e.target.last_name.value}`,
+               
             }
 
         }

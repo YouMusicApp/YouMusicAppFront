@@ -3,7 +3,7 @@ import { setNewPassword } from "../redux/features/user/userSlice";
 
 export const fetchEditUser = async (serverUrl, editUser, token, dispatch, setUserEdit) => {
     const response = await fetch(`${serverUrl}/api/user/edituser/${editUser._id}`, {
-        method: "PUT",
+        method: "PATCH",
         body: JSON.stringify(editUser),
         headers: {
             "Content-Type": "application/json",
@@ -16,17 +16,13 @@ export const fetchEditUser = async (serverUrl, editUser, token, dispatch, setUse
     }
 }
 
-export const fetchPutUser = async (id, userEdited, dispatch) => {
-    try {
-        await axios.put(`http://localhost:4000/users/${id}`, userEdited);
-        await dispatch(setNewPassword(userEdited));
-    } catch (error) { console.log(error) }
-}
 
-export const fetchLike = async (serverUrl, editUser, token, dispatch, setUserEdit) => {
-    const response = await fetch(`${serverUrl}/api/user/edituser/${editUser._id}`, {
-        method: "PUT",
-        body: JSON.stringify(editUser),
+
+export const fetchLike = async (serverUrl, userEdited, token, dispatch, setUserEdit) => {
+    console.log(userEdited)
+    const response = await fetch(`/api/user/edituser/${userEdited._id}`, {
+        method: "PATCH",
+        body: JSON.stringify(userEdited),
         headers: {
             "Content-Type": "application/json",
             Authorization: `Bearer ${token}`
@@ -34,7 +30,7 @@ export const fetchLike = async (serverUrl, editUser, token, dispatch, setUserEdi
     })
     const data = await response.json();
     if (data.response) {
-        dispatch(setUserEdit(editUser))
+        dispatch(setUserEdit(userEdited))
     }
 }
 
@@ -54,3 +50,10 @@ export const fetchAddPlaylist = async (playlistAdded) => {
         console.log(error);
     }
 }
+
+// export const fetchPutUser = async (_id, userEdited, dispatch) => {
+//     try {
+//         await axios.put(`http://localhost:4000/users/${_id}`, userEdited);
+//         await dispatch(setNewPassword(userEdited));
+//     } catch (error) { console.log(error) }
+// }
