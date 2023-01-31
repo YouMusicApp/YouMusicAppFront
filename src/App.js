@@ -29,27 +29,27 @@ function App() {
   }
 
 
-  return (
-    <>
-      <Helper />
+return (
+  <>
+    <Helper />
 
-      <div className="wrapper">
-        <MediaQuery minWidth={600} >
-          <Aside />
-        </MediaQuery>
-        <div id="content">
-          <Header />
-          <main className="main">
-            <AppRouter />
-          </main>
-          {isLogged ? <Player /> : null}
-        </div>
+    <div className="wrapper">
+      <MediaQuery minWidth={600} >
+        <Aside />
+      </MediaQuery>
+      <div id="content">
+        <Header />
+        <main className="main">
+          <AppRouter />
+        </main>
+        {isLogged ? <Player /> : null}
       </div>
+    </div>
 
 
-    </>
+  </>
 
-  );
+);
 }
 
 export default App;

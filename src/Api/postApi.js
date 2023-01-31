@@ -21,11 +21,11 @@ export const functionRegister = async (e, userData, dispatch, setShow, setError)
             email: e.target.email.value,
             password: e.target.password.value
         },
-        myplaylists: [],
-        liked_tracks: [],
-        liked_album: [],
-        liked_artist: [],
-        profilePicture: ''
+        myplaylists:[],
+        liked_tracks:[],
+        liked_album:[],
+        liked_artist:[],
+        profilePicture:''
     }
 
     const interim_user = (userData.list).find(user => user.userData.email === new_user.userData.email);
@@ -43,6 +43,6 @@ export const functionRegister = async (e, userData, dispatch, setShow, setError)
 export const fetchPostEditedPlaylist = async (newPlaylist) => {
     try {
         await axios.post('http://localhost:4000/playlists', newPlaylist);
-
+    
     } catch (error) { console.log(error) }
 }

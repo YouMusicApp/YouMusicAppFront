@@ -16,10 +16,10 @@ const AppRouter = () => {
             <Routes>
                 <Route path="*" element={<HomePage />} />
                 <Route path="/" element={<HomePage />} />
-                <Route path="/song/:id" element={<SongPage />} />
-                <Route path="/album/:id" element={<AlbumPage />} />
-                <Route path="/playlist/:id" element={<PlaylistPage />} />
-                <Route path="/artist/:id" element={<ArtistPage />} />
+                <Route path="/track/:_id" element={<SongPage />} />
+                <Route path="/album/:_id" element={<AlbumPage />} />
+                <Route path="/playlist/:_id" element={<PlaylistPage />} />
+                <Route path="/artist/:_id" element={<ArtistPage />} />
                 <Route path="/explore/:genre" element={<GenrePage />} />
                 <Route path="/explore" element={<ExplorePage />} />
                 <Route path="/search" element={<SearchPage />} />

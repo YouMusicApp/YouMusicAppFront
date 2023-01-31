@@ -12,7 +12,7 @@ const AlbumCard = ({ data, size, img }) => {
 
 
     const openSong = (data) => {
-        navigate(`/album/${data.id}`)
+        navigate(`/album/${data._id}`)
     }
 
     return (
