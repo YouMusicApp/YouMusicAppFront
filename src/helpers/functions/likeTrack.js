@@ -1,16 +1,21 @@
-import { fetchLike } from "../../Api/putApi";
+import { fetchEditUser, fetchLike } from "../../Api/putApi";
 import { setUserEdit, setUserLikedAlbum, setUserLikedArtist, setUserLikedPlaylist, setUserLikedTrack, setUserUnlikedAlbum, setUserUnlikedArtist, setUserUnlikedPlaylist, setUserUnlikedTrack } from "../../redux/features/user/userSlice";
 
-export const likedTrack = async (data, usersData, dispatch, getAccessTokenSilently, serverUrl) => {
+
+
+export const likedTrack = async (data, usersData, dispatch, serverUrl) => {
+
+    
     const checkLiked = usersData.userLogged.liked_tracks.find((like) => like._id === data._id)
-    const token = await getAccessTokenSilently();
+
 
     if (!checkLiked) {
         const userEdited = {
             ...usersData.userLogged,
             'liked_tracks': [...usersData.userLogged.liked_tracks, data]
         }
-        fetchLike(serverUrl, userEdited, token, dispatch, setUserEdit);
+     
+        fetchLike(serverUrl, userEdited, dispatch, setUserEdit);
         dispatch(setUserLikedTrack(data));
     } else {
         const unlikedTrack = usersData.userLogged.liked_tracks.filter((track) => {
@@ -20,12 +25,17 @@ export const likedTrack = async (data, usersData, dispatch, getAccessTokenSilent
             ...usersData.userLogged,
             'liked_tracks': unlikedTrack
         }
-        fetchLike(serverUrl, userEdited, token, dispatch, setUserEdit);
+   
+        fetchLike(serverUrl, userEdited, dispatch, setUserEdit);
         dispatch(setUserUnlikedTrack(userEdited))
     }
+
+    
 }
 
-export const likedAlbum = async (data, usersData, dispatch, getAccessTokenSilently, serverUrl) => {
+
+
+export const likedAlbum = async (data, usersData, getAccessTokenSilently, dispatch, serverUrl) => {
     const checkLiked = usersData.userLogged.liked_album.find((like) => like._id === data._id);
     const token = await getAccessTokenSilently();
     
@@ -60,6 +70,7 @@ export const likedArtist = async (data, usersData, dispatch, getAccessTokenSilen
         }
         fetchLike(serverUrl, userEdited, token, dispatch, setUserEdit);
         dispatch(setUserLikedArtist(data));
+
     } else {
         const unlikedArtist = usersData.userLogged.liked_artist.filter((artist) => {
             return artist._id !== data._id

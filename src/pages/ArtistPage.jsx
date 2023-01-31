@@ -26,7 +26,7 @@ export const ArtistPage = () => {
 
             <TableSongs songList={tracksArtist} />
             
-            {/* <div className='titleCards cardContainer'>
+            <div className='titleCards cardContainer'>
                 <div>
                     <AlbumSlider
                         slidesPerView={2}
@@ -56,8 +56,8 @@ export const ArtistPage = () => {
                                 spaceBetween: 10,
                             }
                         }}
-                    /> */}
-                {/* </div>
+                    /> 
+                </div>
                 {similarSongs.length > 0 &&
                     <div className="mt-2">
                         <Slider
@@ -127,13 +127,13 @@ export const ArtistPage = () => {
                                             }
                                         }}
                                     />
-                                </div> */}
+                                </div>
                             )
                         }
 
                     })
                 }
-            {/* </div> */}
+            </div>
         </>
     )
 }

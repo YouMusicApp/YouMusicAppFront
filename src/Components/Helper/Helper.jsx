@@ -24,7 +24,7 @@ export const Helper = () => {
         fetchGet(dispatch, "playlist", setPlaylistsList);
         fetchGet(dispatch, "artist", setArtistsList);
         fetchGet(dispatch, "genre", setGenresList);
-        // fetchGetbyId(dispatch, "track", setTracksList)
+      
         // fetchGetGenresList(dispatch);
     }, [dispatch])
 

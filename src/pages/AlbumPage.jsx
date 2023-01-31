@@ -19,7 +19,7 @@ export const AlbumPage = () => {
             <TopInfo data={album} />
             <TableSongs songList={album.tracks} />
 
-            {/* <div>
+            <div>
                 <AlbumSlider
                     slidesPerView={2}
                     size='small'
@@ -50,8 +50,8 @@ export const AlbumPage = () => {
                     }}
                 />
             </div>
-            <div className="titleCards cardContainer">
-                <Slider
+            // <div className="titleCards cardContainer">
+            //     <Slider
                     slidesPerView={1}
                     size='small'
                     img='img__small'
@@ -59,7 +59,7 @@ export const AlbumPage = () => {
                     title='Tracks'
                     breakpoints={breakpoints_small}
                 />
-            </div> */}
+            </div>
         </>
     )
 }

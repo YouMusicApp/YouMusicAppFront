@@ -15,8 +15,7 @@ const Card = ({ data, size, img }) => {
     const openSong = (data) => {
         navigate(`/track/${data._id}`)
         console.log(data)
-        console.log(data._id)
-        console.log(data.thumbnail)
+       
     }
 
     return (
