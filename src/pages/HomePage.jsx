@@ -45,16 +45,7 @@ const HomePage = () => {
                 />
               </div>
 
-              <div className="mx-2 titleCards">
-                <PlaylistSlider
-                  slidesPerView={1}
-                  size='small'
-                  img='img__small'
-                  array={playlists.list}
-                  title='Playlists'
-                  breakpoints={breakpoints_small}
-                />
-              </div>
+        
 
               <div className="mx-2 titleCards">
                 <ArtistSlider
@@ -95,6 +86,17 @@ const HomePage = () => {
                   img='img__small'
                   array={tracks.list}
                   title='Tracks'
+                  breakpoints={breakpoints_small}
+                />
+              </div>
+
+              <div className="mx-2 titleCards">
+                <PlaylistSlider
+                  slidesPerView={1}
+                  size='small'
+                  img='img__small'
+                  array={playlists.list}
+                  title='Playlists'
                   breakpoints={breakpoints_small}
                 />
               </div>

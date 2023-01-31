@@ -8,7 +8,9 @@ export const trackSlice = createSlice({
     reducers: {
         setTracksList: (state, action) => {
             state.list = action.payload;
+       
         }
+        
     }
 })
 

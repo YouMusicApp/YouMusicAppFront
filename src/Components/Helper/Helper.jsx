@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 // redux
-import { fetchGet } from "../../Api/Api";
+import { fetchGet, fetchGetbyId } from "../../Api/Api";
 import { useDispatch } from 'react-redux';
 import { setTracksList } from "../../redux/features/tracks/tracksSlice";
 import { setArtistsList } from "../../redux/features/artists/artistsSlice";
@@ -24,6 +24,7 @@ export const Helper = () => {
         fetchGet(dispatch, "playlist", setPlaylistsList);
         fetchGet(dispatch, "artist", setArtistsList);
         fetchGet(dispatch, "genre", setGenresList);
+        // fetchGetbyId(dispatch, "track", setTracksList)
         // fetchGetGenresList(dispatch);
     }, [dispatch])
 

@@ -14,7 +14,7 @@ const ArtistCard = ({ data, size, img }) => {
     const tracksArtist = tracks.list.filter((track) => track.artist === data.name);
 
     const openSong = (data) => {
-        navigate(`/artist/${data.id}`)
+        navigate(`/artist/${data._id}`)
     }
 
     return (
