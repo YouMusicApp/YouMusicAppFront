@@ -5,6 +5,9 @@ import { BsFillPlayCircleFill } from "react-icons/bs";
 import { useNavigate } from 'react-router-dom';
 import { setPlayer } from '../../helpers/functions/setPlayer';
 import { likedTrack } from '../../helpers/functions/likeTrack';
+import { useState } from 'react';
+import { useAuth0 } from '@auth0/auth0-react';
+import { useEffect } from 'react';
 
 
 const Card = ({ data, size, img }) => {
@@ -12,18 +15,32 @@ const Card = ({ data, size, img }) => {
     const usersData = useSelector(state => state.userSlice);
     const navigate = useNavigate();
 
+    const [myToken, setMyToken] = useState("")
+
+    const { getAccessTokenSilently } = useAuth0()
+
+    useEffect(() => {
+        async function getToken() {
+            const token = await getAccessTokenSilently();
+            setMyToken(prev => prev = token);
+        }
+        getToken();
+    }, [getAccessTokenSilently])
+
+
+
     const openSong = (data) => {
         navigate(`/track/${data._id}`)
         console.log(data)
-       
+
     }
 
     return (
 
         <div className={size} >
             {
-                usersData.isLogged ? <button className='btnheart btn' onClick={() => likedTrack(data, usersData, dispatch)}>{
-                    usersData.userLogged.liked_tracks.find((like) => like.id === data.id) ? <BsSuitHeartFill /> : <BsSuitHeart />
+                usersData.isLogged ? <button className='btnheart btn' onClick={() => likedTrack(data, usersData, myToken, dispatch)}>{
+                    usersData.userLogged.liked_tracks.find((like) => like._id === data._id) ? <BsSuitHeartFill /> : <BsSuitHeart />
                 }</button> : ""
             }
             <button className='btn btnplay' onClick={() => setPlayer([data], dispatch, usersData)}><BsFillPlayCircleFill /></button>

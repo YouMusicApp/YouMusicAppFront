@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 // redux
-import { fetchGet, fetchGetbyId } from "../../Api/Api";
+import { fetchGet } from "../../Api/Api";
 import { useDispatch } from 'react-redux';
 import { setTracksList } from "../../redux/features/tracks/tracksSlice";
 import { setArtistsList } from "../../redux/features/artists/artistsSlice";
@@ -15,7 +15,7 @@ import { useAuth0 } from '@auth0/auth0-react';
 export const Helper = () => {
     const dispatch = useDispatch();
     const { getAccessTokenSilently, user } = useAuth0();
-    const serverUrl = process.env.REACT_APP_SERVER_URL;
+    ;
 
     useEffect(() => {
         // fetchGet(dispatch, "user", setUserList);
@@ -38,7 +38,7 @@ export const Helper = () => {
         // PETICION AL BACKEND
         const token = await getAccessTokenSilently();
 
-        const response = await fetch(`${serverUrl}/api/user/checkuser/${user.email}`, {
+        const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/user/checkuser/${user.email}`, {
             headers: {
                 Authorization: `Bearer ${token}`,
             },
@@ -65,7 +65,7 @@ export const Helper = () => {
                 }
             }
 
-            const request = await fetch(`${serverUrl}/api/user/createuser`, {
+            const request = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/user/createuser`, {
                 method: "POST",
                 body: JSON.stringify($user),
                 headers: {

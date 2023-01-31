@@ -1,8 +1,8 @@
 import axios from "axios";
-import { setNewPassword } from "../redux/features/user/userSlice";
 
-export const fetchEditUser = async (serverUrl, editUser, token, dispatch, setUserEdit) => {
-    const response = await fetch(`${serverUrl}/api/user/edituser/${editUser._id}`, {
+
+export const fetchEditUser = async (id, editUser, token, dispatch, setUserEdit,) => {
+    const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/user/edituser/${id}`, {
         method: "PATCH",
         body: JSON.stringify(editUser),
         headers: {
@@ -11,28 +11,12 @@ export const fetchEditUser = async (serverUrl, editUser, token, dispatch, setUse
         }
     })
     const data = await response.json();
-    if (data.response) {
+    if (data) {
         dispatch(setUserEdit(editUser))
     }
 }
 
 
-
-export const fetchLike = async (serverUrl, userEdited, token, dispatch, setUserEdit) => {
-    console.log(userEdited)
-    const response = await fetch(`/api/user/edituser/${userEdited._id}`, {
-        method: "PATCH",
-        body: JSON.stringify(userEdited),
-        headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`
-        }
-    })
-    const data = await response.json();
-    if (data.response) {
-        dispatch(setUserEdit(userEdited))
-    }
-}
 
 //DEBERIAMOS BORRAR ESTE FETCH?
 export const fetchUserEdited = async (id, editUser) => {
