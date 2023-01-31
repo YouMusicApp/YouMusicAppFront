@@ -9,7 +9,7 @@ const AlbumCard = ({ data, size, img }) => {
     const dispatch = useDispatch();
     const usersData = useSelector(state => state.userSlice);
     const navigate = useNavigate();
-
+console.log(usersData.userLogged.liked_album)
 
     const openSong = (data) => {
         navigate(`/album/${data._id}`)
