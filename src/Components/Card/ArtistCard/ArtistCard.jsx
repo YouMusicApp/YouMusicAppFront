@@ -4,10 +4,12 @@ import { useNavigate } from 'react-router-dom';
 import '../Card.css'
 import { setPlayer } from '../../../helpers/functions/setPlayer';
 import { likedArtist } from '../../../helpers/functions/likeTrack';
+import { useEffect, useState } from 'react';
+import { useAuth0 } from '@auth0/auth0-react';
 
 const ArtistCard = ({ data, size, img }) => {
     const dispatch = useDispatch();
-    const usersData = useSelector(state => state.userSlice);
+    const userData = useSelector(state => state.userSlice);
     const navigate = useNavigate();
 
     const tracks = useSelector(state => state.trackSlice);
@@ -17,15 +19,26 @@ const ArtistCard = ({ data, size, img }) => {
         navigate(`/artist/${data._id}`)
     }
 
+    const [myToken, setMyToken] = useState("")
+    const { getAccessTokenSilently } = useAuth0()
+
+    useEffect(() => {
+        async function getToken() {
+            const token = await getAccessTokenSilently();
+            setMyToken(prev => prev = token);
+        }
+        getToken();
+    }, [getAccessTokenSilently])
+
     return (
 
         <div className={size} >
             {
-                usersData.isLogged ? <button className='btnheart btn' onClick={() => likedArtist(data, usersData, dispatch)}>{
-                    usersData.userLogged.liked_artist.find((like) => like.id === data.id) ? <BsSuitHeartFill /> : <BsSuitHeart />
+                userData.isLogged ? <button className='btnheart btn' onClick={() => likedArtist(data, userData, myToken, dispatch)}>{
+                    userData.userLogged.liked_artist.find((like) => like.id === data.id) ? <BsSuitHeartFill /> : <BsSuitHeart />
                 }</button> : ""
             }
-            <button className='btn btnplay' onClick={() => setPlayer(tracksArtist, dispatch, usersData)}><BsFillPlayCircleFill /></button>
+            <button className='btn btnplay' onClick={() => setPlayer(tracksArtist, dispatch, userData)}><BsFillPlayCircleFill /></button>
 
             <img onClick={() => openSong(data)} className={img} src={data.thumbnail} alt={data.artist} />
 
