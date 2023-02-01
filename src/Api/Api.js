@@ -13,15 +13,6 @@ export const fetchGet = async (dispatch, route, setList) => {
     }
 }
 
-// export const fetchGetbyId = async (dispatch, route, setList, _id) => {
-//     try {
-//         const resp = await axios.get(`http://localhost:4000/api/${route}/get/${_id}`);
-//         await dispatch(setList(resp.data.info));
-//     } catch (error) {
-//         console.log(error);
-//     }
-// }
-
 
 export const functionLogin = (e, userData, dispatch) => {
     const new_user = {

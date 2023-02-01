@@ -4,104 +4,89 @@ import { setUserEdit, setUserLikedAlbum, setUserLikedArtist, setUserLikedPlaylis
 
 
 
-export const likedTrack = async (data, usersData, token, dispatch) => {
+export const likedTrack = async (data, userData, token, dispatch) => {
 
-   
-
-    const checkLiked = usersData.userLogged.liked_tracks.find((like) => like._id === data._id)
+    const checkLiked = userData.userLogged.liked_tracks.find((like) => like._id === data._id)
 
     if (!checkLiked) {
-
         const editUser = {
-            'liked_tracks': [...usersData.userLogged.liked_tracks, data]
+            'liked_tracks': [...userData.userLogged.liked_tracks, data]
         }
-        fetchEditUser(usersData.userLogged._id, editUser, token, dispatch, setUserEdit);
+        fetchEditUser(userData.userLogged._id, editUser, token, dispatch, setUserEdit);
         dispatch(setUserLikedTrack(data));
         console.log(editUser)
     } else {
-        const unlikedTrack = usersData.userLogged.liked_tracks.filter((track) => {
+        const unlikedTrack = userData.userLogged.liked_tracks.filter((track) => {
             return track._id !== data._id
         })
         const editUser = {
             'liked_tracks': unlikedTrack
         }
-        fetchEditUser(usersData.userLogged._id, editUser, token, dispatch, setUserEdit);
+        fetchEditUser(userData.userLogged._id, editUser, token, dispatch, setUserEdit);
         dispatch(setUserUnlikedTrack(editUser))
     }
-
-
 }
 
 
-
-
-export const likedAlbum = async (data, usersData, getAccessTokenSilently, dispatch, serverUrl) => {
-    const checkLiked = usersData.userLogged.liked_album.find((like) => like._id === data._id);
-    const token = await getAccessTokenSilently();
+export const likedAlbum = async (data, userData, token, dispatch) => {
+    const checkLiked = userData.userLogged.liked_album.find((like) => like._id === data._id);
 
     if (!checkLiked) {
-        const userEdited = {
-            ...usersData.userLogged,
-            'liked_album': [...usersData.userLogged.liked_album, data]
+        const editUser = {
+            'liked_album': [...userData.userLogged.liked_album, data]
         }
-        fetchEditUser(serverUrl, userEdited, token, dispatch, setUserEdit);
+        fetchEditUser(userData.userLogged._id, editUser, token, dispatch, setUserEdit);
         dispatch(setUserLikedAlbum(data));
     } else {
-        const unlikedAlbum = usersData.userLogged.liked_album.filter((album) => {
+        const unlikedAlbum = userData.userLogged.liked_album.filter((album) => {
             return album._id !== data._id
         })
-        const userEdited = {
-            ...usersData.userLogged,
+        const editUser = {
             'liked_album': unlikedAlbum
         }
-        fetchEditUser(serverUrl, userEdited, token, dispatch, setUserEdit);
-        dispatch(setUserUnlikedAlbum(userEdited))
+        fetchEditUser(userData.userLogged._id, editUser, token, dispatch, setUserEdit);
+        dispatch(setUserUnlikedAlbum(editUser))
     }
 }
 
-export const likedArtist = async (data, usersData, dispatch, getAccessTokenSilently, serverUrl) => {
-    const checkLiked = usersData.userLogged.liked_artist.find((like) => like._id === data._id);
-    const token = await getAccessTokenSilently();
+export const likedArtist = async (data, userData, token, dispatch) => {
+    const checkLiked = userData.userLogged.liked_artist.find((like) => like._id === data._id);
 
     if (!checkLiked) {
-        const userEdited = {
-            ...usersData.userLogged,
-            'liked_artist': [...usersData.userLogged.liked_artist, data]
+        const editUser = {
+            'liked_artist': [...userData.userLogged.liked_artist, data]
         }
-        fetchEditUser(serverUrl, userEdited, token, dispatch, setUserEdit);
+        fetchEditUser(userData.userLogged._id, editUser, token, dispatch, setUserEdit);
         dispatch(setUserLikedArtist(data));
 
     } else {
-        const unlikedArtist = usersData.userLogged.liked_artist.filter((artist) => {
+        const unlikedArtist = userData.userLogged.liked_artist.filter((artist) => {
             return artist._id !== data._id
         })
-        const userEdited = {
-            ...usersData.userLogged,
+        const editUser = {
+
             'liked_artist': unlikedArtist
         }
-        fetchEditUser(serverUrl, userEdited, token, dispatch, setUserEdit);
-        dispatch(setUserUnlikedArtist(userEdited))
+        fetchEditUser(userData.userLogged._id, editUser, token, dispatch, setUserEdit);
+        dispatch(setUserUnlikedArtist(editUser))
     }
 }
 
-export const likedPlaylist = async (data, usersData, dispatch, getAccessTokenSilently, serverUrl) => {
-    const checkLiked = usersData.userLogged.myplaylists.find((like) => like._id === data._id);
-    const token = await getAccessTokenSilently();
+export const likedPlaylist = async (data, userData, token, dispatch) => {
+    const checkLiked = userData.userLogged.myplaylists.find((like) => like._id === data._id);
 
     if (!checkLiked) {
-        const userEdited = {
-            ...usersData.userLogged,
-            'myplaylists': [...usersData.userLogged.myplaylists, data]
+        const editUser = {
+            'myplaylists': [...userData.userLogged.myplaylists, data]
         }
         dispatch(setUserLikedPlaylist(data));
-        fetchEditUser(serverUrl, userEdited, token, dispatch, setUserEdit);
+        fetchEditUser(userData.userLogged._id, editUser, token, dispatch, setUserEdit);
     } else {
-        const unlikedPlaylist = usersData.userLogged.myplaylists.filter((playlist) => playlist._id !== data._id)
-        const userEdited = {
-            ...usersData.userLogged,
+        const unlikedPlaylist = userData.userLogged.myplaylists.filter((playlist) => playlist._id !== data._id)
+        const editUser = {
             'myplaylists': unlikedPlaylist
         }
-        dispatch(setUserUnlikedPlaylist(userEdited))
-        fetchEditUser(serverUrl, userEdited, token, dispatch, setUserEdit);
+        dispatch(setUserUnlikedPlaylist(editUser))
+        fetchEditUser(userData.userLogged._id, editUser, token, dispatch, setUserEdit);
     }
 }

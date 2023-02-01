@@ -12,7 +12,7 @@ import { useEffect } from 'react';
 
 const Card = ({ data, size, img }) => {
     const dispatch = useDispatch();
-    const usersData = useSelector(state => state.userSlice);
+    const userData = useSelector(state => state.userSlice);
     const navigate = useNavigate();
 
     const [myToken, setMyToken] = useState("")
@@ -39,11 +39,11 @@ const Card = ({ data, size, img }) => {
 
         <div className={size} >
             {
-                usersData.isLogged ? <button className='btnheart btn' onClick={() => likedTrack(data, usersData, myToken, dispatch)}>{
-                    usersData.userLogged.liked_tracks.find((like) => like._id === data._id) ? <BsSuitHeartFill /> : <BsSuitHeart />
+                userData.isLogged ? <button className='btnheart btn' onClick={() => likedTrack(data, userData, myToken, dispatch)}>{
+                    userData.userLogged.liked_tracks.find((like) => like._id === data._id) ? <BsSuitHeartFill /> : <BsSuitHeart />
                 }</button> : ""
             }
-            <button className='btn btnplay' onClick={() => setPlayer([data], dispatch, usersData)}><BsFillPlayCircleFill /></button>
+            <button className='btn btnplay' onClick={() => setPlayer([data], dispatch, userData)}><BsFillPlayCircleFill /></button>
 
             <img onClick={() => openSong(data)} className={img} src={data.thumbnail} alt='img' />
 

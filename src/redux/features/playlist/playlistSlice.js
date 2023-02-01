@@ -21,12 +21,7 @@ export const playlistSlice = createSlice({
     }
 })
 
-// setUserLikedPlaylist: (state, action) => {
-//     state.userLogged = {
-//         ...state.userLogged,
-//         'myplaylists': [...state.userLogged.myplaylists, action.payload]
-//     }
-// },
+
 
 export const { setPlaylistsList, createNewPlaylist, deletePlaylist, addSongToPlaylist } = playlistSlice.actions;
 

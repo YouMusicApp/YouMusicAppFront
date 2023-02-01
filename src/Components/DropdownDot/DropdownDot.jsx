@@ -31,7 +31,7 @@ const DropdownDot = ({ data }) => {
                 tracks: [...playlist.tracks, song]
             } : p)
             dispatch(addSongToPlaylist(playlistTotal))
-            fetchAddPlaylist(playlistAdded)
+            // fetchAddPlaylist(playlistAdded)
         } else {
             console.log("ya la tienes")
             //add two buttons for add again and don't do i
