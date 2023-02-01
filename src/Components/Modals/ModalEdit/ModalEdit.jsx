@@ -25,7 +25,7 @@ export const ModalEdit = () => {
         setShow(true);
     }
 
-    const editForm = async (e) => {
+    const editForm = async (e, id) => {
         e.preventDefault()
         const token = await getAccessTokenSilently();
 
@@ -37,11 +37,10 @@ export const ModalEdit = () => {
                 first_name: e.target.first_name.value,
                 last_name: e.target.last_name.value,
                 complete_name: `${e.target.first_name.value} ${e.target.last_name.value}`,
-               
             }
 
         }
-        fetchEditUser(serverUrl, editUser, token, dispatch, setUserEdit)
+        fetchEditUser(id, editUser, token, dispatch, setUserEdit)
     }
 
     return (

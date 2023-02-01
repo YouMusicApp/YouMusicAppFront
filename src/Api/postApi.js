@@ -40,9 +40,27 @@ export const functionRegister = async (e, userData, dispatch, setShow, setError)
     }
 }
 
-export const fetchPostEditedPlaylist = async (newPlaylist) => {
-    try {
-        await axios.post('http://localhost:4000/playlists', newPlaylist);
-    
-    } catch (error) { console.log(error) }
+//createPlaylist
+
+export const fetchCreatePlaylist = async (newPlaylist, token, dispatch, createNewPlaylist) => {
+    const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/playlist/newPlaylist/`, {
+        method: "POST",
+        body: JSON.stringify(newPlaylist),
+        headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`
+        }
+    })
+    const data = await response.json();
+    // if (data) {
+    //     dispatch(createNewPlaylist(newPlaylist))
+    // }
 }
+
+
+// export const fetchPostEditedPlaylist = async (newPlaylist) => {
+//     try {
+//         await axios.post('http://localhost:4000/playlists', newPlaylist);
+    
+//     } catch (error) { console.log(error) }
+// }

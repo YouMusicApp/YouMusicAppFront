@@ -1,36 +1,42 @@
+import { useAuth0 } from '@auth0/auth0-react';
 import React, { useState } from 'react'
 import { Modal } from "react-bootstrap";
 import { BsMusicNoteList } from 'react-icons/bs';
 import { IoIosArrowBack } from 'react-icons/io';
 import { useDispatch, useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { fetchPostEditedPlaylist } from '../../../Api/postApi';
+import { fetchCreatePlaylist } from '../../../Api/postApi';
 import { createNewPlaylist } from '../../../redux/features/playlist/playlistSlice';
+
 
 const ModalEditedPlaylist = () => {
     const [fullscreen, setFullscreen] = useState(true);
     const [show, setShow] = useState(false);
     const dispatch = useDispatch();
-    const usersData = useSelector(state => state.userSlice);
+    const userData = useSelector(state => state.userSlice);
+    const { getAccessTokenSilently } = useAuth0();
+    
 
     function handleShow(v) {
         setFullscreen(v);
         setShow(true);
     }
-    const functionPlaylistEdited = (e) => {
+    const functionPlaylistEdited = async (e) => {
         e.preventDefault();
+        const token = await getAccessTokenSilently();
 
         const newPlaylist = {
-            id: uuidv4(),
-            userId: usersData.userLogged.id,
+            userId: userData.userLogged._id,
             name: e.target.name.value,
             description: e.target.description.value,
             thumbnail: e.target.img.value ? e.target.img.value : 'https://larepublica.pe/resizer/632M9vfX7i5PUUkywOaFjXBmzE0=/480x282/top/smart/cloudfront-us-east-1.images.arcpublishing.com/gruporepublica/RW25RRXAFZFHZCPDX4K2RPLFOY.jpg',
             // publicAccessible: e.target.public.value,
             tracks: [],
         }
+        fetchCreatePlaylist(newPlaylist, token, dispatch, createNewPlaylist)
         dispatch(createNewPlaylist(newPlaylist));
-        fetchPostEditedPlaylist(newPlaylist)
+        
+        
         setShow(false);
     }
 
@@ -39,7 +45,7 @@ const ModalEditedPlaylist = () => {
 
             <li className='cursor-pointer' onClick={() => handleShow('sm-down')}>
                 <BsMusicNoteList
-                /> New Playlist 
+                /> New Playlist
             </li>
 
             <Modal centered className='p-0' show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
