@@ -4,9 +4,10 @@ import { Modal } from "react-bootstrap";
 import { BsMusicNoteList } from 'react-icons/bs';
 import { IoIosArrowBack } from 'react-icons/io';
 import { useDispatch, useSelector } from 'react-redux';
-import { v4 as uuidv4 } from 'uuid';
 import { fetchCreatePlaylist } from '../../../Api/postApi';
 import { createNewPlaylist } from '../../../redux/features/playlist/playlistSlice';
+import { setUserLikedPlaylist } from "../../../redux/features/user/userSlice";
+import { fetchEditUser } from '../../../Api/putApi';
 
 
 const ModalEditedPlaylist = () => {
@@ -15,7 +16,7 @@ const ModalEditedPlaylist = () => {
     const dispatch = useDispatch();
     const userData = useSelector(state => state.userSlice);
     const { getAccessTokenSilently } = useAuth0();
-    
+
 
     function handleShow(v) {
         setFullscreen(v);
@@ -33,10 +34,13 @@ const ModalEditedPlaylist = () => {
             // publicAccessible: e.target.public.value,
             tracks: [],
         }
+
+
         fetchCreatePlaylist(newPlaylist, token, dispatch, createNewPlaylist)
         dispatch(createNewPlaylist(newPlaylist));
-        
-        
+      
+       
+
         setShow(false);
     }
 

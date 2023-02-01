@@ -10,7 +10,7 @@ import { fetchEditUser } from '../../../Api/putApi';
 
 
 export const ModalEdit = () => {
-    const serverUrl = process.env.REACT_APP_SERVER_URL;
+
     const [fullscreen, setFullscreen] = useState(true);
     const [show, setShow] = useState(false);
     const { getAccessTokenSilently } = useAuth0();
