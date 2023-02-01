@@ -4,12 +4,25 @@ import { useNavigate } from 'react-router-dom';
 import '../Card.css'
 import { setPlayer } from '../../../helpers/functions/setPlayer';
 import { likedAlbum } from '../../../helpers/functions/likeTrack';
+import { useAuth0 } from '@auth0/auth0-react';
+import { useEffect, useState } from 'react';
 
 const AlbumCard = ({ data, size, img }) => {
     const dispatch = useDispatch();
-    const usersData = useSelector(state => state.userSlice);
+    const userData = useSelector(state => state.userSlice);
     const navigate = useNavigate();
-console.log(usersData.userLogged.liked_album)
+    
+
+    const [myToken, setMyToken] = useState("")
+    const { getAccessTokenSilently } = useAuth0()
+
+    useEffect(() => {
+        async function getToken() {
+            const token = await getAccessTokenSilently();
+            setMyToken(prev => prev = token);
+        }
+        getToken();
+    }, [getAccessTokenSilently])
 
     const openSong = (data) => {
         navigate(`/album/${data._id}`)
@@ -23,11 +36,11 @@ console.log(usersData.userLogged.liked_album)
                 <p className="card-text">{data.artist}</p>
             </div>
             {
-                usersData.isLogged ? <button className='btnheart btn' onClick={() => likedAlbum(data, usersData, dispatch)}>{
-                    usersData.userLogged.liked_album.find((like) => like.id === data.id) ? <BsSuitHeartFill /> : <BsSuitHeart />
+                userData.isLogged ? <button className='btnheart btn' onClick={() => likedAlbum(data, userData, myToken, dispatch)}>{
+                    userData.userLogged.liked_album.find((like) => like.id === data.id) ? <BsSuitHeartFill /> : <BsSuitHeart />
                 }</button> : ""
             }
-            <button className='btn btnplay' onClick={() => setPlayer(data.tracks, dispatch, usersData)}><BsFillPlayCircleFill /></button>
+            <button className='btn btnplay' onClick={() => setPlayer(data.tracks, dispatch, userData)}><BsFillPlayCircleFill /></button>
 
             <img onClick={() => openSong(data)} className={img} src={data.thumbnail} alt='img' />
 

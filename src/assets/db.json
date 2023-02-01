@@ -99,35 +99,20 @@
       ]
     },
     {
-      "id": "c563aa14-ec0d-4a7c-99a0-1a87064a8a02",
-      "userId": 2,
+      
+      "userId": "63d557c52b127074b853df53",
       "name": "gym",
-      "description": "musiquita",
-      "thumbnail": "https://static4.depositphotos.com/1001094/343/i/600/depositphotos_3431951-stock-photo-portrait-of-one-eyed-circus.jpg",
+      "description": "Music for gym",
+      "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675118352/image/playlists/playlist1_zyjoxq.webp",
       "tracks": [
         {
-          "id": 20,
-          "name": "Monday 8am",
-          "artist": "KINEMATIC",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/alone_rfib7a.jpg",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644602494/tracks-dev/D_JAY_KOI_-_We_got_the_vibes___Feat_Fil_Straughan__uz9qw7.mp3",
-          "genre": "folk"
-        },
-        {
-          "id": 3,
-          "name": "Mahidevran - Maze of sorrow",
-          "artist": "MAHIDEVRAN ROCK BAND",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583928/tracks-dev/Mahidevran_Rock_Band_-_Mahidevran_-_Maze_of_sorrow_ips3zs.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/Maze_of_sorrow_r1crlr.jpg",
-          "genre": "chillout"
-        },
-        {
-          "id": 1,
-          "name": "Better of alone",
-          "artist": "RXBYN",
-          "url": "https://res.cloudinary.com/dmkdsujzh/video/upload/v1644583924/tracks-dev/Rxbyn_-_better_off_alone_fvhwp8.mp3",
-          "thumbnail": "https://res.cloudinary.com/dmkdsujzh/image/upload/v1644583757/tracks-thumbnails-dev/better_off_alone_gfmcby.jpg",
-          "genre": "piano"
+          
+            "_id": "63d8e540930e525ca1e2f0c0",
+            "name": "SUPERMODEL",
+            "artist": "Måneskin",
+            "url": "https://res.cloudinary.com/dfz4bu04u/video/upload/v1675115001/mp3/Ma%CC%8Aneskin_-_SUPERMODEL_g01pzz.mp3",
+            "thumbnail": "https://res.cloudinary.com/dfz4bu04u/image/upload/v1675117699/image/tracks/Ma%CC%8Aneskin_-_SUPERMODEL_kaklnn.jpg",
+            "genre": "poprock"
         }
       ]
     }
