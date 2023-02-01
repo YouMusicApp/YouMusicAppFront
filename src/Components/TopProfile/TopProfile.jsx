@@ -7,8 +7,9 @@ export const TopProfile = () => {
 
     const userData = useSelector(state => state.userSlice);
     const user = userData.userLogged;
-  
-   
+
+    console.log(user.userData.profilePicture)
+
 
     return (
         <>
@@ -17,7 +18,7 @@ export const TopProfile = () => {
                     <div className="">
                         <img className="card-img-top" src="https://www.fotocasion.es/media/img/articulos/35203-fondo-colorama-rose-pink-84-27-FOTOCASION-OFERTA-DESCUENTO.jpg" alt="Cimage" />
                         <div className="card-body little-profile text-center p-2">
-                            <div className="pro-img"><img src={ user.userData.profilePicture ? user.userData.profilePicture : 'https://www.sfu.ca/content/sfu/communication/people/emeritus/linda-harasim/jcr:content/main_content/image.img.640.medium.png/1533071250636.png'} alt="user" /></div>
+                            <div className="pro-img"><img src={user.userData.profilePicture ? user.userData.profilePicture : 'https://www.sfu.ca/content/sfu/communication/people/emeritus/linda-harasim/jcr:content/main_content/image.img.640.medium.png/'} alt="user" /></div>
                             <div>
                                 <h2>{user.userData.username} </h2>
                                 <p>{user.userData.first_name} {user.userData.last_name}</p>
