@@ -84,7 +84,7 @@ Our goal is to provide a high-quality, hassle-free music listening experience fo
 
 ## 1. Frontend
 
-#### Visual Sample
+#### Mobile Visual Display
 
 ### Home Page
 
@@ -94,7 +94,7 @@ Our goal is to provide a high-quality, hassle-free music listening experience fo
 
 ![mobile_6](https://user-images.githubusercontent.com/123480811/216454610-9d471604-dfdf-4ca9-bc0f-50d171ecd0a3.png)
 
-## Album Page!
+### Album Page
 
 ![mobile_8](https://user-images.githubusercontent.com/123480811/216456090-39e41be3-6bf1-48a0-8647-521f6ccfb88e.png)
 
@@ -110,17 +110,38 @@ Our goal is to provide a high-quality, hassle-free music listening experience fo
 
 ![mobile_4](https://user-images.githubusercontent.com/123480811/216456635-0df4b872-108a-4f25-accb-5eac0c996d6e.png)
 
+
+#### Visual Display Browser
+
+
+### Home Page
+
+![mobile_10](https://user-images.githubusercontent.com/123480811/216458901-9889100f-896c-49e4-9d12-082903366164.png)
+
+### Login Page
+
+![mobile_9](https://user-images.githubusercontent.com/123480811/216458968-ba00e063-8b2c-4236-9be3-82d732a14d2a.png)
+
+### Album Page
+
+![mobile_11](https://user-images.githubusercontent.com/123480811/216459005-78e0980e-ffd1-45d5-9e2f-9232c702b979.png)
+
+
 #### 2. Future implementations
 
 - React-Query
 - Styled components
-- Delete songs in playlist 
+- Dislike
+- Improve playlist options
+- Client file upload
+- Implement radio and podcast options
 
 #### 3. Advantages of using React
 
-- React requires less code compared to other development platforms.
-- Reusable components: This makes the application more scalable and easier to maintain as errors will occur in the component's own functionality or in its   communication with the rest.
-- Improves the user experience when navigating the web application, the speed at which pages load and facilitates the maintenance of the application. 
+- Efficient code: React requires less code compared to other development platforms, making the creation and maintenance of the project easier.
+- Reusable components: This makes the application more scalable and easier to maintain, as errors occur in the component's own functionality or in its communication     with the rest of the project.
+- Improves the user experience when navigating the web application, increases the page loading speed and facilitates the maintenance of the application.
+- In summary, React is a powerful tool that offers a wide range of advantages for web application development. By using React, we can create faster, more efficient and   easier to maintain applications. 
 
 ## Authors
 
