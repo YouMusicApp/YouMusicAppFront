@@ -58,7 +58,7 @@ const ModalEditedPlaylist = () => {
                     <Modal.Title>YouMusic</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <div className='m-4 row'><h1 className='text-center'>Edit playlist info</h1></div>
+                    <div className='m-4 row'><h1 className='text-center'>New playlist</h1></div>
                     <div className='mx-2'>
                         <form onSubmit={(e) => functionPlaylistEdited(e)} className="needs-validation">
                             <div className="row g-3">
