@@ -145,9 +145,17 @@ Our goal is to provide a high-quality, hassle-free music listening experience fo
 
 ## Authors
 
+##Frontend
+
 - [@lidiettes](https://github.com/lidiettes)
 - [@jcmginer](https://github.com/jcmginer) 
+- Álvaro Alonso
+- Juan Francisco Solano
 
+##Backend
+
+- [@lidiettes](https://github.com/lidiettes)
+- [@jcmginer](https://github.com/jcmginer)
 
 # Getting Started with Create React App
 
