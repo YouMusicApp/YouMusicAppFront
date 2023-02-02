@@ -11,7 +11,7 @@ export default function AlbumSlider({ array, title, size, slidesPerView, img, br
 
     return (
         <>
-            <h2>{title}</h2>
+            <h2 className="cardContainer">{title}</h2>
             <Swiper
                 slidesPerView={slidesPerView}
                 // pagination={{
@@ -19,7 +19,7 @@ export default function AlbumSlider({ array, title, size, slidesPerView, img, br
                 // }}
                 breakpoints={breakpoints}
                 modules={[Pagination]}
-                className="mySwiper"
+                className="mySwiper cardContainer"
             >
 
                 <div className="row">
