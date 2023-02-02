@@ -22,11 +22,11 @@ export const functionRegister = async (e, userData, dispatch, setShow, setError)
             email: e.target.email.value,
             password: e.target.password.value
         },
-        myplaylists:[],
-        liked_tracks:[],
-        liked_album:[],
-        liked_artist:[],
-        profilePicture:''
+        myplaylists: [],
+        liked_tracks: [],
+        liked_album: [],
+        liked_artist: [],
+        profilePicture: ''
     }
 
     const interim_user = (userData.list).find(user => user.userData.email === new_user.userData.email);
@@ -43,8 +43,8 @@ export const functionRegister = async (e, userData, dispatch, setShow, setError)
 
 //createPlaylist
 
-export const fetchCreatePlaylist = async (newPlaylist, token, dispatch, createNewPlaylist) => {
-    const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/playlist/newPlaylist/`, {
+export const fetchCreatePlaylist = async (id, newPlaylist, token, dispatch) => {
+    const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/playlist/newPlaylist/${id}`, {
         method: "POST",
         body: JSON.stringify(newPlaylist),
         headers: {
@@ -55,7 +55,6 @@ export const fetchCreatePlaylist = async (newPlaylist, token, dispatch, createNe
     const data = await response.json();
     if (data) {
         dispatch(setUserLikedPlaylist(newPlaylist))
-        
     }
 }
 
