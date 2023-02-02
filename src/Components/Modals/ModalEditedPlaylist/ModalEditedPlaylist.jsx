@@ -35,13 +35,18 @@ const ModalEditedPlaylist = () => {
             tracks: [],
         }
 
-
         fetchCreatePlaylist(newPlaylist, token, dispatch, createNewPlaylist)
-        dispatch(createNewPlaylist(newPlaylist));
-
-
+        dispatch(createNewPlaylist(newPlaylist))
 
         setShow(false);
+
+    
+
+
+
+
+
+
     }
 
     return (
