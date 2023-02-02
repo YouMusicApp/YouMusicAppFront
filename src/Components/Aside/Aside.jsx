@@ -35,8 +35,8 @@ export const Aside = () => {
                         <li><Link to='/'><AiOutlineHome className='me-1' /> Home</Link></li>
                         <li><Link to='/'><AiOutlinePlayCircle className='me-1' /> Listen</Link></li>
                         <li><Link to='/explore'><GiCheckboxTree className='me-1' /> Explore</Link></li>
-                        <li><Link to='/'><IoIosRadio className='me-1' /> Radio</Link></li>
-                        <li><Link to='/'><GiMedallist className='me-1' /> Artist?</Link></li>
+                        {/* <li><Link to='/'><IoIosRadio className='me-1' /> Radio</Link></li>
+                        <li><Link to='/'><GiMedallist className='me-1' /> Artist?</Link></li> */}
                     </ul>
                 </div>
                 <div className="">

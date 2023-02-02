@@ -17,8 +17,9 @@ export function AvatarUser() {
                 title=<FaUserCircle className='icon color-purple' />
             >
                 <Dropdown.Item eventKey="1" onClick={() => navigate('/profile')}>Profile</Dropdown.Item>
-                <Dropdown.Item eventKey="2">Another</Dropdown.Item>
-                <Dropdown.Item eventKey="3">Something</Dropdown.Item>
+                
+                {/* <Dropdown.Item eventKey="2">Another</Dropdown.Item> */}
+                {/* <Dropdown.Item eventKey="3">Something</Dropdown.Item> */}
                 <Dropdown.Divider />
                 <Dropdown.Item eventKey="4" ><LogoutAuthButton /></Dropdown.Item>
             </DropdownButton>
@@ -26,3 +27,11 @@ export function AvatarUser() {
 
     );
 }
+
+
+
+
+
+
+
+

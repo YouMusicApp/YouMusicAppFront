@@ -55,8 +55,8 @@ const ModalAside = () => {
                             <li onClick={() => setShow(false)}><Link to='/'><AiOutlineHome className='me-1' /> Home</Link></li>
                             <li onClick={() => setShow(false)}><Link to='/'><AiOutlinePlayCircle className='me-1' /> Listen</Link></li>
                             <li onClick={() => setShow(false)}><Link to='/explore'><GiCheckboxTree className='me-1' /> Explore</Link></li>
-                            <li onClick={() => setShow(false)}><Link to='/'><IoIosRadio className='me-1' /> Radio</Link></li>
-                            <li onClick={() => setShow(false)}><Link to='/'><GiMedallist className='me-1' /> Artist?</Link></li>
+                            {/* <li onClick={() => setShow(false)}><Link to='/'><IoIosRadio className='me-1' /> Radio</Link></li> */}
+                            {/* <li onClick={() => setShow(false)}><Link to='/'><GiMedallist className='me-1' /> Artist?</Link></li> */}
                         </ul>
                     </div>
                     <div className="">
