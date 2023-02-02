@@ -86,7 +86,7 @@ Our goal is to provide a high-quality, hassle-free music listening experience fo
 
 ### Home Page
 
-![mobile Home](https://user-images.githubusercontent.com/123480811/216452829-406504dd-026b-4541-8dc6-543aa8328751.png)
+![mobile_2](https://user-images.githubusercontent.com/123480811/216453858-141f2619-30f5-4baa-b675-60a8a6876cf6.png)
 
 ### Login Page
 
