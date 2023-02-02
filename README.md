@@ -1,4 +1,6 @@
-`# REACT MUSIC PROJECT 
+[YouMusicLogo](https://user-images.githubusercontent.com/123480811/216457088-f3ed3209-4c13-4818-b87b-b004d8e76913.png)
+
+# REACT MUSIC PROJECT 
 
 Put into practice all the previous knowledge learned in the master to develop a music app project using React.
 
@@ -90,22 +92,23 @@ Our goal is to provide a high-quality, hassle-free music listening experience fo
 
 ### Login Page
 
-![mobile (1)](https://user-images.githubusercontent.com/96661791/207954423-26713e85-287e-4a2e-892e-3615b92e8f17.png)
+![mobile_6](https://user-images.githubusercontent.com/123480811/216454610-9d471604-dfdf-4ca9-bc0f-50d171ecd0a3.png)
 
-## Album Page
+## Album Page!
 
-
-![mobile (2)](https://user-images.githubusercontent.com/96661791/207954914-a5f8f5b8-cdd7-459a-accf-c4967cf87573.png)
-
+![mobile_8](https://user-images.githubusercontent.com/123480811/216456090-39e41be3-6bf1-48a0-8647-521f6ccfb88e.png)
 
 ### Profile Page
 
-
-![mobile (3)](https://user-images.githubusercontent.com/96661791/207955102-fe545b76-939b-41d0-ba8c-6d5d22df4ecd.png)
+![mobile_3](https://user-images.githubusercontent.com/123480811/216455209-c894c2bb-54f5-4a3a-9567-c4fb682a319b.png)
 
 ### Aside Page
 
-![mobile (4)](https://user-images.githubusercontent.com/96661791/207955460-7573c3cc-cab6-47ba-978d-41e42832534f.png)
+![mobile_5](https://user-images.githubusercontent.com/123480811/216455800-c4a3ddda-fa06-4909-a620-ecfa551c61f1.png)
+
+### Genres Page
+
+![mobile_4](https://user-images.githubusercontent.com/123480811/216456635-0df4b872-108a-4f25-accb-5eac0c996d6e.png)
 
 #### 2. Future implementations
 
@@ -123,7 +126,6 @@ Our goal is to provide a high-quality, hassle-free music listening experience fo
 
 - [@lidiettes](https://github.com/lidiettes)
 - [@jcmginer](https://github.com/jcmginer) 
-`
 
 # Getting Started with Create React App
 
