@@ -1,4 +1,4 @@
-[YouMusicLogo](https://user-images.githubusercontent.com/123480811/216457088-f3ed3209-4c13-4818-b87b-b004d8e76913.png)
+![YouMusicLogo](https://user-images.githubusercontent.com/123480811/216457088-f3ed3209-4c13-4818-b87b-b004d8e76913.png)
 
 # REACT MUSIC PROJECT 
 
