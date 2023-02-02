@@ -6,8 +6,8 @@ import { IoIosArrowBack } from 'react-icons/io';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCreatePlaylist } from '../../../Api/postApi';
 import { createNewPlaylist } from '../../../redux/features/playlist/playlistSlice';
-import { setUserLikedPlaylist } from "../../../redux/features/user/userSlice";
-import { fetchEditUser } from '../../../Api/putApi';
+import { setUserEdit } from "../../../redux/features/user/userSlice";
+import { fetchEditUser, fetchEditUserPlaylist } from '../../../Api/putApi';
 
 
 const ModalEditedPlaylist = () => {
@@ -35,17 +35,25 @@ const ModalEditedPlaylist = () => {
             tracks: [],
         }
 
-        fetchCreatePlaylist(newPlaylist, token, dispatch, createNewPlaylist)
-        dispatch(createNewPlaylist(newPlaylist))
+
+        fetchCreatePlaylist(userData.userLogged._id, newPlaylist, token, dispatch, createNewPlaylist)
+        dispatch(createNewPlaylist(newPlaylist));
 
         setShow(false);
 
-    
+        console.log(userData.userLogged);
+        console.log(newPlaylist);
 
 
+        const checkPlaylist = userData.userLogged.myplaylists.find((playlist) => playlist._id === newPlaylist._id)
 
-
-
+        if (!checkPlaylist) {
+            const playlistUser = {
+                'my_playlist': [...userData.userLogged.myplaylists, newPlaylist]
+            }
+            fetchEditUserPlaylist(userData.userLogged._id, playlistUser, token, dispatch, setUserEdit);
+            //dispatch(setUserLikedTrack(data));
+        }
 
     }
 
