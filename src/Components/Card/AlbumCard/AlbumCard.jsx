@@ -31,19 +31,20 @@ const AlbumCard = ({ data, size, img }) => {
     return (
 
         <div className='imgbig' >
-            <div className="card-text card-body mb-2">
-                <h5 className="card-title">{data.name}</h5>
-                <p className="card-text">{data.artist}</p>
-            </div>
+           
             {
                 userData.isLogged ? <button className='btnheart btn' onClick={() => likedAlbum(data, userData, myToken, dispatch)}>{
                     userData.userLogged.liked_album.find((like) => like.id === data.id) ? <BsSuitHeartFill /> : <BsSuitHeart />
                 }</button> : ""
             }
+            
             <button className='btn btnplay' onClick={() => setPlayer(data.tracks, dispatch, userData)}><BsFillPlayCircleFill /></button>
 
             <img onClick={() => openSong(data)} className={img} src={data.thumbnail} alt='img' />
-
+            <div className="card-text card-body mb-2 mt-2">
+                <h5 className="card-title ">{data.name}</h5>
+                <p className="card-text">{data.artist}</p>
+            </div>
         </div>
 
     )

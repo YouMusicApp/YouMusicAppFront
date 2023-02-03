@@ -17,6 +17,8 @@ export const ModalEdit = () => {
 
     const userData = useSelector(state => state.userSlice);
     const user = userData.userLogged;
+    console.log(userData.userLogged._id)
+    
 
     const dispatch = useDispatch();
 
@@ -25,10 +27,11 @@ export const ModalEdit = () => {
         setShow(true);
     }
 
-    const editForm = async (e, id) => {
+    const editForm = async (e) => {
+        const id = userData.userLogged._id;
         e.preventDefault()
         const token = await getAccessTokenSilently();
-
+        console.log(token)
         const editUser = {
             ...user,
             "userData": {
