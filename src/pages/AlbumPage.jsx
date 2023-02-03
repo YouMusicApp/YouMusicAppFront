@@ -50,8 +50,8 @@ export const AlbumPage = () => {
                     }}
                 />
             </div>
-            // <div className="titleCards cardContainer">
-            //     <Slider
+            <div className="titleCards cardContainer">
+                <Slider
                     slidesPerView={1}
                     size='small'
                     img='img__small'
