@@ -11,7 +11,7 @@ const AlbumCard = ({ data, size, img }) => {
     const dispatch = useDispatch();
     const userData = useSelector(state => state.userSlice);
     const navigate = useNavigate();
-    
+
 
     const [myToken, setMyToken] = useState("")
     const { getAccessTokenSilently } = useAuth0()
@@ -31,13 +31,13 @@ const AlbumCard = ({ data, size, img }) => {
     return (
 
         <div className='imgbig' >
-           
+
             {
                 userData.isLogged ? <button className='btnheart btn' onClick={() => likedAlbum(data, userData, myToken, dispatch)}>{
                     userData.userLogged.liked_album.find((like) => like.id === data.id) ? <BsSuitHeartFill /> : <BsSuitHeart />
                 }</button> : ""
             }
-            
+
             <button className='btn btnplay' onClick={() => setPlayer(data.tracks, dispatch, userData)}><BsFillPlayCircleFill /></button>
 
             <img onClick={() => openSong(data)} className={img} src={data.thumbnail} alt='img' />
