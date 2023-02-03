@@ -23,11 +23,13 @@ Our goal is to provide a high-quality, hassle-free music listening experience fo
 
 ### Hooks and personalized Hooks
 
--UseState, useEffect, useContext, Memo, useSelector, useAuth0, useNavigate, useSearchParams, useDispatch ... 
+- useState, useEffect, useContext, Memo, useSelector
+- useAuth0, useNavigate, useSearchParams, useDispatch ... 
 
 ### Extra
 
 - Private routes
+- Cloudinary
 - Agile methodology with Scrum using GitHub Project
 
 ### Libraries
