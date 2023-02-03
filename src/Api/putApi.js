@@ -2,6 +2,7 @@ import axios from "axios";
 
 
 export const fetchEditUser = async (id, editUser, token, dispatch, setUserEdit) => {
+    console.log(id)
     const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/user/edituser/${id}`, {
         method: "PATCH",
         body: JSON.stringify(editUser),
