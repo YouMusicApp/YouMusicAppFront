@@ -1,9 +1,7 @@
 import { Link, useNavigate, useSearchParams } from 'react-router-dom'
 import './Aside.css'
-import { AiOutlineHome, AiOutlinePlayCircle/* , AiOutlineSearch  */ } from "react-icons/ai";
+import { AiOutlineHome } from "react-icons/ai";
 import { GiCheckboxTree } from "react-icons/gi";
-import { IoIosRadio } from "react-icons/io";
-import { GiMedallist } from "react-icons/gi";
 import ModalEditedPlaylist from '../Modals/ModalEditedPlaylist/ModalEditedPlaylist';
 import Search from '../Search/Search';
 
@@ -33,7 +31,7 @@ export const Aside = () => {
                     </div>
                     <ul className="sidebar-nav">
                         <li><Link to='/'><AiOutlineHome className='me-1' /> Home</Link></li>
-                        <li><Link to='/'><AiOutlinePlayCircle className='me-1' /> Listen</Link></li>
+                        {/* <li><Link to='/'><AiOutlinePlayCircle className='me-1' /> Listen</Link></li> */}
                         <li><Link to='/explore'><GiCheckboxTree className='me-1' /> Explore</Link></li>
                         {/* <li><Link to='/'><IoIosRadio className='me-1' /> Radio</Link></li>
                         <li><Link to='/'><GiMedallist className='me-1' /> Artist?</Link></li> */}
