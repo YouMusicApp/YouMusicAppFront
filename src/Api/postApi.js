@@ -1,13 +1,13 @@
 import axios from "axios";
 import { registerUser } from "../redux/features/user/userSlice";
 import { v4 as uuidv4 } from 'uuid';
-import { createNewPlaylist } from "../redux/features/playlist/playlistSlice";
+
 import { setUserLikedPlaylist } from "./../redux/features/user/userSlice";
 
 
 export const fetchPostUser = async (newUser, dispatch) => {
     try {
-        await axios.post('http://localhost:4000/users', newUser);
+        await axios.post(`${process.env.REACT_APP_SERVER_URL}/users`, newUser);
         await dispatch(registerUser(newUser));
     } catch (error) { console.log(error) }
 }
@@ -57,6 +57,4 @@ export const fetchCreatePlaylist = async (id, newPlaylist, token, dispatch) => {
         dispatch(setUserLikedPlaylist(newPlaylist))
     }
 }
-
-
 
